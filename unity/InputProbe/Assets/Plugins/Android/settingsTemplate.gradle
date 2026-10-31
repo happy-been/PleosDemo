@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        **ARTIFACTORYREPOSITORY**
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+include ':launcher', ':unityLibrary'
+**INCLUDES**
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        **ARTIFACTORYREPOSITORY**
+        google()
+        mavenCentral()
+        maven {
+            url 'https://nexus-playground.pleos.ai/repository/maven-releases/'
+            content { includeGroup 'ai.pleos.playground' }
+        }
+        flatDir { dirs "${project(':unityLibrary').projectDir}/libs" }
+    }
+}

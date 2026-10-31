@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN" />
+    <uses-permission android:name="android.car.permission.CAR_SPEED" />
+    <uses-permission android:name="android.car.permission.READ_CAR_PEDALS" />
+    <uses-permission android:name="android.car.permission.CAR_ENGINE_DETAILED_3P" />
+    <uses-permission android:name="android.car.permission.CAR_ENGINE_DETAILED" />
+    <application>
+        <uses-library android:name="android.car" android:required="false" />
+    </application>
+</manifest>

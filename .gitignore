@@ -13,3 +13,29 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Unity source is shared; editor caches and generated APK/AAR files are not.
+# Root Gradle modules only: Assets/Editor/Build contains source code.
+/*/build/
+/unity/**/Library/
+/unity/**/Temp/
+/unity/**/Obj/
+/unity/**/Logs/
+/unity/**/UserSettings/
+/unity/**/MemoryCaptures/
+/unity/**/.vs/
+/unity/**/*.csproj
+/unity/**/*.sln
+/unity/**/*.slnx
+/unity/**/*.user
+/unity/**/*.suo
+/unity/**/Assets/Plugins/Android/pleos-vehicle-bridge.aar
+/unity/**/Assets/Plugins/Android/pleos-vehicle-bridge.aar.meta
+**/__pycache__/
+
+# Local credentials and signing material are never shared.
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore

@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    useLibrary("android.car")
     namespace = "com.example.pleosdemo"
     compileSdk {
         version = release(37)
@@ -33,6 +34,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":vehicle-bridge"))
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
