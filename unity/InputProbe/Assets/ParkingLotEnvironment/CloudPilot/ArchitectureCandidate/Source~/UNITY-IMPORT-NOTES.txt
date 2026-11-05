@@ -1,0 +1,19 @@
+Retained verified CC0 source: Modular Urban Apartments Facade, James Ray Cock, Poly Haven.
+Source archive SHA256: 27373b2cdde70452af7f0f1567a32f9f78f0030b67f7be8761125fced8dd1e0b
+Official source/receipt: SOURCE.txt, info.json, files.json, download-manifest.json.
+No new download, package, or paid asset was used by this pass.
+
+Exact glTF indices: materials objects=0, glass=1, trim_01=2, trim_02=3, plaster=4.
+textures normal,diffuse,ARM: objects=0,1,2; glass=3,4,5 (same object atlas); trim_01=6,7,8; trim_02=9,10,11; plaster=12,13,14.
+Imported only FBX plus objects/trim_01/plaster JPEG atlases. glTF/bin remain unimported here.
+Derived Standard metallic/smoothness PNG: R=source ARM.B, G=B=0, A=255-source ARM.G.
+Derived AO PNG replicates ARM.R to RGB (Standard occlusion reads G).
+Diffuse is sRGB; ARM, derived maps and imported OpenGL normal maps are linear. Normal importer keeps default OpenGL green orientation.
+Glass uses object-atlas RGB with authored alpha 0.32, premultiplied transparency, metallic 0.15 and smoothness 0.84. No emission.
+Window object/frame submesh uses a new painted-aluminium clone; normal and occlusion remain from the source atlas. Window trim submesh retains trim_01.
+Brick is a new material clone referencing the existing unchanged CC0 red_brick diffuse (Rob Tuytel); metre UVs are authored only on new meshes. Source wall UV uses 0.66667 repeats/m; back wall 1/1.4 repeats/m.
+
+FBX nodes have a local 270-degree X rotation and scale 100; canonical mesh assets apply those imported axes/units while discarding only sample translation. Canonical wall panel is 3m x 3m. Front faces rotate 180 degrees; side faces +/-90 degrees.
+Active module pairs: wall_window_centered_large_03 + window_centered_large_03; wall_door_centered_large_01 + door_centered_large_01.
+The _02 sample was inspected and rejected for its protruding decorative surround. No cornice/crown/balcony modules were used.
+All architecture assembly is actual mesh geometry. No reference image or photographic facade billboard is displayed in the scene.

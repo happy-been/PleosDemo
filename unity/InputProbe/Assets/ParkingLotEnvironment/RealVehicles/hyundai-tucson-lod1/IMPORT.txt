@@ -1,0 +1,3 @@
+Offline source: Assets/ParkingLotEnvironment/SourceModels~/hyundai-tucson-lod1/model.json
+Baked glTF node transforms. Flip Z/winding, flip V for Unity. Normalized vehicle length 4.53m.
+2026-11-02T05:24:41

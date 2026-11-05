@@ -1,0 +1,26 @@
+{
+  "id": "generico-caminhao",
+  "brand": "Genérico",
+  "model": "Caminhão leve",
+  "years": [
+    2000,
+    2024
+  ],
+  "category": "utility",
+  "file": "generico-caminhao.glb",
+  "bytes": 6678868,
+  "paint": {
+    "materials": [
+      "lct3000_Bodymat"
+    ],
+    "textured": false,
+    "confidence": "alta"
+  },
+  "credit": {
+    "author": "Daniel Zhabotinsky",
+    "authorUrl": "https://sketchfab.com/DanielZhabotinsky",
+    "license": "CC Attribution",
+    "sourceName": "LCT 3000 '95 - Low poly model",
+    "sourceUrl": "https://sketchfab.com/3d-models/663a0953c038434a918cb85725c88ffa"
+  }
+}

@@ -1,0 +1,17 @@
+Unity에서 검토본 열기
+
+프로젝트: C:\dev\PleosDemo\unity\InputProbe
+씬: Assets/ParkingLotEnvironment/CloudPilot/WholeMapFinish20261105/WholeMapReview.unity
+
+1. Unity에서 위 프로젝트를 연다.
+2. Project 창에서 WholeMapReview를 찾아 더블클릭한다.
+3. Hierarchy의 ParkingLot_CornerPilot_Root 아래에서 차량·건물·담장 등을 선택한다.
+4. 객체는 이미 Scene에 저장되어 있다. 배치를 보기 위해 생성 스크립트를 다시 실행할 필요가 없다.
+5. 지붕 보완 객체 ConcreteRoofSurface는 해당 건물의 자식이므로 건물을 옮기면 함께 움직인다.
+
+현재 원본 ParklingLot.unity는 교체하지 않았다. 원본 자산과 ProjectSettings도 변경하지 않았다.
+검토본은 기존 PorterReference20261105와 원래 주차장 자산을 참조하므로 폴더 하나만 다른 프로젝트에 복사하면 안 된다. 공유 시 Unity의 Export Package에서 Include dependencies를 사용한다.
+이 단계는 그래픽 검토이며, 주행 입력·주차 판정·APK 연동을 새로 구현한 것은 아니다.
+차량별 재사용 Prefab 정리 및 새 편집용 Scene 구성은 화면 검토 이후 단계다.
+
+남은 한계: 포터의 원본 형상·등화류, 차량 일부 패널 굴곡, 반복되는 주변 건물 디자인. 기존 조명용 UV 중복 경고도 남아 있다. 완전한 실사 모델로 판정하지 않는다.

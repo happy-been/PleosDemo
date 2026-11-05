@@ -1,0 +1,412 @@
+{
+  "units": "metres",
+  "status": "authored geometry only; Unity import/render unverified",
+  "design_assumptions": {
+    "bay_width": 2.5,
+    "bay_length": 5,
+    "aisle_depth": 6,
+    "eye_height": 1.65,
+    "dimensions_measured_from_image": false
+  },
+  "parts": [
+    {
+      "file": "Pilot_Asphalt.obj",
+      "vertices": 16,
+      "triangles": 8,
+      "bounds": [
+        [
+          -6,
+          -0.006,
+          -0.35
+        ],
+        [
+          6,
+          -0.006,
+          12
+        ]
+      ],
+      "sha256": "fe4656229e2625a6db521e1a34bf3418c2cac5688bc4df5f79c1ec381ec23de5"
+    },
+    {
+      "file": "Pilot_Curb.obj",
+      "vertices": 144,
+      "triangles": 240,
+      "bounds": [
+        [
+          -5.994,
+          -0.08,
+          -0.22
+        ],
+        [
+          5.994,
+          0.18,
+          0.0
+        ]
+      ],
+      "sha256": "1467781e16b7f1e0c52ff4145aa94dd261bc9a8f939c3e1edf8a053cd9ef18c7"
+    },
+    {
+      "file": "Pilot_Sidewalk.obj",
+      "vertices": 24,
+      "triangles": 12,
+      "bounds": [
+        [
+          -6,
+          -0.08,
+          -8
+        ],
+        [
+          6,
+          0.13,
+          -0.23
+        ]
+      ],
+      "sha256": "5718e68cee7204dd886d56eaa83e60193304271a908b4ce20a826d25202d239e"
+    },
+    {
+      "file": "Pilot_ParkingPaint.obj",
+      "vertices": 120,
+      "triangles": 60,
+      "bounds": [
+        [
+          -5.045,
+          -0.002,
+          0
+        ],
+        [
+          2.545,
+          0.003,
+          5.05
+        ]
+      ],
+      "sha256": "6ae1bfa3e900fb96f648966c07e6685ccd3ce4cfe9a9db64e0898b064b0e265d"
+    },
+    {
+      "file": "Pilot_DrainWell.obj",
+      "vertices": 72,
+      "triangles": 36,
+      "bounds": [
+        [
+          3.03,
+          -0.16,
+          -0.2
+        ],
+        [
+          3.38,
+          0.004,
+          5.5
+        ]
+      ],
+      "sha256": "db1f47b44c3c62c504801e9b3f02103de3b2688ab6a28e129deb1c66ff564142"
+    },
+    {
+      "file": "Pilot_DrainSteel.obj",
+      "vertices": 4488,
+      "triangles": 2244,
+      "bounds": [
+        [
+          3.065,
+          -0.025,
+          0.0
+        ],
+        [
+          3.345,
+          0.002,
+          5.485
+        ]
+      ],
+      "sha256": "9ffc6ec8ef8b3c7bc090c9e73a04823c259efb0881aa0113a23d3d498cd5ddb4"
+    },
+    {
+      "file": "Pilot_BrickShell.obj",
+      "vertices": 576,
+      "triangles": 288,
+      "bounds": [
+        [
+          -5,
+          0,
+          -8
+        ],
+        [
+          5,
+          9.600000000000001,
+          -5
+        ]
+      ],
+      "sha256": "d638845035f678b37fb345b20a6fb1508317b802e6ee954029fce460103ce81e"
+    },
+    {
+      "file": "Pilot_ConcreteTrim.obj",
+      "vertices": 384,
+      "triangles": 192,
+      "bounds": [
+        [
+          -5.12,
+          0.835,
+          -8.12
+        ],
+        [
+          5.12,
+          9.74,
+          -4.83
+        ]
+      ],
+      "sha256": "4c37ad3dbf1064bf9ca84a284ad420839af5f448a84c30603a660f7e1f5e1b13"
+    },
+    {
+      "file": "Pilot_WindowGlass.obj",
+      "vertices": 288,
+      "triangles": 144,
+      "bounds": [
+        [
+          -4.305,
+          0.9450000000000001,
+          -5.16
+        ],
+        [
+          4.305,
+          8.855,
+          -5.15
+        ]
+      ],
+      "sha256": "20c4f8cf7e9b44bbcab0f4f2351756a11664fc53f6f51827f6937b86cd557d6f"
+    },
+    {
+      "file": "Pilot_WindowFrames.obj",
+      "vertices": 1440,
+      "triangles": 720,
+      "bounds": [
+        [
+          -4.35,
+          0.9,
+          -5.12
+        ],
+        [
+          4.35,
+          8.9,
+          -4.98
+        ]
+      ],
+      "sha256": "05ff4df1ab1a0009c125730a413e78f05be126c99f0582459de5aa987b8a0564"
+    },
+    {
+      "file": "Pilot4_BrickShell.obj",
+      "vertices": 1194,
+      "triangles": 410,
+      "bounds": [
+        [
+          -5,
+          0,
+          -8
+        ],
+        [
+          5,
+          12.8,
+          -5
+        ]
+      ],
+      "sha256": "d56a2880dc8874de86442be834e69d2fe158f77fd7d6bbcc4ddbb0e5af4c3371"
+    },
+    {
+      "file": "Pilot4_ConcreteTrim.obj",
+      "vertices": 768,
+      "triangles": 264,
+      "bounds": [
+        [
+          -5.12,
+          0.835,
+          -8.12
+        ],
+        [
+          5.12,
+          12.94,
+          -4.83
+        ]
+      ],
+      "sha256": "d012395d103a918f36ed70f6e9496b5cf8930c0596bf3c3a2aded26eacf6df27"
+    },
+    {
+      "file": "Pilot4_WindowFrames.obj",
+      "vertices": 2880,
+      "triangles": 960,
+      "bounds": [
+        [
+          -4.35,
+          0.9,
+          -5.12
+        ],
+        [
+          4.35,
+          12.100000000000001,
+          -4.98
+        ]
+      ],
+      "sha256": "9132b3ae2b8b12249787123f67e88569639582e4ef80e3d3192596b7a4f4ec11"
+    },
+    {
+      "file": "Pilot4_WindowGlass.obj",
+      "vertices": 576,
+      "triangles": 192,
+      "bounds": [
+        [
+          -4.305,
+          0.9450000000000001,
+          -5.16
+        ],
+        [
+          4.305,
+          12.055,
+          -5.15
+        ]
+      ],
+      "sha256": "839752fa1e28ffd450da8e3066059050ef00d078f3502a5e8759935d08e96113"
+    },
+    {
+      "file": "Zone_Asphalt.obj",
+      "vertices": 16,
+      "triangles": 8,
+      "bounds": [
+        [
+          -10,
+          -0.006,
+          -14
+        ],
+        [
+          10,
+          -0.006,
+          14
+        ]
+      ],
+      "sha256": "15ea0544ad295f84f85ae3e967ba5d1d9648370c97bd668320fa6520254e4d78"
+    },
+    {
+      "file": "Zone_Sidewalk.obj",
+      "vertices": 48,
+      "triangles": 24,
+      "bounds": [
+        [
+          -14,
+          -0.1,
+          -14
+        ],
+        [
+          10.3,
+          0.13,
+          14
+        ]
+      ],
+      "sha256": "3401a1f69b31d998af767abf0c7551a81c0bb810cd392698880d780a9b61635e"
+    },
+    {
+      "file": "Zone_Curb.obj",
+      "vertices": 672,
+      "triangles": 1120,
+      "bounds": [
+        [
+          -8.82,
+          -0.08,
+          -13.994
+        ],
+        [
+          9.020000000000001,
+          0.18,
+          13.994
+        ]
+      ],
+      "sha256": "5822027633f693e8f710ccda6a9ef6b07abfc9d50526e8d755e105ac8e253ad1"
+    },
+    {
+      "file": "Zone_ParkingPaint.obj",
+      "vertices": 576,
+      "triangles": 288,
+      "bounds": [
+        [
+          -8.045,
+          -0.002,
+          -12.545
+        ],
+        [
+          8.045,
+          0.003,
+          12.545
+        ]
+      ],
+      "sha256": "d9bebf175fbb3ac26e77b92fb7ccc0622f7a9e0353aac3261cd75782dd186d53"
+    },
+    {
+      "file": "Zone_DrainWell.obj",
+      "vertices": 72,
+      "triangles": 36,
+      "bounds": [
+        [
+          8.5,
+          -0.16,
+          -13.5
+        ],
+        [
+          8.85,
+          0.004,
+          13.5
+        ]
+      ],
+      "sha256": "0c131956aa819287601c0a4e24d88e1b154c6e3985b5287909f9f1add3c30582"
+    },
+    {
+      "file": "Zone_DrainSteel.obj",
+      "vertices": 22032,
+      "triangles": 11016,
+      "bounds": [
+        [
+          8.53,
+          -0.025,
+          -13.5
+        ],
+        [
+          8.82,
+          0.002,
+          13.485
+        ]
+      ],
+      "sha256": "a02d8ba8bcd42422b8816bb1cba32f33cc37b30fe029df19cac47a6d191c97a8"
+    },
+    {
+      "file": "Zone_SignPanel.obj",
+      "vertices": 24,
+      "triangles": 12,
+      "bounds": [
+        [
+          8.05,
+          2.35,
+          9.9
+        ],
+        [
+          9.95,
+          3.2,
+          10.02
+        ]
+      ],
+      "sha256": "fc888b21cc7507f0962552ef1d64b6839ba2b70c1d85dbf5c99c1465de4e8bc4"
+    },
+    {
+      "file": "Zone_SignPost.obj",
+      "vertices": 24,
+      "triangles": 12,
+      "bounds": [
+        [
+          8.96,
+          -0.1,
+          9.94
+        ],
+        [
+          9.04,
+          3.25,
+          10.02
+        ]
+      ],
+      "sha256": "4a359d3b94f71133f5a705ef8b18e21d689037f5e7be59313005e11731a0665d"
+    }
+  ],
+  "total_triangles": 18286,
+  "vehicle": "No new high fidelity vehicle acquired; retain comparison slot pending review",
+  "source": "Authored geometry, existing credited photographic material sources referenced separately."
+}

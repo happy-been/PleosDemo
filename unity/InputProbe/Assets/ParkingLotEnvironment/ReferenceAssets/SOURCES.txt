@@ -1,0 +1,9 @@
+New assets used only by ParklingLot.unity.
+Sources (CC0):
+https://polyhaven.com/a/tree_small_02
+https://polyhaven.com/a/kloppenheim_06_puresky
+License: https://polyhaven.com/license
+Photos consulted for visual layout only; no map-service imagery embedded.
+Reference: https://www.kbmaeil.com/article/20251210500343
+https://polyhaven.com/a/asphalt_02
+Parking Signs font: subset of Nanum Gothic, renamed; SIL OFL 1.1. https://github.com/google/fonts/tree/main/ofl/nanumgothic

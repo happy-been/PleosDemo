@@ -1,0 +1,319 @@
+{
+  "status": "Provisional assembly; final review and Unity validation pending",
+  "width": 20,
+  "length": 28,
+  "aisle": 6,
+  "eyeHeight": 1.65,
+  "verticalFov": 44,
+  "objects": [
+    {
+      "name": "Zone_Asphalt",
+      "asset": "Geometry/Zone_Asphalt.obj",
+      "material": "Asphalt",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": true
+    },
+    {
+      "name": "Zone_Sidewalk",
+      "asset": "Geometry/Zone_Sidewalk.obj",
+      "material": "Paving",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": true
+    },
+    {
+      "name": "Zone_Curb",
+      "asset": "Geometry/Zone_Curb.obj",
+      "material": "Concrete",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": true
+    },
+    {
+      "name": "Zone_ParkingPaint",
+      "asset": "Geometry/Zone_ParkingPaint.obj",
+      "material": "ParkingPaint",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": false
+    },
+    {
+      "name": "Zone_DrainWell",
+      "asset": "Geometry/Zone_DrainWell.obj",
+      "material": "DrainWell",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": false
+    },
+    {
+      "name": "Zone_DrainSteel",
+      "asset": "Geometry/Zone_DrainSteel.obj",
+      "material": "DrainSteel",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": false
+    },
+    {
+      "name": "Zone_SignPanel",
+      "asset": "Geometry/Zone_SignPanel.obj",
+      "material": "SignBlue",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": false
+    },
+    {
+      "name": "Zone_SignPost",
+      "asset": "Geometry/Zone_SignPost.obj",
+      "material": "WindowFrames",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "yaw": 0,
+      "collider": false
+    },
+    {
+      "name": "Building_0_BrickShell",
+      "asset": "Geometry/Pilot_BrickShell.obj",
+      "material": "Brick",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": -6.5
+      },
+      "yaw": 90,
+      "collider": true
+    },
+    {
+      "name": "Building_0_ConcreteTrim",
+      "asset": "Geometry/Pilot_ConcreteTrim.obj",
+      "material": "Concrete",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": -6.5
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_0_WindowFrames",
+      "asset": "Geometry/Pilot_WindowFrames.obj",
+      "material": "WindowFrames",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": -6.5
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_0_WindowGlass",
+      "asset": "Geometry/Pilot_WindowGlass.obj",
+      "material": "WindowGlass",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": -6.5
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_1_BrickShell",
+      "asset": "Geometry/Pilot4_BrickShell.obj",
+      "material": "Concrete",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 5
+      },
+      "yaw": 90,
+      "collider": true
+    },
+    {
+      "name": "Building_1_ConcreteTrim",
+      "asset": "Geometry/Pilot4_ConcreteTrim.obj",
+      "material": "Concrete",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 5
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_1_WindowFrames",
+      "asset": "Geometry/Pilot4_WindowFrames.obj",
+      "material": "WindowFrames",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 5
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_1_WindowGlass",
+      "asset": "Geometry/Pilot4_WindowGlass.obj",
+      "material": "WindowGlass",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 5
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_2_BrickShell",
+      "asset": "Geometry/Pilot_BrickShell.obj",
+      "material": "Brick",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 16
+      },
+      "yaw": 90,
+      "collider": true
+    },
+    {
+      "name": "Building_2_ConcreteTrim",
+      "asset": "Geometry/Pilot_ConcreteTrim.obj",
+      "material": "Concrete",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 16
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_2_WindowFrames",
+      "asset": "Geometry/Pilot_WindowFrames.obj",
+      "material": "WindowFrames",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 16
+      },
+      "yaw": 90,
+      "collider": false
+    },
+    {
+      "name": "Building_2_WindowGlass",
+      "asset": "Geometry/Pilot_WindowGlass.obj",
+      "material": "WindowGlass",
+      "position": {
+        "x": -5.3,
+        "y": 0,
+        "z": 16
+      },
+      "yaw": 90,
+      "collider": false
+    }
+  ],
+  "trees": [
+    {
+      "x": -9.45,
+      "y": 0.13,
+      "z": -7.5
+    },
+    {
+      "x": -9.45,
+      "y": 0.13,
+      "z": -0.8
+    },
+    {
+      "x": -9.45,
+      "y": 0.13,
+      "z": 6.1
+    },
+    {
+      "x": -9.45,
+      "y": 0.13,
+      "z": 11.5
+    }
+  ],
+  "vehicleSlots": [
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": -6.25
+    },
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": -3.75
+    },
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": -1.25
+    },
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": 1.25
+    },
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": 3.75
+    },
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": 6.25
+    },
+    {
+      "x": -5.5,
+      "y": 0,
+      "z": 8.75
+    }
+  ],
+  "cameraPosition": {
+    "x": -1.7,
+    "y": 1.65,
+    "z": -10.5
+  },
+  "cameraYaw": -18,
+  "nearVehicleFramingStatus": "Candidate about 3-4m from approximate body bounds; require actual Unity framing confirmation.",
+  "forwardDistance": 10,
+  "sideDistance": 3,
+  "warning": "Existing vehicle comparison is not approval of close-range shape/material quality."
+}

@@ -1,0 +1,12 @@
+Reusable vehicle kit. Root at ground level; nose +Z. Uses final map paint, glass, wheel and tire materials; plates are attached. Import these prefabs directly for future layouts instead of slicing meshes or redoing materials.
+Porter attribution is retained in ../PorterData/CREDITS.txt; other model credits are in Assets/ParkingLotEnvironment/VEHICLE-SOURCES.md and CREDITS.md.
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_i30_Black.prefab | Compact hatchback | UNAPPROVED_hyundai-i30_1
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_Tucson_White.prefab | SUV | UNAPPROVED_hyundai-tucson_0
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_Azera_Navy.prefab | Sedan | UNAPPROVED_hyundai-azera_3
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_Porter_II_Blue.prefab | Hyundai Porter II blue 1-ton cargo | Porter II by max7th / CC BY 4.0
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_i30_Burgundy.prefab | Compact hatchback | UNAPPROVED_hyundai-i30_1
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_Tucson_Graphite.prefab | SUV | UNAPPROVED_hyundai-tucson_0
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_Azera_Silver.prefab | Sedan | UNAPPROVED_hyundai-azera_3
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_i30_Blue.prefab | Compact hatchback | UNAPPROVED_hyundai-i30_1
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Generic_DeliveryTruck.prefab | Delivery box truck | Daylight_ProvisionalTruck
+Assets/ParkingLotEnvironment/CloudPilot/ParkingContext20261105/ReusableVehicles/Hyundai_Tucson_Black.prefab | SUV | UNAPPROVED_hyundai-tucson_0

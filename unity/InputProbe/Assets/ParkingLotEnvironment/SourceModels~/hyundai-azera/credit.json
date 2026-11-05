@@ -1,0 +1,26 @@
+{
+  "id": "hyundai-azera",
+  "brand": "Hyundai",
+  "model": "Azera",
+  "years": [
+    2000,
+    2024
+  ],
+  "category": "sedan",
+  "file": "hyundai-azera.glb",
+  "bytes": 1452700,
+  "paint": {
+    "materials": [
+      "tail"
+    ],
+    "textured": false,
+    "confidence": "média"
+  },
+  "credit": {
+    "author": "Nieve5677",
+    "authorUrl": "https://sketchfab.com/niev",
+    "license": "CC Attribution",
+    "sourceName": "2009 Hyundai Azera",
+    "sourceUrl": "https://sketchfab.com/3d-models/711b67ea05f9441a863dce4badaca660"
+  }
+}

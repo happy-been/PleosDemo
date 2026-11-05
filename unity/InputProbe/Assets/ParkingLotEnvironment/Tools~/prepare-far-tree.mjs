@@ -1,0 +1,17 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {NodeIO} from '@gltf-transform/core';
+import {ALL_EXTENSIONS} from '@gltf-transform/extensions';
+import {weld,simplify,prune} from '@gltf-transform/functions';
+import {MeshoptSimplifier,MeshoptDecoder} from 'meshoptimizer';
+const [source,destination]=process.argv.slice(2);
+if(!source||!destination)throw Error('Usage: node prepare-far-tree.mjs source.glb destination-folder');
+await Promise.all([MeshoptSimplifier.ready,MeshoptDecoder.ready]);
+const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});
+const doc=await io.read(source);
+const count=()=>doc.getRoot().listMeshes().flatMap(m=>m.listPrimitives()).reduce((n,p)=>n+p.getIndices().getCount()/3,0);
+const before=count();
+await doc.transform(weld(),simplify({simplifier:MeshoptSimplifier,ratio:.16,error:.025,lockBorder:false}),prune());
+await fs.mkdir(destination,{recursive:true});await io.write(path.join(destination,'source.glb'),doc);
+await fs.writeFile(path.join(destination,'credit.json'),JSON.stringify({name:'Tree Small 02, distant mesh',source:'https://polyhaven.com/a/tree_small_02',license:'CC0 1.0',licenseUrl:'https://creativecommons.org/publicdomain/zero/1.0/',modifications:'Further meshoptimizer simplification of scene-owned 79904-triangle derivative. Nearby tree assets remain unchanged.',trianglesBefore:before,trianglesAfter:count()},null,2));
+console.log(JSON.stringify({before,after:count(),destination}));

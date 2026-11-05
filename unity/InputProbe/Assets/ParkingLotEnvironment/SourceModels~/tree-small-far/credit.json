@@ -1,0 +1,9 @@
+{
+  "name": "Tree Small 02, distant mesh",
+  "source": "https://polyhaven.com/a/tree_small_02",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "modifications": "Further meshoptimizer simplification of scene-owned 79904-triangle derivative. Nearby tree assets remain unchanged.",
+  "trianglesBefore": 79904,
+  "trianglesAfter": 12832
+}

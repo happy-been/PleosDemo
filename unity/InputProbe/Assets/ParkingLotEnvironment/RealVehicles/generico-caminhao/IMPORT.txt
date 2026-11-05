@@ -1,0 +1,3 @@
+Offline source: C:/dev/PleosDemo-local-backups/2026-11-02-parkinglot/vehicle-sources/generico-caminhao/model.json
+Baked glTF node transforms. Flip Z/winding, flip V for Unity. Normalized vehicle length 6.02m.
+2026-11-02T03:22:06

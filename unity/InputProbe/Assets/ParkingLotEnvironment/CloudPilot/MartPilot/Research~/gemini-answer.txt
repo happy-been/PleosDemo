@@ -1,0 +1,63 @@
+[target-ai.png](file:///C:/dev/PleosDemo-local-backups/2026-11-02-model-consensus/mart-realism-research-20261103/target-ai.png)와 현재 Unity 화면인 [current-unity-eye.png](file:///C:/dev/PleosDemo-local-backups/2026-11-02-model-consensus/mart-realism-research-20261103/current-unity-eye.png)를 대조하고 공식 문서·원작자 제작 사례·자산 라이선스를 조사한 결과입니다.
+
+---
+
+### 0. 목표 사진 대비 현재 Unity 화면의 핵심 시각 격차 진단
+* **차량 도장·유리·접지 암부**: [target-ai.png](file:///C:/dev/PleosDemo-local-backups/2026-11-02-model-consensus/mart-realism-research-20261103/target-ai.png)의 차량은 클리어코트(Clearcoat) 프레넬 반사로 하늘·수목이 전면 유리와 보닛에 선명히 맺히고, 휠하우스 내부와 타이어 접지면에 짙은 접촉 그림자(Contact Shadow)가 형성됩니다. 반면 [current-unity-eye.png](file:///C:/dev/PleosDemo-local-backups/2026-11-02-model-consensus/mart-realism-research-20261103/current-unity-eye.png)는 **Built-in + Gamma 색공간** 한계로 차체 하이라이트가 분필처럼 탁하게 퍼지고, 유리창이 깊이감 없는 단색 면으로 보이며, AO를 끈 상태에서 하부 암부가 빠져 차량이 노면 위에 떠 보입니다.
+* **공간 구조**: 현재 씬은 여전히 빌라·상가 건물로 둘러싸인 소형 공영주차장 형태이며, 노면 주차선 화이트가 아스팔트 미세 요철 없이 단색 폴리곤처럼 튀어 있습니다. 목표인 **한국 마트 야외 주차장**(전면·후진·평행·사선 주차 구획, 스토퍼, 배수로 트렌치, 카트 보관소, 마트 진입부 캐노피)으로의 공간 재구성이 필요합니다.
+
+---
+
+### 1. 원작자 공개 3D 실사 환경 제작 사례 조사 (실행품 vs AI 정지 이미지 구분)
+1. **Unity Demo Team (Sébastien Lagarde, Zdravko Pavlov) — *Fontainebleau* & *Book of the Dead***
+   * **구분**: 단일 시점 픽셀만 합성하는 AI 정지 이미지와 달리, 실시간 카메라 이동과 충돌이 가능한 **실제 3D 실행 데모 및 플레이 영상**입니다.
+   * **핵심 기법**: 사진측량(Photogrammetry) 스캔 원본의 알베도 텍스처에 박힌 태양광·그림자를 `De-Lighting` 파이프라인(Bent Normal·AO 활용)으로 제거해 순수 PBR 재질로 변환하고, 베이크된 GI(Global Illumination)·Occlusion Probe·지역 Reflection Probe를 결합해 실사 조명을 구현했습니다.
+2. **Grzegorz Baran / 80.lv 아스팔트·노면 사진측량 사례 & Unity *Measured Materials Library***
+   * **구분**: 실시간 3D 엔진 뷰포트 및 자동차 컨피규레이터 **실행품**입니다.
+   * **핵심 기법**: 흐린 날 촬영한 노면 스캔에서 높이맵(Height)·거칠기(Roughness) 편차를 추출하고, 주차선·타이어 흔적은 알파 블렌딩 데칼(Decal)로 얹어 아스팔트 노멀이 투과되게 처리합니다. 차량은 베이스코트 위에 클리어코트 정반사 계층과 시차 보정(Box Projection) 반사 프로브를 겹쳐 실사감을 확보합니다.
+
+---
+
+### 2. 세 가지 제작 방식 비교 및 과제 적합성
+
+| 비교 항목 | ① PBR 모듈 + 실제 차량 3D 메시 + 베이크 조명 (채택) | ② 인터넷/로드뷰 기반 3DGS·NeRF 복원 | ③ 이미지 생성 AI / 2D 투영 |
+| :--- | :--- | :--- | :--- |
+| **데이터 요건** | 모듈형 PBR 타일/프롭, 클린 토폴로지 차량 FBX, 라이트맵 | 다각도 밀집 촬영 영상(차량 하부·후면 사각지대 없어야 함) | 단일/소수 프롬프트 이미지 |
+| **보행/운전 시점 이동** | 전 방향 6DoF 자유 이동 시 기하·조명 일관성 유지 | 촬영 궤적 이탈 시 부유물(Floater) 및 형상 붕괴 발생 | 시점 회전·전후진 시 원근 왜곡으로 즉시 파탄 |
+| **차량 이동/가림(Occlusion)** | 개별 차량 재배치·동적 가림·실시간 그림자 완벽 지원 | 배경에 차량이 융착되어 개별 분리·재배치 시 빈 구멍 발생 | 동적 전후 가림 처리 불가 |
+| **주차 연습 콜라이더** | 정확한 `BoxCollider`/`MeshCollider`로 4종 주차 판정 가능 | 점군/볼륨 밀도 기반이라 연석·차량 경계 충돌면 부정확 | 3D 물리 충돌면 없음 |
+| **라이선스 제약** | CC0/CC-BY 및 자체 제작 자산으로 법적 클린 확보 | 구글 스트리트뷰 약관(ToS 3.2.3)상 스크래핑·3D 복원 엄격 금지 | 주행 가능한 3D 맵 생성 불가 |
+
+---
+
+### 3. 사용 가능한 구체적 자산 후보 검토 (미리보기 vs 다운로드 구분)
+1. **Poly Haven — Outdoor Asphalt / Concrete / Street Props**
+   * **제작자/배포처**: Poly Haven (`polyhaven.com`) / **라이선스**: CC0 1.0 (상업·수정 완전 무료) / **가격**: 무료 확인 완료.
+   * **상태**: **즉시 다운로드 가능**(1K~8K PBR 텍스처 및 FBX/Blend 포함). 마트 주차장 연석, 배수로, 콘크리트 블록, 실측 노면 보강에 즉시 투입 가능합니다.
+2. **Unity Technologies — Measured Materials Library (Automotive Paint/Chrome/Glass)**
+   * **제작자/배포처**: Unity Technologies (공식 GitHub 및 Asset Store) / **라이선스**: Unity Companion License / **가격**: 무료 확인 완료.
+   * **상태**: **다운로드 가능**. 단, HDRP/URP 셰이더 그래프 전용이므로 현재 Built-in 환경에서는 직접 머티리얼을 쓸 수 없고 텍스처 맵과 물성 수치만 추출해 참조해야 합니다.
+3. **Sketchfab 차량 모델 (Hyundai 등) & Unity Asset Store PBR Car Pack**
+   * **제작자/배포처**: Sketchfab 커뮤니티 업로더 / Unity Asset Store 퍼블리셔 / **라이선스**: CC-BY 4.0 또는 Asset Store EULA.
+   * **상태 구분**: Sketchfab의 고품질 현대차 모델 상당수는 **'웹 3D 뷰어 공개 미리보기 전용(다운로드 비활성)'**이거나 에디토리얼 라이선스입니다. 무료 **다운로드 가능(Downloadable)** 필터 통과 모델은 이미 확인된 것처럼 스캔 구멍(Genesis/Sonata)이나 미완성 재질(ix35) 문제가 흔하며, 내외장·유리·휠이 완비된 실사 차량 팩은 Asset Store 유료 자산($15~$80+)이라 **구매 승인 없이는 도입 불가**합니다.
+
+---
+
+### 4. 결론: 제작 방법, 마지막 품질 병목, 작업 묶음 및 채택 기준
+* **채택할 제작 방법과 마지막 품질 병목**: **① PBR 모듈형 마트 주차장 + 정교화된 차량 셰이더/접지 암부 + Mixed Shadowmask/Box Projection 반사 프로브 방식**이 유일하게 주차 연습 요구사항을 충족합니다. 마지막 품질 병목은 두 가지입니다: 첫째, `ProjectSettings` 변경 금지로 고정된 **Built-in + Gamma 색공간**(비선형 조명 연산으로 인해 PBR 반사·감쇠 수식이 왜곡됨), 둘째, **고품질 유료 완성차 자산 부재**(현재 차량 모델의 단층 유리창·헤드라이트·타이어 재질 한계)입니다.
+* **무료로 당장 가능한 것 vs 자산/비용/설정 변경 없이는 불가한 것**:
+  * **당장 가능(무료/현재 범위 내)**: 마트 야외 주차장 전용 레이아웃 구축(전면·후진·평행·사선 주차 구획 및 콜라이더 설계), 차량 하부 가짜 접지 그림자(Blob Shadow Quad) 추가, 구역별 Box Projection Reflection Probe 촘촘한 배치, 주차선 반투명 데칼화로 아스팔트 질감 투과.
+  * **비용/설정 변경 없이 불가**: Linear 색공간 및 HDRP/URP Clear Coat 셰이더 기반의 물리적 차량 도장 반사, 유료급 완성차 외관(내부 대시보드·입체 헤드라이트·흠집 없는 차체 곡률) 확보.
+* **이번에 만들어 검증할 작업 묶음 (`ParklingLot` 씬 및 전용 자산 범위)**:
+  1. **한국 마트 야외 주차장 공간 재편**: 동네 상가 배치를 걷어내고 마트 외벽·입구 캐노피·카트 보관소·스토퍼·트렌치 배수로를 배치하며, **전면·후진(2.5m×5.0m), 평행(2.0m×6.0m), 사선(45°/60°) 주차 연습 구획**과 진입 차로 폭(6m 이상), 정확한 `BoxCollider`를 구성합니다.
+  2. **차량 접지감 및 반사 보정**: 차체에 얼룩을 내던 화면 전체 AO 대신, 모든 차량 바퀴·차체 하부에 부드러운 암부 데칼 Quad(Contact Shadow)를 부착하고, 주차 구역마다 `Box Projection`이 켜진 Reflection Probe를 배치해 유리·보닛에 주변 수목과 하늘이 비치게 합니다.
+  3. **주차선·노면 레이어 분리 및 라이트맵 재베이크**: 단색 흰색 폴리곤 주차선을 노면 노멀이 비치는 알파 데칼로 교체하고 CPU/GPU Lightmapper로 Mixed Shadowmask를 재베이크합니다.
+* **실제 화면 채택 기준**: ① 운전석·3인칭 시점에서 전면/후진/평행/사선 주차 동선에 콜라이더 끼임이 없을 것, ② 차량 타이어와 노면 사이에 명확한 접지 암부가 형성되어 부유감이 사라질 것, ③ 차량 유리와 보닛에 단색 회색이 아닌 주변 환경 반사가 맺힐 것, ④ 주차선 위로 아스팔트 질감이 자연스럽게 이어질 것.
+
+### 참고 출처 URL
+1. Unity 공식 문서 (Linear vs Gamma 색공간과 PBR 조명 수식): https://docs.unity3d.com/2022.3/Documentation/Manual/LinearRendering-LinearOrGammaWorkflow.html
+2. Unity 공식 문서 (Reflection Probe Box Projection 시차 보정): https://docs.unity3d.com/2022.3/Documentation/Manual/class-ReflectionProbe.html
+3. Unity Blog — Sébastien Lagarde, *Photogrammetry in Unity: Making Real-World Objects into Digital Assets* (Fontainebleau & De-Lighting 사례): https://blog.unity.com/technology/photogrammetry-in-unity-making-real-world-objects-into-digital-assets
+4. Unity Blog — Zdravko Pavlov, *Book of the Dead: Photogrammetry assets, trees, VFX*: https://blog.unity.com/technology/book-of-the-dead-photogrammetry-assets-trees-vfx
+5. Google Maps Platform Terms of Service (스트리트뷰 스크래핑 및 3D 파생 모델 복원 금지 조항 3.2.3): https://cloud.google.com/maps-platform/terms
+6. Poly Haven (CC0 노면 PBR 텍스처 및 거리 프롭 다운로드 배포처): https://polyhaven.com/models

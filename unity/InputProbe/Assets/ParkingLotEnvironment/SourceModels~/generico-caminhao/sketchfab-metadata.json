@@ -1,0 +1,197 @@
+{
+  "animationCount": 0,
+  "categories": [
+    {
+      "uid": "22a2f677efad4d7bbca5ad45f9b5868e",
+      "name": "Cars & Vehicles",
+      "slug": "cars-vehicles",
+      "uri": "https://api.sketchfab.com/v3/categories/22a2f677efad4d7bbca5ad45f9b5868e",
+      "icon": "https://static.sketchfab.com/static/builds/web/dist/static/assets/images/icons/categories/45dd0cc0860ac57fcd63bde1cc3f2b7c-v2.svg",
+      "thumbnails": [
+        {
+          "width": "512",
+          "height": "288",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/512x288.png"
+        },
+        {
+          "width": "800",
+          "height": "450",
+          "url": "https://static.sketchfab.com/categories/22a2f677efad4d7bbca5ad45f9b5868e/800x450.png"
+        }
+      ]
+    }
+  ],
+  "commentCount": 25,
+  "createdAt": "2021-06-28T11:02:01.54552",
+  "embedUrl": "https://sketchfab.com/models/663a0953c038434a918cb85725c88ffa/embed",
+  "faceCount": 18947,
+  "isAgeRestricted": false,
+  "license": {
+    "uri": "https://api.sketchfab.com/v3/licenses/322a749bcfa841b29dff1e8a1bb74b0b",
+    "label": "CC Attribution",
+    "fullName": "Creative Commons Attribution",
+    "requirements": "Author must be credited. Commercial use is allowed.",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "slug": "by"
+  },
+  "likeCount": 1525,
+  "name": "LCT 3000 '95 - Low poly model",
+  "publishedAt": "2021-06-29T16:27:14.493088",
+  "soundCount": 0,
+  "staffpickedAt": null,
+  "tags": [
+    {
+      "name": "truck",
+      "slug": "truck",
+      "uri": "https://api.sketchfab.com/v3/tags/truck"
+    },
+    {
+      "name": "van",
+      "slug": "van",
+      "uri": "https://api.sketchfab.com/v3/tags/van"
+    },
+    {
+      "name": "generic",
+      "slug": "generic",
+      "uri": "https://api.sketchfab.com/v3/tags/generic"
+    },
+    {
+      "name": "lct",
+      "slug": "lct",
+      "uri": "https://api.sketchfab.com/v3/tags/lct"
+    },
+    {
+      "name": "box",
+      "slug": "box",
+      "uri": "https://api.sketchfab.com/v3/tags/box"
+    },
+    {
+      "name": "boxtruck",
+      "slug": "boxtruck",
+      "uri": "https://api.sketchfab.com/v3/tags/boxtruck"
+    },
+    {
+      "name": "low-poly-model",
+      "slug": "low-poly-model",
+      "uri": "https://api.sketchfab.com/v3/tags/low-poly-model"
+    },
+    {
+      "name": "low-poly",
+      "slug": "low-poly",
+      "uri": "https://api.sketchfab.com/v3/tags/low-poly"
+    },
+    {
+      "name": "lowpoly",
+      "slug": "lowpoly",
+      "uri": "https://api.sketchfab.com/v3/tags/lowpoly"
+    },
+    {
+      "name": "car",
+      "slug": "car",
+      "uri": "https://api.sketchfab.com/v3/tags/car"
+    },
+    {
+      "name": "japanese",
+      "slug": "japanese",
+      "uri": "https://api.sketchfab.com/v3/tags/japanese"
+    }
+  ],
+  "thumbnails": {
+    "images": [
+      {
+        "uid": "7705f6ede5e545699b7bcf51956ec1a6",
+        "width": 1920,
+        "height": 1080,
+        "size": 174722,
+        "url": "https://media.sketchfab.com/models/663a0953c038434a918cb85725c88ffa/thumbnails/a9380fd484894030aebd6934b307fdeb/5d8038c442aa4086b7c1ebdb4cb999d5.jpeg"
+      },
+      {
+        "uid": "5deb143a0a7947f88d4c108e84a7e47f",
+        "width": 1024,
+        "height": 576,
+        "size": 47248,
+        "url": "https://media.sketchfab.com/models/663a0953c038434a918cb85725c88ffa/thumbnails/a9380fd484894030aebd6934b307fdeb/1a9924d48da94f45bebe023a0e6c3dfb.jpeg"
+      },
+      {
+        "uid": "4443b0d30e1248ee9b45b8b0bc191498",
+        "width": 720,
+        "height": 405,
+        "size": 26532,
+        "url": "https://media.sketchfab.com/models/663a0953c038434a918cb85725c88ffa/thumbnails/a9380fd484894030aebd6934b307fdeb/260306e76b9c43c2a960a35396521693.jpeg"
+      },
+      {
+        "uid": "291370dfdebc46f2b3461948d1be0c32",
+        "width": 256,
+        "height": 144,
+        "size": 5703,
+        "url": "https://media.sketchfab.com/models/663a0953c038434a918cb85725c88ffa/thumbnails/a9380fd484894030aebd6934b307fdeb/af62244814994dd1bdaee626ef178ad4.jpeg"
+      },
+      {
+        "uid": "4de47d7930ae4b83addde33968b03f87",
+        "width": 64,
+        "height": 36,
+        "size": 1274,
+        "url": "https://media.sketchfab.com/models/663a0953c038434a918cb85725c88ffa/thumbnails/a9380fd484894030aebd6934b307fdeb/2074f3e23f394e48b196e1977d98d752.jpeg"
+      }
+    ]
+  },
+  "uid": "663a0953c038434a918cb85725c88ffa",
+  "uri": "https://api.sketchfab.com/v3/models/663a0953c038434a918cb85725c88ffa",
+  "user": {
+    "uid": "2c3909fbc3334051bb4f873a0586395a",
+    "username": "DanielZhabotinsky",
+    "displayName": "Daniel Zhabotinsky",
+    "account": "basic",
+    "profileUrl": "https://sketchfab.com/DanielZhabotinsky",
+    "avatar": {
+      "uid": "51af6a870cce449eb75b0345feebaebb",
+      "uri": "https://api.sketchfab.com/v3/avatars/51af6a870cce449eb75b0345feebaebb",
+      "images": [
+        {
+          "width": 90,
+          "height": 90,
+          "size": 5719,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/2ef0f894055b4bb69123b2a27fa2d379.jpeg"
+        },
+        {
+          "width": 100,
+          "height": 100,
+          "size": 6496,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/ab11eedf96374486acb544f71a23b165.jpeg"
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "size": 1359,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/35f6f9b6c9a14a548ce472582d8a9bb5.jpeg"
+        },
+        {
+          "width": 48,
+          "height": 48,
+          "size": 2584,
+          "url": "https://media.sketchfab.com/avatars/51af6a870cce449eb75b0345feebaebb/a8072a51447c4d41ab177b357111b420.jpeg"
+        }
+      ]
+    },
+    "uri": "https://api.sketchfab.com/v3/users/2c3909fbc3334051bb4f873a0586395a"
+  },
+  "vertexCount": 11754,
+  "viewCount": 79211,
+  "viewerUrl": "https://sketchfab.com/3d-models/lct-3000-95-low-poly-model-663a0953c038434a918cb85725c88ffa",
+  "isDownloadable": true,
+  "isProtected": false,
+  "description": "An improved version of my old model. Generic Japanese-made small-cabin truck. The design corresponds to the time period from 1990 to the late 2000s.\nUpdate: New 3 ton cargo box, new wheels, materials and much more.\n\nI unconditionally give you permission to use this model at your discretion, modify it or implement it into a digital product. Use the model as you see fit and have a nice day.",
+  "price": null,
+  "downloadCount": 39237,
+  "editorUrl": "https://sketchfab.com/models/663a0953c038434a918cb85725c88ffa/edit",
+  "status": {
+    "warning": {},
+    "processing": "SUCCEEDED"
+  },
+  "source": "website",
+  "hasCommentsDisabled": false,
+  "updatedAt": "2025-09-05T12:44:34.81669",
+  "pbrType": "metalness",
+  "textureCount": 20,
+  "materialCount": 8
+}

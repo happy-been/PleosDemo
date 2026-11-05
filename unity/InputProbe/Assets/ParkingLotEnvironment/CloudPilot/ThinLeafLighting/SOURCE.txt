@@ -1,0 +1,4 @@
+Owned thin-leaf lighting approximation using Unity built-in StandardSpecular and GI plus attenuated backlight/wrap. Original source textures,alpha,tint,geometry unchanged. No imported third-party code. Actual whole-frame comparison required; not measured physical subsurface scattering.
+Unity surface-lighting signatures: https://docs.unity3d.com/2022.3/Documentation/Manual/SL-SurfaceShaderLighting.html
+Examples: https://docs.unity3d.com/2022.3/Documentation/Manual/SL-SurfaceShaderLightingExamples.html
+Existing source tree: Rico Cilliers / Poly Haven / CC0 https://polyhaven.com/a/tree_small_02

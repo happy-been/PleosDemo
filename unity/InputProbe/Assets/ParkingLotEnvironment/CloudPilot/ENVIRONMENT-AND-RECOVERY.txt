@@ -1,0 +1,62 @@
+PARKSIDE — 2026-11-02 클라우드 후속 준비 / 적용·검증·복구
+
+완료
+- 동일 Linux 클라우드에서 작업. 다른 클라우드 생성/유료 서버 구매/공개 업로드 없음.
+- 전체 원본 ZIP 및3712개 원본 파일 해시 검증. 이번 작업 후 원본3712개 변경0.
+- 원본 ParklingLot.unity와meta 실제 백업:
+  /workspace/scratch/97664395d686/parkside-backups/v35-before-cloudpilot
+- 신규 CloudPilot 폴더만 작성. OBJ22종/18,286삼각형, 20×28m 배치 JSON,
+  3·4층 건물 창 구멍/측후면, 실제 배수구/그레이팅/경계석/표지판.
+- 수동 Editor 프리팹 조립·씬 적용·v35 보존 토글·복구·보호 검사·재열기 검사,
+  FOV37/44 정지+전진10m/좌우3m의122장 오프라인 캡처 코드 작성.
+- Unity 제공API DLL 참조 C# 오프라인 컴파일 성공. 메시 인덱스/면적/방향·배치참조 검사.
+- 재사용3면 모듈을 소프트웨어 OpenGL로3시점 검사. 명확한 비Unity 라벨 포함.
+
+미완료
+- Unity 임포트/프리팹 생성/실제 씬 변경/저장 재열기/반사프로브/실제 Unity 캡처/Android 성능.
+- 고품질 근경 현대차 미확보. 비교용7대는 기존 저폴리 자산이며 품질 합격 아님.
+- 하늘채도/주광노출/바닥톤/그림자/차량 반사와 유리/가상번호판 가독성·위치의 실제 시각 판정.
+- 클라우드 Argon/Fable 인증. 로컬 작업 스레드가 실제 호출 후 전달한 최종 합의는
+  MODEL-DECISION.txt에 출처를 구분해 기록했으며 여기서 호출했다고 주장하지 않음.
+
+Unity 장애의 실제 증거
+- Unity -version =2022.3.16f1, 직접 연결 라이브러리 누락 없음.
+- LicenseClient log: NamedPipeServerStream 생성 중 SocketException(13):Permission denied.
+- 독립 AF_UNIX socket 생성/바인딩 검사: PermissionError(1,Operation not permitted).
+- Unity 공식 설정CDN/Hub 배포호스트 public-cdn.cloud.unity3d.com 접속: 정책 차단 오류.
+- --showEntitlements:No licenses were found. Unity batch start:exit199/IPC 연결 실패.
+- 단순 로그인만으로 이 환경에서 Unity가 동작한다는 보장은 없음. 제한 우회 없음.
+
+필요한 최소 사용자/환경 조치
+1. 실행환경 제공 측에서 Unity 정상 IPC(Unix socket)와 공식 인증/라이선스 호스트 통신,
+   사용자에게 공식 로그인·약관 확인을 안전하게 인계할 수단을 지원해야 함.
+   현재 제공된 도구로 이 소켓/네트워크 정책을 바꾸거나 Hub 인증 UI를 제공할 수 없음.
+2. 지원 환경에서 Unity Hub에 본인 로그인. Personal 사용 자격/약관을 본인이 확인.
+   공식 안내:Settings>Licenses>Add license>Get a free personal license(필요할 경우).
+   2022.3 기존 안내는 Hub 경로다. 최신 공식 Unity CLI 문서에는 별도로
+   unity auth login 및 unity license activate --personal --accept-eula 경로가 있다.
+   따라서 모든 Personal 활성화가 GUI Hub 전용이라고 일반화하지 않는다.
+   최신 CLI와 이2022.3.16f1 Editor의 실제 호환성/실행은 여기서 미검증이다.
+   사용자가 약관을 확인해야 하며 이 작업에서 --accept-eula를 실행하지 않았다.
+   https://github.com/Unity-Technologies/skills/blob/main/skills/unity-cli/references/auth-license-cloud.md
+   ALF 우회나 로컬 라이선스 복사는 하지 않음.
+   https://docs.unity.com/en-us/hub/manage-license
+   https://docs.unity3d.com/2022.3/Documentation/Manual/ManagingYourUnityLicense.html
+3. 클라우드CLI도 쓰려면 동일 클라우드 터미널에서 agy 실행 후 공식 OAuth URL을
+   개인 브라우저에서 열고, 돌아온 일회 코드를 해당 터미널의 공식 프롬프트에 입력.
+   https://antigravity.google/docs/install?tab=cli
+4. Claude 기존 구독은 claude auth login --claudeai의 공식 브라우저 흐름 사용.
+   https://code.claude.com/docs/en/authentication
+   현재 채팅에는 안전한 터미널 인증코드 입력/Unity Hub 화면 인계수단이 확인되지 않음.
+   비밀번호/토큰을 채팅에 보내거나 기존PC 인증파일을 복사하지 말 것.
+
+적용·복구
+- ZIP의 unity 폴더를 전체 원본 저장소 루트에 합친다. 기존 파일 교체는 없다.
+- 자세한 순서와 미실행 주의는 CloudPilot/README.txt. 먼저 별도 프리팹 준비,
+  v35해시 확인/백업 후 해당 씬 적용, 비교차량 추가, 저장, 보호/재열기 검사, 캡처 순서.
+- 원본 builder 전체 재생성/공용 에셋 수정/Packages·ProjectSettings 변경 없음.
+- 실패 시 Restore original v35 from backup. 도구 실패면 Unity를 닫고 외부백업의
+  원본 씬을 복사해 복구한다. meta를 보존하며 원본SHA256를 확인한다.
+- 원본 씬SHA256:
+  8e05aef6387b1ea39ec56942a7c0bf0a57a8b4f655a8134b2a3bb17b108b89ce
+- 실행 공간의 영구 지속/상시 백그라운드 실행은 보장하지 않는다.

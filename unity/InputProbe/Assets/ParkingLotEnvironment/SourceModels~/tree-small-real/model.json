@@ -1,0 +1,142 @@
+{
+  "name": "tree-small-real",
+  "format": "park-vehicle-intermediate-v1",
+  "layout": "positions and normals world-baked, little-endian float32 [px,py,pz,nx,ny,nz,u,v] then uint32 indices",
+  "coordinateSystem": "glTF right-handed; no Z flip",
+  "uvConvention": "Unchanged glTF TEXCOORD_0: image origin top-left, positive V down; importer must adapt to Unity texture convention",
+  "materials": [
+    {
+      "name": "tree_small_02_branches",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 1,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-1.jpg",
+      "normalTexture": "textures/texture-0.jpg",
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-2.jpg",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tree_small_02_leaves",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 1,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-4.jpg",
+      "normalTexture": "textures/texture-3.jpg",
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-5.jpg",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tree_small_02_trunk",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 1,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-7.jpg",
+      "normalTexture": "textures/texture-6.jpg",
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-8.jpg",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tree_small_02_LOD0_0",
+      "file": "mesh-0000.bin",
+      "material": 0,
+      "vertexCount": 3784,
+      "indexCount": 10731,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": true
+    },
+    {
+      "name": "tree_small_02_LOD0_1",
+      "file": "mesh-0001.bin",
+      "material": 1,
+      "vertexCount": 96250,
+      "indexCount": 225741,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tree_small_02_LOD0_2",
+      "file": "mesh-0002.bin",
+      "material": 2,
+      "vertexCount": 920,
+      "indexCount": 3240,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    }
+  ],
+  "bounds": {
+    "min": [
+      -1.3086811304092407,
+      -0.024031998589634895,
+      -1.363386869430542
+    ],
+    "max": [
+      1.5989437103271484,
+      4.526227951049805,
+      2.861259937286377
+    ],
+    "size": [
+      2.907624840736389,
+      4.55025994963944,
+      4.224646806716919
+    ]
+  },
+  "skippedNonTriangles": 0,
+  "triangles": 79904,
+  "vertices": 100954
+}

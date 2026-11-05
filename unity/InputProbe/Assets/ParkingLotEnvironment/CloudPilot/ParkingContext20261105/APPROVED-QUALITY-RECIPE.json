@@ -1,0 +1,47 @@
+{
+  "version": "approved-quality-reuse-20261105",
+  "basis": "Approved KRRealism20261104 + KRRoadMatch20261104, current scene f0b8c06d",
+  "preserve": [
+    "asphalt material",
+    "sun direction/intensity",
+    "camera tonemapper and exposure",
+    "building PBR material references"
+  ],
+  "vehicles": {
+    "porter": "HyundaiPorterII_Blue.prefab",
+    "source": "max7th / Thingiverse 4685394 / CC BY 4.0",
+    "paint_smoothness": 0.74,
+    "paint_metallic": 0.24,
+    "tire_smoothness": 0.16,
+    "wheel_smoothness": 0.46,
+    "reusable_directory": "ReusableVehicles"
+  },
+  "inspection": {
+    "native": {
+      "hero_and_porter": [
+        2560,
+        1440
+      ],
+      "other_views": [
+        1920,
+        1080
+      ]
+    },
+    "review": [
+      1920,
+      1080
+    ],
+    "third_person_height": 2.8,
+    "views": [
+      "chase",
+      "right",
+      "back",
+      "left",
+      "Porter close",
+      "SUV close",
+      "sedan close",
+      "aerial"
+    ]
+  },
+  "future_maps": "Reuse approved materials, complete closed-volume building modules and the Porter prefab. Change layout and regional props; do not re-slice truck meshes or recalibrate the full lighting stack per layout."
+}

@@ -1,0 +1,13 @@
+Tone curve: Stephen Hill ACESFitted implementation from BakingLab by MJP and David Neubelt,MIT license included. Original include retained. This is a fitted curve,not a complete ACES color management pipeline.
+Whole-frame camera grade proposal from one Claude Code claude-fable-5 high review. Lighting,geometry and project settings remain unchanged. No claim that grading alone makes the scene photographic.
+Unity image-effect reference: https://docs.unity3d.com/2022.3/Documentation/ScriptReference/MonoBehaviour.OnRenderImage.html
+{
+  "ACESFitted.cginc": {
+    "url": "https://raw.githubusercontent.com/TheRealMJP/BakingLab/c3868af50d72afc13cdfe513a1e0c6a4fafdac8c/BakingLab/ACES.hlsl",
+    "sha256": "0dab4dbfbd748dd4d6a3f38cef00155cfa4ffb5f6a8dddf4b3368aff52e4b23f"
+  },
+  "LICENSE-BakingLab.txt": {
+    "url": "https://raw.githubusercontent.com/TheRealMJP/BakingLab/c3868af50d72afc13cdfe513a1e0c6a4fafdac8c/LICENSE",
+    "sha256": "751878625007bd944c6f0b8b43e1bbdf47da639975d49c358832043a31f1f3e8"
+  }
+}

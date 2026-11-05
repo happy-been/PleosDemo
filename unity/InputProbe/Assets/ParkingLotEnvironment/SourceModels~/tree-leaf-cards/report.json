@@ -1,0 +1,39 @@
+{
+  "name": "CC0 Tree Small 02 leaf island planar card experiment",
+  "vertices": 121000,
+  "triangles": 60500,
+  "originalReducedLeafTriangles": 75247,
+  "islands": 30250,
+  "normalizedRmsPercentiles": [
+    0.019748067070037983,
+    0.037150159453110856,
+    0.041941271336185165,
+    0.047226045079305806,
+    0.05474133755068119,
+    0.05633370505791055,
+    0.06174358391630823,
+    0.06540294887140069
+  ],
+  "rmsAbovePoint1": 0,
+  "rmsAbovePoint2": 0,
+  "normalLengthPercentiles": [
+    0.23070406913757324,
+    0.9491387009620667,
+    0.9743320941925049
+  ],
+  "source": "https://polyhaven.com/a/tree_small_02",
+  "license": "CC0 1.0",
+  "coordinateSystem": "original glTF XYZ, UV origin top-left; importer must flip Z, winding, V, then recenter using original near-tree bounds",
+  "bounds": {
+    "min": [
+      -1.318716287612915,
+      1.456013798713684,
+      -1.3839746713638306
+    ],
+    "max": [
+      1.6156375408172607,
+      4.5400190353393555,
+      2.911614179611206
+    ]
+  }
+}
