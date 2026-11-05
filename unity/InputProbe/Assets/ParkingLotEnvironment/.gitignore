@@ -1,0 +1,4 @@
+# Downloaded local tool dependencies can be restored with npm ci.
+# Keep model sources, licenses, package.json and the lockfile in version control.
+/Tools~/node_modules/
+/Tools~/__pycache__/

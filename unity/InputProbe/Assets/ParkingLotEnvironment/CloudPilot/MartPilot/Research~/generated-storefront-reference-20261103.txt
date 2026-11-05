@@ -1,0 +1,7 @@
+Generated 2026-11-03 with the built-in image generation tool, as a trial reference/texture for a fictional Korean supermarket entrance. This is synthetic imagery, not a photograph of a real place. Dimensions 2172 x 724, SHA-256 a50064dcf7c4df0b462dfe049283b566869984e9f39ff2bb5b1364bbc742107e.
+
+Purpose: test whether the currently dark, generic 3D storefront can gain believable interior and material detail while preserving the existing 3D facade, frames, depth, collision and parking layout. This is not a replacement for a 3D map or actual 3D shop interior. The image contains baked-in reflections and perspective in the merchandise, so parallax and lighting inconsistency are potential limitations.
+
+Status: reference generated and stored only; not yet imported as a Unity asset, applied to geometry, baked, or rendered. A non-destructive trial must test the image at a representative near-camera distance and a side angle before acceptance. Preserve the existing scene and original materials; use a new scene-owned material/geometry and distinguish the generated texture in credits.
+
+Prompt: photorealistic straight-on orthographic 12m by 4m fictional Korean supermarket storefront, transparent glazing and automatic doors with aluminum mullions, subtle grocery interior and plain green fascia; neutral diffuse daylight; no vehicles, people, sky, logos, readable text or watermark.

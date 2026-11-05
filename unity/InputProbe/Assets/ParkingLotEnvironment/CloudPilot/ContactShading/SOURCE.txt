@@ -1,0 +1,5 @@
+KinoObscurance, Keijiro Takahashi, MIT license.
+Source: https://github.com/keijiro/KinoObscurance
+Pinned revision: 4845a9e4db34fbeaefeef84f135017dfb82ce6d2
+Changes: unique shader name, serialized shader reference, unsupported shader fallback and command buffer cleanup.
+Scope: attached only to parking scene camera. No project-wide quality changes.

@@ -1,0 +1,1093 @@
+{
+  "name": "hyundai-tucson-lod1",
+  "format": "park-vehicle-intermediate-v1",
+  "layout": "positions and normals world-baked, little-endian float32 [px,py,pz,nx,ny,nz,u,v] then uint32 indices",
+  "coordinateSystem": "glTF right-handed; no Z flip",
+  "uvConvention": "Unchanged glTF TEXCOORD_0: image origin top-left, positive V down; importer must adapt to Unity texture convention",
+  "materials": [
+    {
+      "name": "metal",
+      "baseColor": [
+        0.8,
+        0.8,
+        0.8,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "black_plastic",
+      "baseColor": [
+        0.0141671,
+        0.0141671,
+        0.0141671,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8816666343029544,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "chrome",
+      "baseColor": [
+        0.8,
+        0.8,
+        0.8,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "brakes",
+      "baseColor": [
+        1,
+        0.069403,
+        0.069403,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "metal_dark",
+      "baseColor": [
+        0.539162,
+        0.539162,
+        0.539162,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "wheel_rubber",
+      "baseColor": [
+        0.0430873,
+        0.0430873,
+        0.0448159,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rearlights_white",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.9387814165991546,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "back_blinkers",
+      "baseColor": [
+        1,
+        0.188923,
+        0,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.9387814165991546,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "glass",
+      "baseColor": [
+        0.672855,
+        0.760076,
+        0.8,
+        0.11147103658536585
+      ],
+      "metallic": 0,
+      "roughness": 0.8117858460526206,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "brakelights_red",
+      "baseColor": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.9387814165991546,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "blinker_lamps",
+      "baseColor": [
+        1,
+        0.188923,
+        0,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.9387814165991546,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front_lamps",
+      "baseColor": [
+        0.8,
+        0.737674,
+        0.50572,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "sits_leather",
+      "baseColor": [
+        0.0240788,
+        0.0240788,
+        0.0240788,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "panel",
+      "baseColor": [
+        0.0506771,
+        0.0506771,
+        0.0506771,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8337071316474255,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "interior",
+      "baseColor": [
+        0.249409,
+        0.171999,
+        0.122813,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8337071316474255,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "varnish",
+      "baseColor": [
+        0.0759308,
+        0.245755,
+        0.54668,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "mirror_left",
+      "baseColor": [
+        0.8,
+        0.8,
+        0.8,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "mirror_right",
+      "baseColor": [
+        0.8,
+        0.8,
+        0.8,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8239417257461427,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tucson-15_FR_wheel_metal_0_0",
+      "file": "mesh-0000.bin",
+      "material": 0,
+      "vertexCount": 201,
+      "indexCount": 690,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FR_wheel_black_plastic_0_0",
+      "file": "mesh-0001.bin",
+      "material": 1,
+      "vertexCount": 1286,
+      "indexCount": 3792,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FR_wheel_chrome_0_0",
+      "file": "mesh-0002.bin",
+      "material": 2,
+      "vertexCount": 150,
+      "indexCount": 480,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FR_wheel_brakes_0_0",
+      "file": "mesh-0003.bin",
+      "material": 3,
+      "vertexCount": 32,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FR_wheel_metal_dark_0_0",
+      "file": "mesh-0004.bin",
+      "material": 4,
+      "vertexCount": 174,
+      "indexCount": 510,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FR_wheel_wheel_rubber_0_0",
+      "file": "mesh-0005.bin",
+      "material": 5,
+      "vertexCount": 286,
+      "indexCount": 1356,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BR_wheel_metal_0_0",
+      "file": "mesh-0006.bin",
+      "material": 0,
+      "vertexCount": 201,
+      "indexCount": 690,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BR_wheel_black_plastic_0_0",
+      "file": "mesh-0007.bin",
+      "material": 1,
+      "vertexCount": 1286,
+      "indexCount": 3792,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BR_wheel_chrome_0_0",
+      "file": "mesh-0008.bin",
+      "material": 2,
+      "vertexCount": 150,
+      "indexCount": 480,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BR_wheel_brakes_0_0",
+      "file": "mesh-0009.bin",
+      "material": 3,
+      "vertexCount": 32,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BR_wheel_metal_dark_0_0",
+      "file": "mesh-0010.bin",
+      "material": 4,
+      "vertexCount": 174,
+      "indexCount": 510,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BR_wheel_wheel_rubber_0_0",
+      "file": "mesh-0011.bin",
+      "material": 5,
+      "vertexCount": 286,
+      "indexCount": 1356,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BL_wheel_metal_0_0",
+      "file": "mesh-0012.bin",
+      "material": 0,
+      "vertexCount": 201,
+      "indexCount": 690,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BL_wheel_black_plastic_0_0",
+      "file": "mesh-0013.bin",
+      "material": 1,
+      "vertexCount": 1302,
+      "indexCount": 3840,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BL_wheel_chrome_0_0",
+      "file": "mesh-0014.bin",
+      "material": 2,
+      "vertexCount": 150,
+      "indexCount": 480,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BL_wheel_brakes_0_0",
+      "file": "mesh-0015.bin",
+      "material": 3,
+      "vertexCount": 32,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BL_wheel_metal_dark_0_0",
+      "file": "mesh-0016.bin",
+      "material": 4,
+      "vertexCount": 174,
+      "indexCount": 510,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_BL_wheel_wheel_rubber_0_0",
+      "file": "mesh-0017.bin",
+      "material": 5,
+      "vertexCount": 287,
+      "indexCount": 1362,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_rearlamps_glass_rearlights_white_0_0",
+      "file": "mesh-0018.bin",
+      "material": 6,
+      "vertexCount": 36,
+      "indexCount": 120,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_back_right_blinker_glass_back_blinkers_0_0",
+      "file": "mesh-0019.bin",
+      "material": 7,
+      "vertexCount": 12,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_back_left_blinker_glass_back_blinkers_0_0",
+      "file": "mesh-0020.bin",
+      "material": 7,
+      "vertexCount": 12,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_backlights_black_plastic_0_0",
+      "file": "mesh-0021.bin",
+      "material": 1,
+      "vertexCount": 166,
+      "indexCount": 534,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_backlights_chrome_0_0",
+      "file": "mesh-0022.bin",
+      "material": 2,
+      "vertexCount": 58,
+      "indexCount": 246,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_backlights_glass_0_0",
+      "file": "mesh-0023.bin",
+      "material": 8,
+      "vertexCount": 140,
+      "indexCount": 636,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_brakelights_glass_brakelights_red_0_0",
+      "file": "mesh-0024.bin",
+      "material": 9,
+      "vertexCount": 365,
+      "indexCount": 1236,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_mirror_right_blinker_glass_blinker_lamps_0_0",
+      "file": "mesh-0025.bin",
+      "material": 10,
+      "vertexCount": 8,
+      "indexCount": 18,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_mirror_left_blinker_glass_blinker_lamps_0_0",
+      "file": "mesh-0026.bin",
+      "material": 10,
+      "vertexCount": 8,
+      "indexCount": 18,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_frontlights_right_blinker_glass_blinker_lamps_0_0",
+      "file": "mesh-0027.bin",
+      "material": 10,
+      "vertexCount": 6,
+      "indexCount": 12,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_frontlights_left_blinker_glass_blinker_lamps_0_0",
+      "file": "mesh-0028.bin",
+      "material": 10,
+      "vertexCount": 6,
+      "indexCount": 12,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_frontlamps_glass_front_lamps_0_0",
+      "file": "mesh-0029.bin",
+      "material": 11,
+      "vertexCount": 48,
+      "indexCount": 192,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_frontlights_black_plastic_0_0",
+      "file": "mesh-0030.bin",
+      "material": 1,
+      "vertexCount": 420,
+      "indexCount": 1548,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_frontlights_chrome_0_0",
+      "file": "mesh-0031.bin",
+      "material": 2,
+      "vertexCount": 290,
+      "indexCount": 894,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_frontlights_glass_0_0",
+      "file": "mesh-0032.bin",
+      "material": 8,
+      "vertexCount": 62,
+      "indexCount": 276,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_driving_wheel_sits_leather_0_0",
+      "file": "mesh-0033.bin",
+      "material": 12,
+      "vertexCount": 565,
+      "indexCount": 2868,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_driving_wheel_panel_0_0",
+      "file": "mesh-0034.bin",
+      "material": 13,
+      "vertexCount": 58,
+      "indexCount": 138,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_driving_wheel_black_plastic_0_0",
+      "file": "mesh-0035.bin",
+      "material": 1,
+      "vertexCount": 90,
+      "indexCount": 264,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_interior_black_plastic_0_0",
+      "file": "mesh-0036.bin",
+      "material": 1,
+      "vertexCount": 242,
+      "indexCount": 669,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_interior_interior_0_0",
+      "file": "mesh-0037.bin",
+      "material": 14,
+      "vertexCount": 170,
+      "indexCount": 774,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_interior_panel_0_0",
+      "file": "mesh-0038.bin",
+      "material": 13,
+      "vertexCount": 298,
+      "indexCount": 888,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_interior_sits_leather_0_0",
+      "file": "mesh-0039.bin",
+      "material": 12,
+      "vertexCount": 593,
+      "indexCount": 3210,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_interior_chrome_0_0",
+      "file": "mesh-0040.bin",
+      "material": 2,
+      "vertexCount": 10,
+      "indexCount": 24,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FL_wheel_metal_0_0",
+      "file": "mesh-0041.bin",
+      "material": 0,
+      "vertexCount": 201,
+      "indexCount": 690,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FL_wheel_black_plastic_0_0",
+      "file": "mesh-0042.bin",
+      "material": 1,
+      "vertexCount": 1302,
+      "indexCount": 3840,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FL_wheel_chrome_0_0",
+      "file": "mesh-0043.bin",
+      "material": 2,
+      "vertexCount": 150,
+      "indexCount": 480,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FL_wheel_brakes_0_0",
+      "file": "mesh-0044.bin",
+      "material": 3,
+      "vertexCount": 32,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FL_wheel_metal_dark_0_0",
+      "file": "mesh-0045.bin",
+      "material": 4,
+      "vertexCount": 174,
+      "indexCount": 510,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_FL_wheel_wheel_rubber_0_0",
+      "file": "mesh-0046.bin",
+      "material": 5,
+      "vertexCount": 287,
+      "indexCount": 1362,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_varnish_0_0",
+      "file": "mesh-0047.bin",
+      "material": 15,
+      "vertexCount": 1452,
+      "indexCount": 4281,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_chrome_0_0",
+      "file": "mesh-0048.bin",
+      "material": 2,
+      "vertexCount": 557,
+      "indexCount": 1497,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_black_plastic_0_0",
+      "file": "mesh-0049.bin",
+      "material": 1,
+      "vertexCount": 1902,
+      "indexCount": 5364,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_metal_0_0",
+      "file": "mesh-0050.bin",
+      "material": 0,
+      "vertexCount": 348,
+      "indexCount": 1014,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_mirror_left_0_0",
+      "file": "mesh-0051.bin",
+      "material": 16,
+      "vertexCount": 16,
+      "indexCount": 42,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_glass_0_0",
+      "file": "mesh-0052.bin",
+      "material": 8,
+      "vertexCount": 342,
+      "indexCount": 822,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "tucson-15_exterior_mirror_right_0_0",
+      "file": "mesh-0053.bin",
+      "material": 17,
+      "vertexCount": 16,
+      "indexCount": 42,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    }
+  ],
+  "bounds": {
+    "min": [
+      -103.73908996582031,
+      0.02463088869139085,
+      -226.20353578402714
+    ],
+    "max": [
+      103.73908996582031,
+      165.9676844326162,
+      226.7027982162305
+    ],
+    "size": [
+      207.47817993164062,
+      165.9430535439248,
+      452.90633400025763
+    ]
+  },
+  "skippedNonTriangles": 0,
+  "triangles": 18473,
+  "vertices": 16846
+}

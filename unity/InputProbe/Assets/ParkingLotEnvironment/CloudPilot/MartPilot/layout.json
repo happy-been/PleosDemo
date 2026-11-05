@@ -1,0 +1,787 @@
+{
+    "target": "Korean supermarket outdoor parking layout prototype; not photoreal approval or gameplay test",
+    "bayCount": 60,
+    "parkedVehicles": 27,
+    "bays": [
+        {
+            "id": "A01",
+            "type": "perpendicular",
+            "center": {
+                "x": -14.850000381469727,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "A02",
+            "type": "perpendicular",
+            "center": {
+                "x": -12.15000057220459,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "A03",
+            "type": "perpendicular",
+            "center": {
+                "x": -9.450000762939454,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "A04",
+            "type": "perpendicular",
+            "center": {
+                "x": -6.75,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "A05",
+            "type": "perpendicular",
+            "center": {
+                "x": -4.050000190734863,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "A06",
+            "type": "perpendicular",
+            "center": {
+                "x": -1.3500001430511475,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "A07",
+            "type": "perpendicular",
+            "center": {
+                "x": 1.3499999046325684,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "A08",
+            "type": "perpendicular",
+            "center": {
+                "x": 4.050000190734863,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "A09",
+            "type": "perpendicular",
+            "center": {
+                "x": 6.75,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "A10",
+            "type": "perpendicular",
+            "center": {
+                "x": 9.449999809265137,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "A11",
+            "type": "perpendicular",
+            "center": {
+                "x": 12.149999618530274,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "A12",
+            "type": "perpendicular",
+            "center": {
+                "x": 14.850000381469727,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "B01",
+            "type": "perpendicular",
+            "center": {
+                "x": -14.850000381469727,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "B02",
+            "type": "perpendicular",
+            "center": {
+                "x": -12.15000057220459,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "B03",
+            "type": "perpendicular",
+            "center": {
+                "x": -9.450000762939454,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "B04",
+            "type": "perpendicular",
+            "center": {
+                "x": -6.75,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "B05",
+            "type": "perpendicular",
+            "center": {
+                "x": -4.050000190734863,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "B06",
+            "type": "perpendicular",
+            "center": {
+                "x": -1.3500001430511475,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "B07",
+            "type": "perpendicular",
+            "center": {
+                "x": 1.3499999046325684,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "B08",
+            "type": "perpendicular",
+            "center": {
+                "x": 4.050000190734863,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "B09",
+            "type": "perpendicular",
+            "center": {
+                "x": 6.75,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "B10",
+            "type": "perpendicular",
+            "center": {
+                "x": 9.449999809265137,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "B11",
+            "type": "perpendicular",
+            "center": {
+                "x": 12.149999618530274,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "B12",
+            "type": "perpendicular",
+            "center": {
+                "x": 14.850000381469727,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C01",
+            "type": "perpendicular",
+            "center": {
+                "x": -14.850000381469727,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C02",
+            "type": "perpendicular",
+            "center": {
+                "x": -12.15000057220459,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "C03",
+            "type": "perpendicular",
+            "center": {
+                "x": -9.450000762939454,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C04",
+            "type": "perpendicular",
+            "center": {
+                "x": -6.75,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "C05",
+            "type": "perpendicular",
+            "center": {
+                "x": -4.050000190734863,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C06",
+            "type": "perpendicular",
+            "center": {
+                "x": -1.3500001430511475,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C07",
+            "type": "perpendicular",
+            "center": {
+                "x": 1.3499999046325684,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "C08",
+            "type": "perpendicular",
+            "center": {
+                "x": 4.050000190734863,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C09",
+            "type": "perpendicular",
+            "center": {
+                "x": 6.75,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C10",
+            "type": "perpendicular",
+            "center": {
+                "x": 9.449999809265137,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "C11",
+            "type": "perpendicular",
+            "center": {
+                "x": 12.149999618530274,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "C12",
+            "type": "perpendicular",
+            "center": {
+                "x": 14.850000381469727,
+                "y": 0.0,
+                "z": -6.599999904632568
+            },
+            "heading": 0.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "D01",
+            "type": "perpendicular",
+            "center": {
+                "x": -14.850000381469727,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "D02",
+            "type": "perpendicular",
+            "center": {
+                "x": -12.15000057220459,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D03",
+            "type": "perpendicular",
+            "center": {
+                "x": -9.450000762939454,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D04",
+            "type": "perpendicular",
+            "center": {
+                "x": -6.75,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "D05",
+            "type": "perpendicular",
+            "center": {
+                "x": -4.050000190734863,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D06",
+            "type": "perpendicular",
+            "center": {
+                "x": -1.3500001430511475,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D07",
+            "type": "perpendicular",
+            "center": {
+                "x": 1.3499999046325684,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D08",
+            "type": "perpendicular",
+            "center": {
+                "x": 4.050000190734863,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "D09",
+            "type": "perpendicular",
+            "center": {
+                "x": 6.75,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D10",
+            "type": "perpendicular",
+            "center": {
+                "x": 9.449999809265137,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "D11",
+            "type": "perpendicular",
+            "center": {
+                "x": 12.149999618530274,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "D12",
+            "type": "perpendicular",
+            "center": {
+                "x": 14.850000381469727,
+                "y": 0.0,
+                "z": 5.400000095367432
+            },
+            "heading": 180.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "P01",
+            "type": "parallel",
+            "center": {
+                "x": -26.200000762939454,
+                "y": 0.0,
+                "z": -25.0
+            },
+            "heading": 0.0,
+            "width": 2.5999999046325685,
+            "length": 6.5,
+            "occupied": true
+        },
+        {
+            "id": "P02",
+            "type": "parallel",
+            "center": {
+                "x": -26.200000762939454,
+                "y": 0.0,
+                "z": -17.5
+            },
+            "heading": 0.0,
+            "width": 2.5999999046325685,
+            "length": 6.5,
+            "occupied": false
+        },
+        {
+            "id": "P03",
+            "type": "parallel",
+            "center": {
+                "x": -26.200000762939454,
+                "y": 0.0,
+                "z": -10.0
+            },
+            "heading": 0.0,
+            "width": 2.5999999046325685,
+            "length": 6.5,
+            "occupied": false
+        },
+        {
+            "id": "P04",
+            "type": "parallel",
+            "center": {
+                "x": -26.200000762939454,
+                "y": 0.0,
+                "z": -2.5
+            },
+            "heading": 0.0,
+            "width": 2.5999999046325685,
+            "length": 6.5,
+            "occupied": true
+        },
+        {
+            "id": "P05",
+            "type": "parallel",
+            "center": {
+                "x": -26.200000762939454,
+                "y": 0.0,
+                "z": 5.0
+            },
+            "heading": 0.0,
+            "width": 2.5999999046325685,
+            "length": 6.5,
+            "occupied": false
+        },
+        {
+            "id": "P06",
+            "type": "parallel",
+            "center": {
+                "x": -26.200000762939454,
+                "y": 0.0,
+                "z": 12.5
+            },
+            "heading": 0.0,
+            "width": 2.5999999046325685,
+            "length": 6.5,
+            "occupied": true
+        },
+        {
+            "id": "S01",
+            "type": "angled",
+            "center": {
+                "x": 25.200000762939454,
+                "y": 0.0,
+                "z": -24.0
+            },
+            "heading": -60.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "S02",
+            "type": "angled",
+            "center": {
+                "x": 25.200000762939454,
+                "y": 0.0,
+                "z": -18.5
+            },
+            "heading": -60.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "S03",
+            "type": "angled",
+            "center": {
+                "x": 25.200000762939454,
+                "y": 0.0,
+                "z": -13.0
+            },
+            "heading": -60.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        },
+        {
+            "id": "S04",
+            "type": "angled",
+            "center": {
+                "x": 25.200000762939454,
+                "y": 0.0,
+                "z": -7.5
+            },
+            "heading": -60.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "S05",
+            "type": "angled",
+            "center": {
+                "x": 25.200000762939454,
+                "y": 0.0,
+                "z": -2.0
+            },
+            "heading": -60.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": false
+        },
+        {
+            "id": "S06",
+            "type": "angled",
+            "center": {
+                "x": 25.200000762939454,
+                "y": 0.0,
+                "z": 3.5
+            },
+            "heading": -60.0,
+            "width": 2.700000047683716,
+            "length": 5.199999809265137,
+            "occupied": true
+        }
+    ]
+}

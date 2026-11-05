@@ -1,0 +1,38 @@
+{
+  "vertices": 22902,
+  "triangles": 7634,
+  "source_sha256": "3ff22dd22f2fa3f2f16712fd5be04f8fe45ad70fbbdf7fa67616a414f30c62d7",
+  "source_vertices": 3999,
+  "source_triangles": 4772,
+  "world_metres_per_local_unit": 0.00999491848,
+  "note": "Temporary offline candidates. No original vertex or UV motion; only side-door normals and linear subdivision. Unselected original triangles untouched. Not adopted.",
+  "variants": {
+    "door-0": {
+      "vertices": 22902,
+      "triangles": 7634,
+      "sha256": "a6e9ad94bcbaa9797dac96283a65ecb17df7a2eab5064eefb0dd6ee679e9f33b",
+      "position_uv_sha256": "50d816e7d69e1bdc86db695afa4651230acaaa217b96bd889c14c8ce9c7f4d19",
+      "weight_max": 0.0,
+      "unchanged_parent_triangles": 3818,
+      "subdivided_parent_triangles": 954
+    },
+    "door-50": {
+      "vertices": 22902,
+      "triangles": 7634,
+      "sha256": "98eb1ecc9ae4c133ce2ca3593d7b448b3abc7ff33b1bc3d11b41d5ed40a349f8",
+      "position_uv_sha256": "50d816e7d69e1bdc86db695afa4651230acaaa217b96bd889c14c8ce9c7f4d19",
+      "weight_max": 0.5,
+      "unchanged_parent_triangles": 3818,
+      "subdivided_parent_triangles": 954
+    },
+    "door-80": {
+      "vertices": 22902,
+      "triangles": 7634,
+      "sha256": "28eb5270fe22dc0d0da41269e2317cae6fcd610832cccc83c125ff6a42e0e225",
+      "position_uv_sha256": "50d816e7d69e1bdc86db695afa4651230acaaa217b96bd889c14c8ce9c7f4d19",
+      "weight_max": 0.8,
+      "unchanged_parent_triangles": 3818,
+      "subdivided_parent_triangles": 954
+    }
+  }
+}

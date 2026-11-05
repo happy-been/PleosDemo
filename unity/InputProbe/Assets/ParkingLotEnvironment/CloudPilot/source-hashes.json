@@ -1,0 +1,22 @@
+[
+  {
+    "path": "KoreanAssets/aerial_asphalt_01_diff_2k.jpg",
+    "bytes": 2802005,
+    "sha256": "a85ce28b8e6ed90acb0234832969b27f5b73fe055a0d5b94f34fc2943d319fb5"
+  },
+  {
+    "path": "KoreanAssets/red_brick_diff_2k.jpg",
+    "bytes": 3169072,
+    "sha256": "a1ae5ba7e63026971ceaf68ebbcf8982d9c2dadde1c99996c49b8ac1160af995"
+  },
+  {
+    "path": "KoreanAssets/concrete_pavement_diff_2k.jpg",
+    "bytes": 3817566,
+    "sha256": "e5a1cecfe7765cc0b24a6ab0abf492bd21c9e7af64e97fc46ef6021d0645fbd3"
+  },
+  {
+    "path": "KoreanAssets/concrete_wall_009_diff_2k.jpg",
+    "bytes": 2573465,
+    "sha256": "abcdc1ad41eb5cd58ba158f954cb00bae57c2eba13f90a1145f04edfc85cc617"
+  }
+]

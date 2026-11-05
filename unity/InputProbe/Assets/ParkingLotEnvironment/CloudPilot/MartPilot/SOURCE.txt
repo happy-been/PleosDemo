@@ -1,0 +1,5 @@
+New authored supermarket geometry/signage. Fictional Korean market, not a reconstruction of an actual business.
+Clean Asphalt by Dimitrios Savva / Poly Haven, CC0: https://polyhaven.com/a/clean_asphalt https://polyhaven.com/license . Original photo-based maps copied unchanged from the already credited RealismAssets; smoothness channel converted from roughness for Unity Standard.
+Existing read-only assets: vehicle models, Poly Haven Tree Small02, concrete, planting soil, sky and Nanum Gothic-derived ParkingSigns. Full authors/URLs/licenses and derivative notices remain in Assets/ParkingLotEnvironment/CREDITS.md and source receipts. No new vehicle acquisition.
+
+Outer grass: Grass Ground, Charlotte Baglioni / Poly Haven CC0, https://polyhaven.com/a/grass_ground . Read-only existing texture. No geographic Korean capture claim.

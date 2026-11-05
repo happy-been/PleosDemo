@@ -1,0 +1,3 @@
+Offline source: Assets/ParkingLotEnvironment/SourceModels~/hyundai-ioniq5-openx/model.json
+Baked glTF node transforms. Flip Z/winding, flip V for Unity. Normalized vehicle length 4.657335m.
+2026-11-02T06:28:45

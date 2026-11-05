@@ -1,0 +1,2098 @@
+{
+  "name": "hyundai_ioniq_5_2022",
+  "format": "park-vehicle-intermediate-v1",
+  "layout": "positions and normals world-baked, little-endian float32 [px,py,pz,nx,ny,nz,u,v] then uint32 indices",
+  "coordinateSystem": "glTF right-handed; no Z flip",
+  "uvConvention": "Unchanged glTF TEXCOORD_0: image origin top-left, positive V down; importer must adapt to Unity texture convention",
+  "materials": [
+    {
+      "name": "Body",
+      "baseColor": [
+        0.5709999799728394,
+        0.5329999923706055,
+        0.503000020980835,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.46000000834465027,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Chrome",
+      "baseColor": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.15000000596046448,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Body_Glass",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.20000000298023224
+      ],
+      "metallic": 0,
+      "roughness": 0.05000000074505806,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Black_Gloss",
+      "baseColor": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.15000000596046448,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Trim_Grey",
+      "baseColor": [
+        0.1899999976158142,
+        0.1899999976158142,
+        0.20000000298023224,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.44999998807907104,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Black_Plastic",
+      "baseColor": [
+        0.019999999552965164,
+        0.019999999552965164,
+        0.019999999552965164,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Chrome_Satin",
+      "baseColor": [
+        0.5080000162124634,
+        0.5080000162124634,
+        0.5080000162124634,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Garnish_Silver",
+      "baseColor": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.6100000143051147,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.3499999940395355,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Lamp_Amber",
+      "baseColor": [
+        1,
+        0.25,
+        0,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Mirror_Glass",
+      "baseColor": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.05000000074505806,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Pixel_Trim",
+      "baseColor": [
+        0.09000000357627869,
+        0.09000000357627869,
+        0.0949999988079071,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "White_Matte",
+      "baseColor": [
+        0.8500000238418579,
+        0.8500000238418579,
+        0.8500000238418579,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8500000238418579,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "License_Plate_White",
+      "baseColor": [
+        0.8999999761581421,
+        0.8999999761581421,
+        0.8999999761581421,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.4000000059604645,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "License_Plate_Blue",
+      "baseColor": [
+        0,
+        0.07999999821186066,
+        0.6000000238418579,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.4000000059604645,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "License_Plate_Black",
+      "baseColor": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.4000000059604645,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Lamp_Red",
+      "baseColor": [
+        0.550000011920929,
+        0.019999999552965164,
+        0.019999999552965164,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Lamp_White",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Lamp_Projector",
+      "baseColor": [
+        0.3499999940395355,
+        0.3499999940395355,
+        0.3700000047683716,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.25,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Brake_Caliper",
+      "baseColor": [
+        0.029999999329447746,
+        0.029999999329447746,
+        0.029999999329447746,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Tire",
+      "baseColor": [
+        0.019999999552965164,
+        0.019999999552965164,
+        0.019999999552965164,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.800000011920929,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Rim_Machined",
+      "baseColor": [
+        0.7799999713897705,
+        0.7799999713897705,
+        0.7799999713897705,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.25,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Rim_Black",
+      "baseColor": [
+        0.02500000037252903,
+        0.02500000037252903,
+        0.02500000037252903,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.44999998807907104,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Rim_Aero",
+      "baseColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.052000001072883606,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.550000011920929,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Brake_Disc",
+      "baseColor": [
+        0.3149999976158142,
+        0.3149999976158142,
+        0.3149999976158142,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.5,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Lens_Smoked",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.25
+      ],
+      "metallic": 0,
+      "roughness": 0.05000000074505806,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Reflector_Red",
+      "baseColor": [
+        0.44999998807907104,
+        0.009999999776482582,
+        0.009999999776482582,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Pixel_Clear",
+      "baseColor": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.6200000047683716,
+        1
+      ],
+      "metallic": 0.6000000238418579,
+      "roughness": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Seat_Fabric",
+      "baseColor": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.054999999701976776,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.800000011920929,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Grey_Plastic",
+      "baseColor": [
+        0.05999999865889549,
+        0.05999999865889549,
+        0.05999999865889549,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Black_Matte",
+      "baseColor": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.009999999776482582,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8999999761581421,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Door_Front_0_0",
+      "file": "mesh-0000.bin",
+      "material": 0,
+      "vertexCount": 401,
+      "indexCount": 1284,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Front_0_1",
+      "file": "mesh-0001.bin",
+      "material": 1,
+      "vertexCount": 2382,
+      "indexCount": 3492,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_0",
+      "file": "mesh-0002.bin",
+      "material": 0,
+      "vertexCount": 442,
+      "indexCount": 1098,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_1",
+      "file": "mesh-0003.bin",
+      "material": 2,
+      "vertexCount": 30,
+      "indexCount": 120,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_2",
+      "file": "mesh-0004.bin",
+      "material": 3,
+      "vertexCount": 102,
+      "indexCount": 240,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_3",
+      "file": "mesh-0005.bin",
+      "material": 4,
+      "vertexCount": 469,
+      "indexCount": 708,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_4",
+      "file": "mesh-0006.bin",
+      "material": 5,
+      "vertexCount": 48,
+      "indexCount": 90,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_5",
+      "file": "mesh-0007.bin",
+      "material": 6,
+      "vertexCount": 11,
+      "indexCount": 21,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_0_6",
+      "file": "mesh-0008.bin",
+      "material": 7,
+      "vertexCount": 48,
+      "indexCount": 78,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Indicator_Left_1_0",
+      "file": "mesh-0009.bin",
+      "material": 8,
+      "vertexCount": 32,
+      "indexCount": 48,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Mirror_Side_Left_0_0",
+      "file": "mesh-0010.bin",
+      "material": 0,
+      "vertexCount": 117,
+      "indexCount": 291,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Mirror_Side_Left_0_1",
+      "file": "mesh-0011.bin",
+      "material": 9,
+      "vertexCount": 79,
+      "indexCount": 195,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Mirror_Side_Left_0_2",
+      "file": "mesh-0012.bin",
+      "material": 3,
+      "vertexCount": 181,
+      "indexCount": 441,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_0",
+      "file": "mesh-0013.bin",
+      "material": 0,
+      "vertexCount": 275,
+      "indexCount": 687,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_1",
+      "file": "mesh-0014.bin",
+      "material": 4,
+      "vertexCount": 364,
+      "indexCount": 576,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_2",
+      "file": "mesh-0015.bin",
+      "material": 2,
+      "vertexCount": 28,
+      "indexCount": 105,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_3",
+      "file": "mesh-0016.bin",
+      "material": 3,
+      "vertexCount": 201,
+      "indexCount": 456,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_4",
+      "file": "mesh-0017.bin",
+      "material": 5,
+      "vertexCount": 22,
+      "indexCount": 42,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_5",
+      "file": "mesh-0018.bin",
+      "material": 6,
+      "vertexCount": 6,
+      "indexCount": 12,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Left_1_6",
+      "file": "mesh-0019.bin",
+      "material": 7,
+      "vertexCount": 46,
+      "indexCount": 78,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_0",
+      "file": "mesh-0020.bin",
+      "material": 0,
+      "vertexCount": 417,
+      "indexCount": 1050,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_1",
+      "file": "mesh-0021.bin",
+      "material": 4,
+      "vertexCount": 184,
+      "indexCount": 378,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_2",
+      "file": "mesh-0022.bin",
+      "material": 3,
+      "vertexCount": 623,
+      "indexCount": 2100,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_3",
+      "file": "mesh-0023.bin",
+      "material": 2,
+      "vertexCount": 127,
+      "indexCount": 618,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_4",
+      "file": "mesh-0024.bin",
+      "material": 5,
+      "vertexCount": 69,
+      "indexCount": 108,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_5",
+      "file": "mesh-0025.bin",
+      "material": 10,
+      "vertexCount": 7442,
+      "indexCount": 11166,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_6",
+      "file": "mesh-0026.bin",
+      "material": 11,
+      "vertexCount": 1384,
+      "indexCount": 3582,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Rear_0_7",
+      "file": "mesh-0027.bin",
+      "material": 1,
+      "vertexCount": 3052,
+      "indexCount": 4524,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_0",
+      "file": "mesh-0028.bin",
+      "material": 0,
+      "vertexCount": 441,
+      "indexCount": 1098,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_1",
+      "file": "mesh-0029.bin",
+      "material": 2,
+      "vertexCount": 30,
+      "indexCount": 120,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_2",
+      "file": "mesh-0030.bin",
+      "material": 3,
+      "vertexCount": 102,
+      "indexCount": 240,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_3",
+      "file": "mesh-0031.bin",
+      "material": 4,
+      "vertexCount": 510,
+      "indexCount": 771,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_4",
+      "file": "mesh-0032.bin",
+      "material": 5,
+      "vertexCount": 46,
+      "indexCount": 90,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_5",
+      "file": "mesh-0033.bin",
+      "material": 6,
+      "vertexCount": 11,
+      "indexCount": 21,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_0_6",
+      "file": "mesh-0034.bin",
+      "material": 7,
+      "vertexCount": 48,
+      "indexCount": 78,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Indicator_Right_1_0",
+      "file": "mesh-0035.bin",
+      "material": 8,
+      "vertexCount": 32,
+      "indexCount": 48,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Mirror_Side_Right_0_0",
+      "file": "mesh-0036.bin",
+      "material": 0,
+      "vertexCount": 117,
+      "indexCount": 291,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Mirror_Side_Right_0_1",
+      "file": "mesh-0037.bin",
+      "material": 9,
+      "vertexCount": 79,
+      "indexCount": 195,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Mirror_Side_Right_0_2",
+      "file": "mesh-0038.bin",
+      "material": 3,
+      "vertexCount": 181,
+      "indexCount": 441,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_0",
+      "file": "mesh-0039.bin",
+      "material": 0,
+      "vertexCount": 275,
+      "indexCount": 687,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_1",
+      "file": "mesh-0040.bin",
+      "material": 4,
+      "vertexCount": 359,
+      "indexCount": 567,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_2",
+      "file": "mesh-0041.bin",
+      "material": 2,
+      "vertexCount": 28,
+      "indexCount": 105,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_3",
+      "file": "mesh-0042.bin",
+      "material": 3,
+      "vertexCount": 201,
+      "indexCount": 456,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_4",
+      "file": "mesh-0043.bin",
+      "material": 5,
+      "vertexCount": 20,
+      "indexCount": 42,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_5",
+      "file": "mesh-0044.bin",
+      "material": 6,
+      "vertexCount": 6,
+      "indexCount": 12,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Door_Right_1_6",
+      "file": "mesh-0045.bin",
+      "material": 7,
+      "vertexCount": 46,
+      "indexCount": 78,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_0_0",
+      "file": "mesh-0046.bin",
+      "material": 5,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_0_1",
+      "file": "mesh-0047.bin",
+      "material": 12,
+      "vertexCount": 50,
+      "indexCount": 138,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_0_2",
+      "file": "mesh-0048.bin",
+      "material": 13,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_0_3",
+      "file": "mesh-0049.bin",
+      "material": 14,
+      "vertexCount": 154,
+      "indexCount": 414,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_1_0",
+      "file": "mesh-0050.bin",
+      "material": 5,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_1_1",
+      "file": "mesh-0051.bin",
+      "material": 12,
+      "vertexCount": 50,
+      "indexCount": 138,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_1_2",
+      "file": "mesh-0052.bin",
+      "material": 13,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "License_Plate_1_3",
+      "file": "mesh-0053.bin",
+      "material": 14,
+      "vertexCount": 154,
+      "indexCount": 414,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Brake_Center_0_0",
+      "file": "mesh-0054.bin",
+      "material": 15,
+      "vertexCount": 46,
+      "indexCount": 72,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Brake_Left_0_0",
+      "file": "mesh-0055.bin",
+      "material": 15,
+      "vertexCount": 1266,
+      "indexCount": 1902,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Brake_Right_0_0",
+      "file": "mesh-0056.bin",
+      "material": 15,
+      "vertexCount": 1266,
+      "indexCount": 1902,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Day_Left_0_0",
+      "file": "mesh-0057.bin",
+      "material": 16,
+      "vertexCount": 112,
+      "indexCount": 168,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Day_Right_0_0",
+      "file": "mesh-0058.bin",
+      "material": 16,
+      "vertexCount": 100,
+      "indexCount": 168,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_High_Beam_Left_0_0",
+      "file": "mesh-0059.bin",
+      "material": 17,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_High_Beam_Right_0_0",
+      "file": "mesh-0060.bin",
+      "material": 17,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Indicator_Left_0_0",
+      "file": "mesh-0061.bin",
+      "material": 8,
+      "vertexCount": 354,
+      "indexCount": 516,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Indicator_Left_2_0",
+      "file": "mesh-0062.bin",
+      "material": 8,
+      "vertexCount": 521,
+      "indexCount": 789,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Indicator_Right_0_0",
+      "file": "mesh-0063.bin",
+      "material": 8,
+      "vertexCount": 354,
+      "indexCount": 516,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Indicator_Right_2_0",
+      "file": "mesh-0064.bin",
+      "material": 8,
+      "vertexCount": 522,
+      "indexCount": 792,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_License_Plate_0_0",
+      "file": "mesh-0065.bin",
+      "material": 16,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_License_Plate_1_0",
+      "file": "mesh-0066.bin",
+      "material": 16,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Low_Beam_Left_0_0",
+      "file": "mesh-0067.bin",
+      "material": 17,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Low_Beam_Right_0_0",
+      "file": "mesh-0068.bin",
+      "material": 17,
+      "vertexCount": 4,
+      "indexCount": 6,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Reverse_Left_0_0",
+      "file": "mesh-0069.bin",
+      "material": 16,
+      "vertexCount": 183,
+      "indexCount": 459,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Reverse_Right_0_0",
+      "file": "mesh-0070.bin",
+      "material": 16,
+      "vertexCount": 181,
+      "indexCount": 459,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Tail_Left_0_0",
+      "file": "mesh-0071.bin",
+      "material": 15,
+      "vertexCount": 46,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Light_Tail_Right_0_0",
+      "file": "mesh-0072.bin",
+      "material": 15,
+      "vertexCount": 50,
+      "indexCount": 60,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Brake_Caliper_0_0_0",
+      "file": "mesh-0073.bin",
+      "material": 18,
+      "vertexCount": 84,
+      "indexCount": 156,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_0_0",
+      "file": "mesh-0074.bin",
+      "material": 19,
+      "vertexCount": 519,
+      "indexCount": 1722,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_0_1",
+      "file": "mesh-0075.bin",
+      "material": 20,
+      "vertexCount": 960,
+      "indexCount": 1680,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_0_2",
+      "file": "mesh-0076.bin",
+      "material": 21,
+      "vertexCount": 1426,
+      "indexCount": 2208,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_0_3",
+      "file": "mesh-0077.bin",
+      "material": 22,
+      "vertexCount": 1056,
+      "indexCount": 1104,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_0_4",
+      "file": "mesh-0078.bin",
+      "material": 23,
+      "vertexCount": 288,
+      "indexCount": 576,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_0_5",
+      "file": "mesh-0079.bin",
+      "material": 1,
+      "vertexCount": 1149,
+      "indexCount": 1737,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Brake_Caliper_0_1_0",
+      "file": "mesh-0080.bin",
+      "material": 18,
+      "vertexCount": 84,
+      "indexCount": 156,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_1_0",
+      "file": "mesh-0081.bin",
+      "material": 19,
+      "vertexCount": 519,
+      "indexCount": 1722,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_1_1",
+      "file": "mesh-0082.bin",
+      "material": 20,
+      "vertexCount": 960,
+      "indexCount": 1680,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_1_2",
+      "file": "mesh-0083.bin",
+      "material": 21,
+      "vertexCount": 1426,
+      "indexCount": 2208,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_1_3",
+      "file": "mesh-0084.bin",
+      "material": 22,
+      "vertexCount": 1056,
+      "indexCount": 1104,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_1_4",
+      "file": "mesh-0085.bin",
+      "material": 23,
+      "vertexCount": 288,
+      "indexCount": 576,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_0_1_5",
+      "file": "mesh-0086.bin",
+      "material": 1,
+      "vertexCount": 1149,
+      "indexCount": 1737,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Brake_Caliper_1_0_0",
+      "file": "mesh-0087.bin",
+      "material": 18,
+      "vertexCount": 84,
+      "indexCount": 156,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_0_0",
+      "file": "mesh-0088.bin",
+      "material": 19,
+      "vertexCount": 519,
+      "indexCount": 1722,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_0_1",
+      "file": "mesh-0089.bin",
+      "material": 20,
+      "vertexCount": 960,
+      "indexCount": 1680,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_0_2",
+      "file": "mesh-0090.bin",
+      "material": 21,
+      "vertexCount": 1426,
+      "indexCount": 2208,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_0_3",
+      "file": "mesh-0091.bin",
+      "material": 22,
+      "vertexCount": 1056,
+      "indexCount": 1104,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_0_4",
+      "file": "mesh-0092.bin",
+      "material": 23,
+      "vertexCount": 288,
+      "indexCount": 576,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_0_5",
+      "file": "mesh-0093.bin",
+      "material": 1,
+      "vertexCount": 1149,
+      "indexCount": 1737,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Brake_Caliper_1_1_0",
+      "file": "mesh-0094.bin",
+      "material": 18,
+      "vertexCount": 84,
+      "indexCount": 156,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_1_0",
+      "file": "mesh-0095.bin",
+      "material": 19,
+      "vertexCount": 519,
+      "indexCount": 1722,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_1_1",
+      "file": "mesh-0096.bin",
+      "material": 20,
+      "vertexCount": 960,
+      "indexCount": 1680,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_1_2",
+      "file": "mesh-0097.bin",
+      "material": 21,
+      "vertexCount": 1426,
+      "indexCount": 2208,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_1_3",
+      "file": "mesh-0098.bin",
+      "material": 22,
+      "vertexCount": 1056,
+      "indexCount": 1104,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_1_4",
+      "file": "mesh-0099.bin",
+      "material": 23,
+      "vertexCount": 288,
+      "indexCount": 576,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Wheel_1_1_5",
+      "file": "mesh-0100.bin",
+      "material": 1,
+      "vertexCount": 1149,
+      "indexCount": 1737,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Body_0",
+      "file": "mesh-0101.bin",
+      "material": 0,
+      "vertexCount": 1418,
+      "indexCount": 4164,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Body_1",
+      "file": "mesh-0102.bin",
+      "material": 4,
+      "vertexCount": 1828,
+      "indexCount": 4674,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Body_2",
+      "file": "mesh-0103.bin",
+      "material": 5,
+      "vertexCount": 571,
+      "indexCount": 1296,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Body_3",
+      "file": "mesh-0104.bin",
+      "material": 3,
+      "vertexCount": 482,
+      "indexCount": 1866,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Body_4",
+      "file": "mesh-0105.bin",
+      "material": 24,
+      "vertexCount": 43,
+      "indexCount": 93,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Body_Glass_0",
+      "file": "mesh-0106.bin",
+      "material": 2,
+      "vertexCount": 86,
+      "indexCount": 372,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Lamp_Housings_0",
+      "file": "mesh-0107.bin",
+      "material": 5,
+      "vertexCount": 386,
+      "indexCount": 516,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Lamp_Housings_1",
+      "file": "mesh-0108.bin",
+      "material": 3,
+      "vertexCount": 80,
+      "indexCount": 144,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Lamp_Housings_2",
+      "file": "mesh-0109.bin",
+      "material": 10,
+      "vertexCount": 5089,
+      "indexCount": 8928,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Lamp_Housings_3",
+      "file": "mesh-0110.bin",
+      "material": 25,
+      "vertexCount": 302,
+      "indexCount": 516,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Lamp_Housings_4",
+      "file": "mesh-0111.bin",
+      "material": 26,
+      "vertexCount": 522,
+      "indexCount": 810,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Steering_Wheel_0",
+      "file": "mesh-0112.bin",
+      "material": 5,
+      "vertexCount": 544,
+      "indexCount": 2076,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Interior_Static_0",
+      "file": "mesh-0113.bin",
+      "material": 27,
+      "vertexCount": 960,
+      "indexCount": 1320,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Interior_Static_1",
+      "file": "mesh-0114.bin",
+      "material": 28,
+      "vertexCount": 288,
+      "indexCount": 444,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Interior_Static_2",
+      "file": "mesh-0115.bin",
+      "material": 29,
+      "vertexCount": 8,
+      "indexCount": 12,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    },
+    {
+      "name": "Interior_Static_3",
+      "file": "mesh-0116.bin",
+      "material": 3,
+      "vertexCount": 96,
+      "indexCount": 132,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false,
+      "sourceTexCoord": 0,
+      "textureTransformBaked": false
+    }
+  ],
+  "bounds": {
+    "min": [
+      -2.328667402267456,
+      0,
+      -1.0852669477462769
+    ],
+    "max": [
+      2.328667402267456,
+      1.627739429473877,
+      1.0852669691941148
+    ],
+    "size": [
+      4.657334804534912,
+      1.627739429473877,
+      2.170533916940392
+    ]
+  },
+  "skippedNonTriangles": 0,
+  "triangles": 37350,
+  "vertices": 61194
+}

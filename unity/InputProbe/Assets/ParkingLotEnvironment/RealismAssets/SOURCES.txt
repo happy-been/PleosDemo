@@ -1,0 +1,76 @@
+ParkingLotEnvironment realism assets
+Source: Poly Haven (https://polyhaven.com/)
+License: CC0 1.0 public domain dedication. https://polyhaven.com/license ; https://creativecommons.org/publicdomain/zero/1.0/
+Downloaded: 2026-11-02
+Asset pages: https://polyhaven.com/a/mall_parking_lot ; https://polyhaven.com/a/clean_asphalt ; https://polyhaven.com/a/shrub_03
+Diffuse maps are sRGB. Normal, roughness, AO and alpha mask are linear data. Shrub alpha is stored separately and must be supplied to a cutout material.
+
+mall_parking_lot_4k.hdr
+https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/4k/mall_parking_lot_4k.hdr
+Bytes: 24959595 MD5: 7578dff71456c05a979ebd9164cc5c50
+
+clean_asphalt_diff_2k.jpg
+https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_diff_2k.jpg
+Bytes: 3314999 MD5: d3afa117daf0846a743bbf5b4eb2464d
+
+clean_asphalt_nor_gl_2k.jpg
+https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_nor_gl_2k.jpg
+Bytes: 3923727 MD5: f9d4e1b14ac5b231748b600dcd59f20e
+
+clean_asphalt_rough_2k.jpg
+https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_rough_2k.jpg
+Bytes: 2898463 MD5: b2dfdcd35bd5462dd8b275c6adc68d74
+
+clean_asphalt_ao_2k.jpg
+https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_ao_2k.jpg
+Bytes: 3141137 MD5: 72b00076439b3aff9819e51ad6a8dbf9
+
+shrub_03_1k.fbx
+https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/shrub_03/shrub_03_1k.fbx
+Bytes: 290956 MD5: 321b133f596ba7fa7f78c8ab8b914c90
+
+shrub_03_diff_1k.jpg
+https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_diff_1k.jpg
+Bytes: 481841 MD5: 5da9190b7c2837a9e209a3fe774dba3c
+
+shrub_03_alpha_1k.png
+https://dl.polyhaven.org/file/ph-assets/Models/png/1k/shrub_03/shrub_03_alpha_1k.png
+Bytes: 79069 MD5: 57a2d0fd7ea02ebeb8de321652f9f58a
+
+shrub_03_nor_gl_1k.jpg
+https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_nor_gl_1k.jpg
+Bytes: 504734 MD5: 38956b2171644cfefda2ef542e055100
+
+shrub_03_rough_1k.jpg
+https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_rough_1k.jpg
+Bytes: 262676 MD5: 52e45dbbe80e9c18409dbfb66021f7ea
+
+shrub_03_ao_1k.jpg
+https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_03/shrub_03_ao_1k.jpg
+Bytes: 242160 MD5: dbeb03e7c36bb1a6a890a76563d55f85
+
+
+Additional soil asset: https://polyhaven.com/a/brown_mud_leaves_01 (same CC0 license)
+brown_mud_leaves_01_diff_1k.jpg
+https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_leaves_01/brown_mud_leaves_01_diff_1k.jpg
+MD5: 5340848384f9bb19bfa6e7ac459683d7
+brown_mud_leaves_01_nor_gl_1k.jpg
+https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_leaves_01/brown_mud_leaves_01_nor_gl_1k.jpg
+MD5: 3698df51ef8262ddf2248ffca1e73196
+
+8K parking panorama upgrade: https://polyhaven.com/a/mall_parking_lot
+License: CC0 https://polyhaven.com/license
+https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/8k/mall_parking_lot_8k.hdr
+Bytes: 100164329 MD5: 770463d4e08881a0084ea4bdddee9463
+
+Forest public-parking surroundings: https://polyhaven.com/a/park_parking
+License: CC0 https://polyhaven.com/license
+https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/8k/park_parking_8k.hdr
+Bytes: 107448935 MD5: ff6c252c08b8ea252a64e3f58d15f4c4
+https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/park_parking.jpg
+Bytes: 56561599 MD5: d82b432be791016039b4f8148a5bde9c
+
+Final distant surroundings: https://polyhaven.com/a/suburban_field_02
+License: CC0 https://polyhaven.com/license
+https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/8k/suburban_field_02_8k.hdr
+Bytes: 101132408 MD5: 0034ee387513a7f8e8dc9f19648307de

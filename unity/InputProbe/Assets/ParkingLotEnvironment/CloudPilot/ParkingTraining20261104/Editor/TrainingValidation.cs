@@ -1,0 +1,9 @@
+using System;using System.IO;using System.Linq;using UnityEngine;using ParkingLotEnvironment.Training;
+namespace ParkingLotEnvironment.CloudPilot { public static class TrainingValidation {
+ public static void Check(GameObject root,string output){var layout=root.GetComponentInChildren<ParkingTrainingLayout>();if(!layout||layout.bays.Length!=5||layout.obstacles.Length!=10)throw new Exception("Unexpected practice counts");Physics.SyncTransforms();
+  foreach(var bay in layout.bays){float sx=bay.maneuver==ParkingManeuver.Parallel?bay.width:bay.length,sz=bay.maneuver==ParkingManeuver.Parallel?bay.length:bay.width;foreach(var obstacle in layout.obstacles){float overlapX=(sx+obstacle.size.x)/2-Mathf.Abs(bay.center.x-obstacle.center.x),overlapZ=(sz+obstacle.size.z)/2-Mathf.Abs(bay.center.z-obstacle.center.z);if(overlapX>.025f&&overlapZ>.025f)throw new Exception("Practice bay blocked: "+bay.id+" / "+obstacle.id);}}
+  for(int i=0;i<layout.obstacles.Length;i++)for(int j=i+1;j<layout.obstacles.Length;j++){var a=layout.obstacles[i];var b=layout.obstacles[j];if(Mathf.Abs(a.center.x-b.center.x)<(a.size.x+b.size.x)/2-.01f&&Mathf.Abs(a.center.z-b.center.z)<(a.size.z+b.size.z)/2-.01f)throw new Exception("Parked vehicles overlap: "+a.id+"/"+b.id);}
+  int rays=0;foreach(float x in new[]{0f,3.5f})foreach(float z in new[]{-19f,-12f,-5f,2f,9f,12f}){RaycastHit hit;if(!Physics.Raycast(new Vector3(x,3,z),Vector3.down,out hit,4,~0,QueryTriggerInteraction.Ignore))throw new Exception("Missing driveable floor "+x+","+z);if(Mathf.Abs(hit.point.y)>.045f)throw new Exception("Hidden driving obstruction "+hit.collider.name+" at "+x+","+z+" height="+hit.point.y);rays++;}
+  File.WriteAllText(output+"/map-validation.txt","5 empty targets; 10 non-overlapping parked obstacles; "+rays+" driveable-ground raycasts passed. Parking target rectangles are clear. Existing input and vehicle control integration is not modified.\n");
+ }
+}}

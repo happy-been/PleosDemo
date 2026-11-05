@@ -1,0 +1,17 @@
+{
+  "status": "Candidate only: not placed in the saved map yet",
+  "model": "Hyundai Tucson 2015, OpenX adaptation",
+  "originalAuthor": "razor24",
+  "originalModel": "https://sketchfab.com/3d-models/2015-hyundai-tucson-7674a3bd168a451daf73fc0a33d39589",
+  "originalLicense": "CC-BY-4.0",
+  "adaptationAuthor": "Dogan Ulus / VevaLabs",
+  "adaptationLicense": "MPL-2.0 AND CC-BY-4.0",
+  "sourceRepository": "https://github.com/vevalabs/openx-assets/tree/9c8ed30b3f8469e2dce138523b38d0eee253a0bd/src/vehicles/hyundai_tucson_2015",
+  "release": "https://github.com/vevalabs/openx-assets/releases/tag/20261015",
+  "download": "https://github.com/vevalabs/openx-assets/releases/download/20261015/openx-assets-glb.zip",
+  "releaseArchiveSHA256": "a89e822fe6be4058150090a2624052c0bc8a4612743784f371f8c25cb9d82cbb",
+  "sourceBlendSHA256": "f43a15e04bb1a80a43daf6fa70949ce8ede97969fca2182e919f3122a2dda2bb",
+  "retainedSource": "source.blend, source.glb, original xoma metadata, REUSE.toml and both full license texts",
+  "localChanges": "glTF node transforms baked into intermediate files; candidate-only Unity conversion and temporary matched body paint. Existing Tucson assets and parked instances are untouched by this comparison.",
+  "triangles": 33600
+}

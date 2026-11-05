@@ -1,0 +1,67 @@
+{
+  "name": "Hyundai Porter II by max7th, assembled for ParkingLot",
+  "meshes": [
+    {
+      "name": "BluePaint",
+      "file": "porter-BluePaint.bin",
+      "vertexCount": 20549,
+      "indexCount": 113709,
+      "material": 0
+    },
+    {
+      "name": "Glass",
+      "file": "porter-Glass.bin",
+      "vertexCount": 2774,
+      "indexCount": 11592,
+      "material": 1
+    },
+    {
+      "name": "Rubber",
+      "file": "porter-Rubber.bin",
+      "vertexCount": 21000,
+      "indexCount": 126000,
+      "material": 2
+    },
+    {
+      "name": "Steel",
+      "file": "porter-Steel.bin",
+      "vertexCount": 2176,
+      "indexCount": 13056,
+      "material": 3
+    },
+    {
+      "name": "DarkTrim",
+      "file": "porter-DarkTrim.bin",
+      "vertexCount": 4375,
+      "indexCount": 23235,
+      "material": 4
+    },
+    {
+      "name": "Headlight",
+      "file": "porter-Headlight.bin",
+      "vertexCount": 2504,
+      "indexCount": 13746,
+      "material": 5
+    }
+  ],
+  "materials": [
+    "BluePaint",
+    "Glass",
+    "Rubber",
+    "Steel",
+    "DarkTrim",
+    "Headlight",
+    "RedLens",
+    "AmberLens"
+  ],
+  "min": [
+    -1.0927062034606934,
+    -0.000613149837590754,
+    -2.603259325027466
+  ],
+  "max": [
+    1.0927062034606934,
+    2.149852991104126,
+    2.486279010772705
+  ]
+}

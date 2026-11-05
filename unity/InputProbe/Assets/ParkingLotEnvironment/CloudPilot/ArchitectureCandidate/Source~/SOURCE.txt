@@ -1,0 +1,7 @@
+Modular Urban Apartments Facade
+Author: James Ray Cock
+https://polyhaven.com/a/modular_urban_apartments_facade
+CC0: https://polyhaven.com/license
+Authoritative metadata: info.json and files.json
+2k FBX and glTF with glTF JPEG texture set; FBX materials must be explicitly assigned from verified glTF manifest. Native FBX PNG textures not downloaded.
+Not imported or applied yet. Inspect architectural suitability before use; not a Korean location scan.

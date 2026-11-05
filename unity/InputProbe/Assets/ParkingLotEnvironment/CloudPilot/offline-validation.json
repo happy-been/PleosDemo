@@ -1,0 +1,157 @@
+{
+  "offline_csharp_compile": {
+    "exit": 0,
+    "compiler": "Unity bundled Mono/mcs with Unity2022.3.16f1 API DLLs",
+    "editor_execution": "NOT_RUN",
+    "source_files": 3
+  },
+  "geometry": [
+    {
+      "file": "Pilot4_BrickShell.obj",
+      "triangles": 410,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 70.56895999999993
+    },
+    {
+      "file": "Pilot4_ConcreteTrim.obj",
+      "triangles": 264,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 20.288607999999968
+    },
+    {
+      "file": "Pilot4_WindowFrames.obj",
+      "triangles": 960,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.7759360000000125
+    },
+    {
+      "file": "Pilot4_WindowGlass.obj",
+      "triangles": 192,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.34065600000001056
+    },
+    {
+      "file": "Pilot_Asphalt.obj",
+      "triangles": 8,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": -0.29241000000000006
+    },
+    {
+      "file": "Pilot_BrickShell.obj",
+      "triangles": 288,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 47.646719999999895
+    },
+    {
+      "file": "Pilot_ConcreteTrim.obj",
+      "triangles": 192,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 12.89402400000003
+    },
+    {
+      "file": "Pilot_Curb.obj",
+      "triangles": 240,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.6674928
+    },
+    {
+      "file": "Pilot_DrainSteel.obj",
+      "triangles": 2244,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.015830099999997824
+    },
+    {
+      "file": "Pilot_DrainWell.obj",
+      "triangles": 36,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.18861299999999998
+    },
+    {
+      "file": "Pilot_ParkingPaint.obj",
+      "triangles": 60,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.012374999999999997
+    },
+    {
+      "file": "Pilot_Sidewalk.obj",
+      "triangles": 12,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 19.580400000000004
+    },
+    {
+      "file": "Pilot_WindowFrames.obj",
+      "triangles": 720,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.5819520000000192
+    },
+    {
+      "file": "Pilot_WindowGlass.obj",
+      "triangles": 144,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.25549199999999406
+    },
+    {
+      "file": "Zone_Asphalt.obj",
+      "triangles": 8,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": -1.1011000000000002
+    },
+    {
+      "file": "Zone_Curb.obj",
+      "triangles": 1120,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 3.114966399999993
+    },
+    {
+      "file": "Zone_DrainSteel.obj",
+      "triangles": 11016,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.07931519999999938
+    },
+    {
+      "file": "Zone_DrainWell.obj",
+      "triangles": 36,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.9301500000000034
+    },
+    {
+      "file": "Zone_ParkingPaint.obj",
+      "triangles": 288,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.07199999999999991
+    },
+    {
+      "file": "Zone_Sidewalk.obj",
+      "triangles": 24,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 41.60240000000002
+    },
+    {
+      "file": "Zone_SignPanel.obj",
+      "triangles": 12,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.19380000000000125
+    },
+    {
+      "file": "Zone_SignPost.obj",
+      "triangles": 12,
+      "area_and_indices": "PASS",
+      "signed_volume_m3": 0.021439999999996642
+    }
+  ],
+  "layout": {
+    "files_resolve": true,
+    "left_vehicle_slots": 7,
+    "right_vehicle_slots": 0,
+    "dimensions": "design assumptions, not legal compliance verification"
+  },
+  "original_hashes": {
+    "checked": 3712,
+    "mismatches": 0,
+    "scene_sha256": "8e05aef6387b1ea39ec56942a7c0bf0a57a8b4f655a8134b2a3bb17b108b89ce"
+  },
+  "unity_import_render_save_reopen_android": "NOT_RUN",
+  "revision": "v2",
+  "filesystem_scope_test": "PASS: actual C# helper tested against scoped-source/cache-symlink fixture, path traversal/absolute path and reparse escape rejection, exact new-Pilot exception",
+  "material_save": "SetDirty and SaveAssetIfDirty only after Created membership/path guard; Unity serialization readback NOT_RUN"
+}

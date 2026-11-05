@@ -1,0 +1,482 @@
+{
+  "name": "generico-caminhao",
+  "format": "park-vehicle-intermediate-v1",
+  "layout": "positions and normals world-baked, little-endian float32 [px,py,pz,nx,ny,nz,u,v] then uint32 indices",
+  "coordinateSystem": "glTF right-handed; no Z flip",
+  "uvConvention": "Unchanged glTF TEXCOORD_0: image origin top-left, positive V down; importer must adapt to Unity texture convention",
+  "materials": [
+    {
+      "name": "lct3000_Bodymat",
+      "baseColor": [
+        0.49214391798892365,
+        0.49214391798892365,
+        0.49214391798892365,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.13330254488404916,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-0.png",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": "textures/texture-0.png",
+      "occlusionStrength": 1
+    },
+    {
+      "name": "UCB_Lights_and_Glass_Transperent",
+      "baseColor": [
+        1,
+        1,
+        1,
+        0.8
+      ],
+      "metallic": 0,
+      "roughness": 0.04220739904072067,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-2.jpg",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "UCB_BOTTOM",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 1,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-3.jpg",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-4.png",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": "textures/texture-4.png",
+      "occlusionStrength": 1
+    },
+    {
+      "name": "UCB_Interiors_2",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 1,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-6.jpg",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-7.png",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "UCB_Lights_and_Glass",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.0543534184864978,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-2.jpg",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "RB1c_Tire_1k",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0.8,
+      "roughness": 1,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-8.jpg",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": "textures/texture-9.png",
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": "textures/texture-9.png",
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Numberplates_Misk_U",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.10702864035024488,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-11.png",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Carbadges_misc_U",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0.72238448800424,
+      "roughness": 0.10702864035024488,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": "textures/texture-12.png",
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    }
+  ],
+  "meshes": [
+    {
+      "name": "LCT300095_Body_lct3000_Bodymat_0_0",
+      "file": "mesh-0000.bin",
+      "material": 0,
+      "vertexCount": 1201,
+      "indexCount": 3093,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Windshield_UCB_Lights_and_Glass_Transperent_0_0",
+      "file": "mesh-0001.bin",
+      "material": 1,
+      "vertexCount": 35,
+      "indexCount": 114,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Bottom_UCB_BOTTOM_0_0",
+      "file": "mesh-0002.bin",
+      "material": 2,
+      "vertexCount": 3553,
+      "indexCount": 6918,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Bumper_front_UCB_BOTTOM_0_0",
+      "file": "mesh-0003.bin",
+      "material": 2,
+      "vertexCount": 332,
+      "indexCount": 1008,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Taillights_Glass_UCB_Lights_and_Glass_Transperent_0_0",
+      "file": "mesh-0004.bin",
+      "material": 1,
+      "vertexCount": 88,
+      "indexCount": 180,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Headlights_Glass_UCB_Lights_and_Glass_Transperent_0_0",
+      "file": "mesh-0005.bin",
+      "material": 1,
+      "vertexCount": 126,
+      "indexCount": 348,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Interior_UCB_Interiors_2_0_0",
+      "file": "mesh-0006.bin",
+      "material": 3,
+      "vertexCount": 1472,
+      "indexCount": 4116,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Glass_Passenger_UCB_Lights_and_Glass_Transperent_0_0",
+      "file": "mesh-0007.bin",
+      "material": 1,
+      "vertexCount": 17,
+      "indexCount": 48,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Suspension_UCB_BOTTOM_0_0",
+      "file": "mesh-0008.bin",
+      "material": 2,
+      "vertexCount": 694,
+      "indexCount": 1374,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Bumper_rear_UCB_BOTTOM_0_0",
+      "file": "mesh-0009.bin",
+      "material": 2,
+      "vertexCount": 132,
+      "indexCount": 336,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Headlights_UCB_Lights_and_Glass_0_0",
+      "file": "mesh-0010.bin",
+      "material": 4,
+      "vertexCount": 14,
+      "indexCount": 48,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Brakelights_UCB_Lights_and_Glass_0_0",
+      "file": "mesh-0011.bin",
+      "material": 4,
+      "vertexCount": 10,
+      "indexCount": 24,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Blinkers_UCB_Lights_and_Glass_0_0",
+      "file": "mesh-0012.bin",
+      "material": 4,
+      "vertexCount": 26,
+      "indexCount": 66,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Reverse_UCB_Lights_and_Glass_0_0",
+      "file": "mesh-0013.bin",
+      "material": 4,
+      "vertexCount": 10,
+      "indexCount": 24,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Glass_Driver_UCB_Lights_and_Glass_Transperent_0_0",
+      "file": "mesh-0014.bin",
+      "material": 1,
+      "vertexCount": 17,
+      "indexCount": 48,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Steering_Wheel_UCB_Interiors_2_0_0",
+      "file": "mesh-0015.bin",
+      "material": 3,
+      "vertexCount": 199,
+      "indexCount": 624,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Reardoor_Left_lct3000_Bodymat_0_0",
+      "file": "mesh-0016.bin",
+      "material": 0,
+      "vertexCount": 102,
+      "indexCount": 225,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Reardoor_Right_lct3000_Bodymat_0_0",
+      "file": "mesh-0017.bin",
+      "material": 0,
+      "vertexCount": 104,
+      "indexCount": 228,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Reardoor_Right_Inner_UCB_BOTTOM_0_0",
+      "file": "mesh-0018.bin",
+      "material": 2,
+      "vertexCount": 277,
+      "indexCount": 570,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Reardoor_Left_Inner_UCB_BOTTOM_0_0",
+      "file": "mesh-0019.bin",
+      "material": 2,
+      "vertexCount": 278,
+      "indexCount": 576,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_WheelStock_FL_RB1c_Tire_1k_0_0",
+      "file": "mesh-0020.bin",
+      "material": 5,
+      "vertexCount": 677,
+      "indexCount": 2262,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_WheelStock_RL_RB1c_Tire_1k_0_0",
+      "file": "mesh-0021.bin",
+      "material": 5,
+      "vertexCount": 849,
+      "indexCount": 3006,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_WheelStock_RR_RB1c_Tire_1k_0_0",
+      "file": "mesh-0022.bin",
+      "material": 5,
+      "vertexCount": 849,
+      "indexCount": 3006,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_WheelStock_FR_RB1c_Tire_1k_0_0",
+      "file": "mesh-0023.bin",
+      "material": 5,
+      "vertexCount": 677,
+      "indexCount": 2262,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Numberplate_front_Numberplates_Misk_U_0_0",
+      "file": "mesh-0024.bin",
+      "material": 6,
+      "vertexCount": 72,
+      "indexCount": 144,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Body_Badges_Carbadges_misc_U_0_0",
+      "file": "mesh-0025.bin",
+      "material": 7,
+      "vertexCount": 44,
+      "indexCount": 66,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "LCT300095_Numberplate_rear_Numberplates_Misk_U_0_0",
+      "file": "mesh-0026.bin",
+      "material": 6,
+      "vertexCount": 72,
+      "indexCount": 144,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    }
+  ],
+  "bounds": {
+    "min": [
+      -3.0113015391125586,
+      -0.007944381427799518,
+      -1.2863125815138423
+    ],
+    "max": [
+      3.01129339596597,
+      2.8456106746006897,
+      1.3110951455909474
+    ],
+    "size": [
+      6.022594935078528,
+      2.8535550560284895,
+      2.5974077271047897
+    ]
+  },
+  "skippedNonTriangles": 0,
+  "triangles": 10286,
+  "vertices": 11927
+}

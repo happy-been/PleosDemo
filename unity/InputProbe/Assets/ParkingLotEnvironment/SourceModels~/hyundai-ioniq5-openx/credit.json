@@ -1,0 +1,18 @@
+{
+  "status": "Selected for three parked scene instances after front/rear render comparison; see MAP_WORKLOG.md for validation.",
+  "model": "Hyundai Ioniq 5 2022",
+  "originalAuthor": "andikapratamaw",
+  "originalModel": "https://sketchfab.com/3d-models/hyundai-ioniq-5-lowpoly-675e78311e8440d88714bd212cb7a8fb",
+  "originalLicense": "CC-BY-4.0",
+  "adaptationAuthor": "Dogan Ulus / VevaLabs",
+  "adaptationLicense": "MPL-2.0 AND CC-BY-4.0",
+  "sourceRepository": "https://github.com/vevalabs/openx-assets/tree/9c8ed30b3f8469e2dce138523b38d0eee253a0bd/src/vehicles/hyundai_ioniq_5_2022",
+  "release": "https://github.com/vevalabs/openx-assets/releases/tag/20261015",
+  "download": "https://github.com/vevalabs/openx-assets/releases/download/20261015/openx-assets-glb.zip",
+  "releaseArchiveSHA256": "a89e822fe6be4058150090a2624052c0bc8a4612743784f371f8c25cb9d82cbb",
+  "sourceBlendSHA256": "e8e8788dee08ae2885e829c860930b843f3c3471ff05dcd851fa5aaa006abd8a",
+  "retainedSource": "source.blend, source.glb, original xoma metadata, REUSE.toml and both full license texts",
+  "localChanges": "Unity coordinate/UV conversion and ground normalization; scene-only paint palette, separate 35-degree weighted normal derivatives for body/arch trim, darker interior material derivatives, Korean sample registrations replacing the European sample plate on scene instances. Original source GLB and Blender files retained unchanged.",
+  "triangles": 37350,
+  "notes": "Do not describe this as a photographic scan. Original author describes it as a low-poly model. Keep attribution, source and license notices with distributed derivatives."
+}

@@ -1,0 +1,5 @@
+Porter II by max7th
+https://www.thingiverse.com/thing:4685394
+Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
+Retrieved 2026-11-05 through the public file downloads. Original STL parts retained in local backup.
+Modified: repaired inconsistent source triangle winding before material segmentation; replaced the print mounting base with a modeled steel ladder chassis; assembled the print-layout components, normalized dimensions, assigned separate blue paint/glass/trim/lens/steel/rubber surfaces, reduced tire triangles, added lights and plates in Unity. Not a Hyundai-issued asset.

@@ -1,0 +1,5 @@
+Porter II by max7th
+https://www.thingiverse.com/thing:4685394
+Creative Commons Attribution 4.0: https://creativecommons.org/licenses/by/4.0/
+Retrieved 2026-11-05 through the public file downloads. Original STL parts retained in local backup.
+Modified: photo-referenced derivative using the official Porter II diesel dimensions and appearance. Corrected axle placement, tire diameters, headboard height, cabin roof height and crease-preserving normals; repaired STL winding; replaced the print base with a steel ladder chassis. Assembled the print-layout components, normalized dimensions, assigned separate blue paint/glass/trim/lens/steel/rubber surfaces, reduced tire triangles, added lights and plates in Unity. Not a Hyundai-issued asset.

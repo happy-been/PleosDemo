@@ -1,0 +1,2 @@
+# Preserve Unity native assets, including binary meshes and lighting data.
+*.asset -text

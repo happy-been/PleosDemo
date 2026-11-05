@@ -1,0 +1,32 @@
+{
+  "name": "Terlenka",
+  "page": "https://polyhaven.com/a/terlenka",
+  "license": "CC0",
+  "authors": {
+    "colormass": "Photography",
+    "Rico Cilliers": "Processing"
+  },
+  "dimensions_mm": [
+    265.70814767607123,
+    266.2999927997589
+  ],
+  "downloaded": "2026-11-02T12:33:57.4380857+09:00",
+  "files": [
+    {
+      "kind": "diffuse",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terlenka/terlenka_diff_1k.jpg",
+      "file": "terlenka_diff_1k.jpg",
+      "bytes": 691195,
+      "md5": "202624e89023d9ace2845b372015490c",
+      "sha256": "74C4333ED05E133928B0CF6D52E732135C8C0CE6DC8623EFA590FB31B90F15C0"
+    },
+    {
+      "kind": "nor_gl",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terlenka/terlenka_nor_gl_1k.jpg",
+      "file": "terlenka_nor_gl_1k.jpg",
+      "bytes": 877301,
+      "md5": "88d445044fb8519c516c97acabf93ef1",
+      "sha256": "05D7152FF680A6699018F5C37456A14E16EB1E70014A79D4D500DFD2E099C8F9"
+    }
+  ]
+}

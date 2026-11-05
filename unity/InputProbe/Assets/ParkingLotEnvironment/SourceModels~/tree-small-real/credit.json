@@ -1,0 +1,8 @@
+{
+  "name": "Tree Small 02",
+  "source": "https://polyhaven.com/a/tree_small_02",
+  "files": "https://api.polyhaven.com/files/tree_small_02",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "modifications": "Simplified with meshoptimizer to target 3.88% ratio, max error 1%, preserving materials, UVs and vertex normals. Original leaves have geometric silhouette and no alpha image, set opaque with double-sided material."
+}

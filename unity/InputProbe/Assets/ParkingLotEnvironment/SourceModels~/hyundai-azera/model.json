@@ -1,0 +1,2726 @@
+{
+  "name": "hyundai-azera",
+  "format": "park-vehicle-intermediate-v1",
+  "layout": "positions and normals world-baked, little-endian float32 [px,py,pz,nx,ny,nz,u,v] then uint32 indices",
+  "coordinateSystem": "glTF right-handed; no Z flip",
+  "uvConvention": "Unchanged glTF TEXCOORD_0: image origin top-left, positive V down; importer must adapt to Unity texture convention",
+  "materials": [
+    {
+      "name": "belly_pan",
+      "baseColor": [
+        0.1961,
+        0.1961,
+        0.1961,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.746032,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde31",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde45",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde48",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde49",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde51",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde53",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinde56",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Cylinder0",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "dashboard",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "exhust",
+      "baseColor": [
+        0.4235,
+        0.4235,
+        0.4235,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front_bum",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front_bum_1",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.47
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front_bum_2",
+      "baseColor": [
+        0.5882,
+        0.5882,
+        0.5882,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front_doo",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "front_doo_1",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "head_lig2",
+      "baseColor": [
+        0.4118,
+        0.4118,
+        0.4118,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "head_lig2_1",
+      "baseColor": [
+        0.9333,
+        0.2784,
+        0.098,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.78681,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "head_ligh",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.47
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "hood",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "lamps_fro",
+      "baseColor": [
+        0.4118,
+        0.4118,
+        0.4118,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "lamps_fro_1",
+      "baseColor": [
+        0.8431,
+        0.8431,
+        0.8431,
+        0.67
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "lamps_fro_2",
+      "baseColor": [
+        0.9216,
+        0.3686,
+        0.1529,
+        0.59
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "lamps_fro_3",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Line02",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Line03",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Line04",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "middle_co",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "middle_co_1",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "middle_co_2",
+      "baseColor": [
+        0.8078,
+        0.8235,
+        0.8353,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Object01",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Object06",
+      "baseColor": [
+        0.5843,
+        0.5843,
+        0.5843,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Object07",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Object08",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Object11",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Object13",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "radiator",
+      "baseColor": [
+        0.5882,
+        0.5882,
+        0.5882,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "radiator__1",
+      "baseColor": [
+        0.4235,
+        0.4235,
+        0.4235,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_bump",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_bump_1",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.47
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_do38",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_do38_1",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_door",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_door_1",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "rear_wind",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.47
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "right_doo",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "right_doo_1",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "roof",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "roof_seal",
+      "baseColor": [
+        0.1961,
+        0.1961,
+        0.1961,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.746032,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Shape03",
+      "baseColor": [
+        0.5843,
+        0.5843,
+        0.5843,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Shape04",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Shape04_1",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Shape04_2",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "steering",
+      "baseColor": [
+        0.7922,
+        0.7608,
+        0.7059,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.812144,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "steering__1",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "steering__2",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "sub01",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.66
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "sub02",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.66
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tail",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tail_ligh",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tail_wi39",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tail_wi39_1",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tail_wind",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tail_wind_1",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "trunk",
+      "baseColor": [
+        0.749,
+        0.749,
+        0.749,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.968377,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "trunk_1",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "trunk_2",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Tube004",
+      "baseColor": [
+        0.5882,
+        0.5882,
+        0.5882,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Tube005",
+      "baseColor": [
+        0.5882,
+        0.5882,
+        0.5882,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Tube006",
+      "baseColor": [
+        0.5882,
+        0.5882,
+        0.5882,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "Tube03",
+      "baseColor": [
+        0.5882,
+        0.5882,
+        0.5882,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.882953,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tyre002",
+      "baseColor": [
+        0.1961,
+        0.1961,
+        0.1961,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.746032,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tyre003",
+      "baseColor": [
+        0.1961,
+        0.1961,
+        0.1961,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.746032,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tyre004",
+      "baseColor": [
+        0.1961,
+        0.1961,
+        0.1961,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.746032,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "tyre01",
+      "baseColor": [
+        0.1961,
+        0.1961,
+        0.1961,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.746032,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    },
+    {
+      "name": "windshiel",
+      "baseColor": [
+        0,
+        0,
+        0,
+        0.47
+      ],
+      "metallic": 0,
+      "roughness": 0.642229,
+      "alphaMode": "BLEND",
+      "alphaCutoff": 0.5,
+      "doubleSided": true,
+      "baseColorTexture": null,
+      "normalTexture": null,
+      "normalScale": 1,
+      "metallicRoughnessTexture": null,
+      "emissiveTexture": null,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "occlusionTexture": null,
+      "occlusionStrength": 1
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_4_0",
+      "file": "mesh-0000.bin",
+      "material": 0,
+      "vertexCount": 1254,
+      "indexCount": 2823,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_5_0",
+      "file": "mesh-0001.bin",
+      "material": 1,
+      "vertexCount": 183,
+      "indexCount": 348,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_6_0",
+      "file": "mesh-0002.bin",
+      "material": 2,
+      "vertexCount": 181,
+      "indexCount": 348,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_7_0",
+      "file": "mesh-0003.bin",
+      "material": 3,
+      "vertexCount": 285,
+      "indexCount": 534,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_8_0",
+      "file": "mesh-0004.bin",
+      "material": 4,
+      "vertexCount": 289,
+      "indexCount": 534,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_9_0",
+      "file": "mesh-0005.bin",
+      "material": 5,
+      "vertexCount": 187,
+      "indexCount": 348,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_10_0",
+      "file": "mesh-0006.bin",
+      "material": 6,
+      "vertexCount": 188,
+      "indexCount": 348,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_11_0",
+      "file": "mesh-0007.bin",
+      "material": 7,
+      "vertexCount": 287,
+      "indexCount": 552,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_12_0",
+      "file": "mesh-0008.bin",
+      "material": 8,
+      "vertexCount": 277,
+      "indexCount": 528,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_13_0",
+      "file": "mesh-0009.bin",
+      "material": 9,
+      "vertexCount": 3042,
+      "indexCount": 7092,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_14_0",
+      "file": "mesh-0010.bin",
+      "material": 10,
+      "vertexCount": 2502,
+      "indexCount": 4278,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_15_0",
+      "file": "mesh-0011.bin",
+      "material": 11,
+      "vertexCount": 3424,
+      "indexCount": 7398,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_16_0",
+      "file": "mesh-0012.bin",
+      "material": 12,
+      "vertexCount": 2368,
+      "indexCount": 5325,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_17_0",
+      "file": "mesh-0013.bin",
+      "material": 13,
+      "vertexCount": 1124,
+      "indexCount": 2391,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_18_0",
+      "file": "mesh-0014.bin",
+      "material": 14,
+      "vertexCount": 698,
+      "indexCount": 1689,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_19_0",
+      "file": "mesh-0015.bin",
+      "material": 15,
+      "vertexCount": 5846,
+      "indexCount": 11919,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_20_0",
+      "file": "mesh-0016.bin",
+      "material": 16,
+      "vertexCount": 582,
+      "indexCount": 1119,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_21_0",
+      "file": "mesh-0017.bin",
+      "material": 17,
+      "vertexCount": 2212,
+      "indexCount": 4986,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_22_0",
+      "file": "mesh-0018.bin",
+      "material": 18,
+      "vertexCount": 144,
+      "indexCount": 294,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_23_0",
+      "file": "mesh-0019.bin",
+      "material": 19,
+      "vertexCount": 191,
+      "indexCount": 687,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_24_0",
+      "file": "mesh-0020.bin",
+      "material": 20,
+      "vertexCount": 1277,
+      "indexCount": 2724,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_25_0",
+      "file": "mesh-0021.bin",
+      "material": 21,
+      "vertexCount": 10774,
+      "indexCount": 30027,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_26_0",
+      "file": "mesh-0022.bin",
+      "material": 22,
+      "vertexCount": 1185,
+      "indexCount": 4761,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_27_0",
+      "file": "mesh-0023.bin",
+      "material": 23,
+      "vertexCount": 175,
+      "indexCount": 648,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_28_0",
+      "file": "mesh-0024.bin",
+      "material": 24,
+      "vertexCount": 1724,
+      "indexCount": 3528,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_29_0",
+      "file": "mesh-0025.bin",
+      "material": 25,
+      "vertexCount": 3812,
+      "indexCount": 9339,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_30_0",
+      "file": "mesh-0026.bin",
+      "material": 26,
+      "vertexCount": 3801,
+      "indexCount": 9225,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_31_0",
+      "file": "mesh-0027.bin",
+      "material": 27,
+      "vertexCount": 7419,
+      "indexCount": 17499,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_32_0",
+      "file": "mesh-0028.bin",
+      "material": 28,
+      "vertexCount": 2692,
+      "indexCount": 5991,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_33_0",
+      "file": "mesh-0029.bin",
+      "material": 29,
+      "vertexCount": 2687,
+      "indexCount": 6066,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_34_0",
+      "file": "mesh-0030.bin",
+      "material": 30,
+      "vertexCount": 422,
+      "indexCount": 1290,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_35_0",
+      "file": "mesh-0031.bin",
+      "material": 31,
+      "vertexCount": 2515,
+      "indexCount": 5214,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_36_0",
+      "file": "mesh-0032.bin",
+      "material": 32,
+      "vertexCount": 34,
+      "indexCount": 96,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_37_0",
+      "file": "mesh-0033.bin",
+      "material": 33,
+      "vertexCount": 4703,
+      "indexCount": 10206,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_38_0",
+      "file": "mesh-0034.bin",
+      "material": 34,
+      "vertexCount": 148,
+      "indexCount": 270,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_39_0",
+      "file": "mesh-0035.bin",
+      "material": 35,
+      "vertexCount": 4422,
+      "indexCount": 8790,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_40_0",
+      "file": "mesh-0036.bin",
+      "material": 36,
+      "vertexCount": 33,
+      "indexCount": 75,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_41_0",
+      "file": "mesh-0037.bin",
+      "material": 37,
+      "vertexCount": 1995,
+      "indexCount": 4485,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_42_0",
+      "file": "mesh-0038.bin",
+      "material": 38,
+      "vertexCount": 1693,
+      "indexCount": 3720,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_43_0",
+      "file": "mesh-0039.bin",
+      "material": 39,
+      "vertexCount": 2275,
+      "indexCount": 5217,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_44_0",
+      "file": "mesh-0040.bin",
+      "material": 40,
+      "vertexCount": 1111,
+      "indexCount": 2832,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_45_0",
+      "file": "mesh-0041.bin",
+      "material": 41,
+      "vertexCount": 3445,
+      "indexCount": 6753,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_46_0",
+      "file": "mesh-0042.bin",
+      "material": 42,
+      "vertexCount": 1214,
+      "indexCount": 2409,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_47_0",
+      "file": "mesh-0043.bin",
+      "material": 43,
+      "vertexCount": 3456,
+      "indexCount": 6654,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_48_0",
+      "file": "mesh-0044.bin",
+      "material": 44,
+      "vertexCount": 1203,
+      "indexCount": 2349,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_49_0",
+      "file": "mesh-0045.bin",
+      "material": 45,
+      "vertexCount": 540,
+      "indexCount": 1362,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_50_0",
+      "file": "mesh-0046.bin",
+      "material": 46,
+      "vertexCount": 5785,
+      "indexCount": 11823,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_51_0",
+      "file": "mesh-0047.bin",
+      "material": 47,
+      "vertexCount": 598,
+      "indexCount": 1128,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_52_0",
+      "file": "mesh-0048.bin",
+      "material": 48,
+      "vertexCount": 644,
+      "indexCount": 1458,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_53_0",
+      "file": "mesh-0049.bin",
+      "material": 49,
+      "vertexCount": 3655,
+      "indexCount": 8037,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_54_0",
+      "file": "mesh-0050.bin",
+      "material": 50,
+      "vertexCount": 52,
+      "indexCount": 153,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_55_0",
+      "file": "mesh-0051.bin",
+      "material": 51,
+      "vertexCount": 1340,
+      "indexCount": 4185,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_56_0",
+      "file": "mesh-0052.bin",
+      "material": 52,
+      "vertexCount": 1902,
+      "indexCount": 5109,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_57_0",
+      "file": "mesh-0053.bin",
+      "material": 53,
+      "vertexCount": 492,
+      "indexCount": 1191,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_58_0",
+      "file": "mesh-0054.bin",
+      "material": 54,
+      "vertexCount": 5772,
+      "indexCount": 16662,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_59_0",
+      "file": "mesh-0055.bin",
+      "material": 55,
+      "vertexCount": 849,
+      "indexCount": 3684,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_60_0",
+      "file": "mesh-0056.bin",
+      "material": 56,
+      "vertexCount": 799,
+      "indexCount": 2820,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_61_0",
+      "file": "mesh-0057.bin",
+      "material": 57,
+      "vertexCount": 43454,
+      "indexCount": 93852,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_62_0",
+      "file": "mesh-0058.bin",
+      "material": 58,
+      "vertexCount": 22231,
+      "indexCount": 55758,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_63_0",
+      "file": "mesh-0059.bin",
+      "material": 59,
+      "vertexCount": 4712,
+      "indexCount": 10887,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_64_0",
+      "file": "mesh-0060.bin",
+      "material": 60,
+      "vertexCount": 708,
+      "indexCount": 1584,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_65_0",
+      "file": "mesh-0061.bin",
+      "material": 61,
+      "vertexCount": 418,
+      "indexCount": 867,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_66_0",
+      "file": "mesh-0062.bin",
+      "material": 62,
+      "vertexCount": 491,
+      "indexCount": 1032,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_67_0",
+      "file": "mesh-0063.bin",
+      "material": 63,
+      "vertexCount": 509,
+      "indexCount": 1071,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_68_0",
+      "file": "mesh-0064.bin",
+      "material": 64,
+      "vertexCount": 400,
+      "indexCount": 834,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_69_0",
+      "file": "mesh-0065.bin",
+      "material": 65,
+      "vertexCount": 2066,
+      "indexCount": 4695,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_70_0",
+      "file": "mesh-0066.bin",
+      "material": 66,
+      "vertexCount": 917,
+      "indexCount": 1884,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_71_0",
+      "file": "mesh-0067.bin",
+      "material": 67,
+      "vertexCount": 293,
+      "indexCount": 621,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_72_0",
+      "file": "mesh-0068.bin",
+      "material": 68,
+      "vertexCount": 2310,
+      "indexCount": 4728,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_73_0",
+      "file": "mesh-0069.bin",
+      "material": 69,
+      "vertexCount": 2321,
+      "indexCount": 4803,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_74_0",
+      "file": "mesh-0070.bin",
+      "material": 70,
+      "vertexCount": 2273,
+      "indexCount": 4662,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_75_0",
+      "file": "mesh-0071.bin",
+      "material": 71,
+      "vertexCount": 2305,
+      "indexCount": 4674,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_76_0",
+      "file": "mesh-0072.bin",
+      "material": 72,
+      "vertexCount": 633,
+      "indexCount": 1734,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_77_0",
+      "file": "mesh-0073.bin",
+      "material": 73,
+      "vertexCount": 642,
+      "indexCount": 1752,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_78_0",
+      "file": "mesh-0074.bin",
+      "material": 74,
+      "vertexCount": 618,
+      "indexCount": 1701,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_79_0",
+      "file": "mesh-0075.bin",
+      "material": 75,
+      "vertexCount": 597,
+      "indexCount": 1665,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    },
+    {
+      "name": "Object_80_0",
+      "file": "mesh-0076.bin",
+      "material": 76,
+      "vertexCount": 76,
+      "indexCount": 303,
+      "mirroredTransformWindingCorrected": false,
+      "recalculateNormals": false
+    }
+  ],
+  "bounds": {
+    "min": [
+      -41.18401395652411,
+      -0.7954347720369555,
+      -88.93423477497345
+    ],
+    "max": [
+      40.81575015274194,
+      56.88850049121209,
+      100.7694281509618
+    ],
+    "size": [
+      81.99976410926605,
+      57.68393526324905,
+      189.70366292593525
+    ]
+  },
+  "skippedNonTriangles": 0,
+  "triangles": 153476,
+  "vertices": 199881
+}

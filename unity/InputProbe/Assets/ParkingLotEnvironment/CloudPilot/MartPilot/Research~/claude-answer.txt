@@ -1,0 +1,23 @@
+# 조사 결과 보고 (Claude Fable 5 독립 조사)
+
+**결론 먼저: 현재 과제에 맞는 방법은 "사진측량·PBR 재질 + 실측 차량 모델 + 베이크 조명 + 데칼로 반복 깨기"이며, 3DGS/NeRF와 AI 이미지 생성은 주차 연습용 맵 요건(자유 시점·콜라이더·차량 이동)에 부적합합니다.** 두 이미지를 직접 열어 비교했고, 아래는 전부 실제 검색으로 확인한 내용입니다.
+
+## 1. 원작자 공개 제작 사례 (실시간 3D 실행물 기준)
+- **Unity 공식 "Book of the Dead"**: 환경 자산 전부를 DSLR로 사진측량 스캔하고 RealityCapture로 지오메트리·텍스처를 생성, Unity Labs **De-Lighting 도구로 그림자/조명을 텍스처에서 제거**한 뒤 엔진 조명으로 다시 입힌 실시간 이동 가능 데모입니다. AI 정지 이미지가 아니라 다운로드 가능한 실행물입니다. [Unity 블로그](https://unity.com/blog/industry/book-of-the-dead-photogrammetry-assets-trees-vfx)
+- **Unity "Fontainebleau" 사진측량 데모**: 메시·텍스처·머티리얼을 공개하고 De-Lighting 도구를 Asset Store에 배포한 공식 케이스 스터디. [Unity 블로그](https://unity.com/blog/engine-platform/photogrammetry-real-world-objects-into-digital-assets)
+- **Police Simulator: Patrol Officers (오픈월드 도심)**: 80.lv의 개발자 인터뷰에서 도심 실사감의 핵심을 "벽·보도·**아스팔트 재질을 버텍스 페인트와 마스크로 혼합**해 오염·파손·젖음을 섞고, **데칼로 타일링 반복을 깨는 것**"으로 설명. 지금 우리 화면의 최대 약점과 정확히 일치합니다. [80.lv](https://80.lv/articles/creating-an-open-world-environment-in-police-simulator-patrol-officers)
+
+## 2. 세 방식 비교
+- **사진측량·PBR + 베이크(채택)**: 콜라이더·주차구획 치수·차량 이동·가림 전부 일반 메시로 해결. 이미 하는 방식의 연장이라 설정 변경 불요.
+- **3DGS/NeRF 복원**: Unity용 스플랫 플러그인은 존재하나([UnitySplats](https://github.com/arloopa/unitysplats), [Polycam 가이드](https://learn.poly.cam/hc/en-us/articles/41491673295508)) 스플랫은 **조명·그림자·라이트맵·반사 프로브의 영향을 받지 않고 콜라이더가 없어** 차량을 움직이는 순간 그림자 불일치가 노출됩니다. 자체 촬영엔 수백 장 다시점 데이터가 필요하고, 로드뷰 스크랩은 약관 위반이라 배제.
+- **AI 이미지 생성**: 시점 고정 정지 이미지라 보행·주행 시점 이동이 불가. 건물 전면 텍스처 소스 등 보조로만 유효(이미 적용 중).
+
+## 3. 구체적 자산 후보 (다운로드 가능 확인)
+1. **Poly Haven 아스팔트 PBR** — Poly Haven 재단, CC0(저작자표시 불요), 무료. 아스팔트/비투멘 카테고리가 API로도 목록 제공되며 다운로드 가능 확인. [polyhaven.com/textures/asphalt](https://polyhaven.com/textures/asphalt)
+2. **Sketchfab CC-BY 현대 차량**: [Hyundai Ioniq 5 lowpoly(약 12k 폴리, CC-BY, 다운로드 가능)](https://sketchfab.com/3d-models/hyundai-ioniq-5-lowpoly-675e78311e8440d88714bd212cb7a8fb), Hyundai Sonata 2009·i10 Aura도 CC-BY 다운로드 확인. 단 폴리 수가 낮아 근경 품질은 별도 검수 필요하고, 실차 형상의 상표 이슈는 비상업/데모 범위에서 관리.
+3. **Unity 공식 De-Lighting 도구**(Asset Store 무료): 생성 사진 건물 텍스처에 구워진 그림자를 제거해 베이크 조명과의 이중 그림자 모순을 없애는 용도. 단 Book of the Dead 환경팩 자체는 HDRP 전용이라 통째 이식은 불가 — 이 점은 솔직히 한계입니다.
+
+## 4. 이번 작업 묶음과 채택 기준
+**무료로 당장 가능**: ① 노면을 2~3종 아스팔트 블렌드 + 유막·균열·타이어자국·배수구 데칼 20개 내외로 반복 깨기(목표 사진의 핵심 차이) ② 건물 1층 상가 간판·차양·에어컨 실외기 등 "생활 소품" 추가 ③ 생성 텍스처 디라이팅 후 재베이크 ④ 전면·후진·평행·사선 구획(KS 기준 일반형 2.5×5.0m)과 콜라이더 정비. **무료로 불가**: 근경에서 버티는 고품질 차량 셰이더(클리어코트 반사)와 고해상 수목은 유료 자산 없이는 한계 — 과장하지 않겠습니다. **채택 기준**: 목표 사진과 동일 눈높이 구도로 저장 씬을 베이크·캡처해 ①노면 반복 무늬가 보이는가 ②그림자 방향 모순이 있는가 ③10m 거리 차량 실루엣이 실차와 구분되는가 3항목으로 판정.
+
+Gemini 조사와 비교할 준비가 되어 있습니다.

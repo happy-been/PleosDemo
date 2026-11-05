@@ -1,0 +1,10 @@
+Generated with the built-in imagegen tool on 2026-11-02. Synthetic photographic-style texture, not a photograph of a real Korean property.
+Actual result: 1254 x 1254 RGB.
+Original retained: C:/Users/박찬빈/.codex/generated_images/01a1975b-4105-70e1-98d0-1a6437ab9e62/exec-caf742da-ac4c-4472-b0b1-94d58a45eae1.png
+
+Use case: photorealistic-natural.
+Asset type: seamless diffuse/albedo texture for a Unity 3D Korean residential rooftop, not a finished scene.
+Primary request: an extremely realistic straight-down orthographic photograph of aged muted sage-green urethane waterproof coating on a flat Korean villa roof, representing a 10 metre by 10 metre surface. Fill the entire square with only the horizontal coating. Subtle patchy sun fading, fine grey dust, a few very thin repaired hairline cracks, low-contrast irregular darker rain-drying stains, small worn flecks. Keep most paint intact; ordinary maintained 15-year-old roof rather than abandoned ruin. The green is desaturated grey-green, not turquoise or vivid grass green.
+Composition: flat square texture, ideally 2048 x 2048, continuous material beyond all four edges, tileable with no identifiable border. Fine surface detail, natural irregular scale variation. No dramatic central motif.
+Lighting: perfectly diffuse overcast neutral illumination, uniform exposure, no cast shadows, no specular highlights, no baked ambient occlusion, no perspective, no vignette.
+Avoid: buildings, parapets, walls, rooftop equipment, drains, pipes, objects, people, text, logos, watermarks, tiles, paving grids, repeating obvious cracks, thick black lines, large puddles, CGI styling, illustration. This will be mapped onto existing 3D geometry.
