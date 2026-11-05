@@ -6,11 +6,15 @@ Pleos 입력으로 조작하는 Unity 주차 시뮬레이터의 개발 시작점
 
 1. Unity Hub의 **Add → Add project from disk**에서 `unity/InputProbe` 폴더를 등록한다.
 2. Unity **2022.3.16f1**, PC 작업은 **Windows 64-bit** 대상으로 연다.
-3. `Assets/_Parkside/Scenes/ParkingPractice.unity`를 열고 Play한다.
-4. **Start preview**를 누른 뒤 **W 가속 / Space 제동 / ←·→ 조향**으로 확인한다.
+3. `Assets/_Parkside/Scenes/MainMenu.unity`를 열고 Play한다.
+4. **연습 → 후진 주차 선택 → 연습장 열기 → Start preview** 순서로 진행한 뒤 **W 가속 / Space 제동 / ←·→ 조향**으로 확인한다.
 5. `PARKSIDE → Validate scene and input`으로 씬 연결·입력·차량 동작을 검사한다.
 
 맵은 씬, 차량은 `PracticeCar.prefab`, UI는 `PracticeCanvas`에서 편집한다. PC에서는 키보드, Android APK에서는 Pleos 공급자를 사용한다. `Systems/InputReceiver`의 Desktop Source / Android Source 참조로 공급자를 교체한다.
+
+Figma 기반 메뉴 5개 화면은 `MainMenu`의 `MenuCanvas`에서 편집한다. 맵 검색·필터, 시점 선택, 기존 연습장 진입·홈 복귀가 연결되어 있다. 해외 주행·멀티·점수 판정은 준비 중이다. [UI 실행과 Scene 구성 안내](docs/ui-and-scenes.md)를 참고한다.
+
+실사 재질과 조명을 확인하는 별도 Scene은 `Assets/_Parkside/Scenes/ParkingLookdev.unity`다. Play 후 1~4로 시점을 바꾸며 볼 수 있다. [작은 주차장 시각 검증 안내](docs/parking-lookdev.md)에 조작과 에셋 출처를 정리했다.
 
 ## Pleos AVD에서 시작
 

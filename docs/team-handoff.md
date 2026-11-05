@@ -6,7 +6,7 @@
 
 **1. 현재 구현된 범위**
 
-Pleos AVD의 핸들·페달 값을 Kotlin에서 읽고 검사한 뒤 Unity가 JSON 스냅샷으로 가져온다. Unity에는 작은 주차장, 차량 프리팹, 전진·후진 미리보기, 3종 시점, 진단 HUD가 있다. 정밀 차량 물리·충돌·주차 성공 판정·Figma 메뉴는 앞으로 구현한다.
+Pleos AVD의 핸들·페달 값을 Kotlin에서 읽고 검사한 뒤 Unity가 JSON 스냅샷으로 가져온다. Unity에는 작은 주차장, 차량 프리팹, 전진·후진 미리보기, 3종 시점, 진단 HUD와 Figma 기반 메뉴 5개 화면이 있다. 정밀 차량 물리·충돌·주차 성공 판정은 앞으로 구현한다. 앱 진입은 `MainMenu.unity`이며 [UI 실행과 Scene 구성 안내](ui-and-scenes.md)에 화면별 범위를 정리했다.
 
 연속 가속·브레이크 비율은 현재 AVD 콘솔의 HTTP 어댑터로 읽는다. 실차 SDK에서 연속 페달 비율을 확보한 상태를 뜻하지 않는다.
 
@@ -93,7 +93,7 @@ Assets/_Parkside/
 
 **5. 맵과 차량은 씬·프리팹에서 편집한다.**
 
-현재 진입 씬은 `Assets/_Parkside/Scenes/ParkingPractice.unity`다. 기존 `InputProbe.unity`와 `PleosInputProbe.cs`는 제거했다.
+현재 진입 씬은 `Assets/_Parkside/Scenes/MainMenu.unity`다. 연습장 자체만 편집·시험할 때는 `ParkingPractice.unity`를 직접 연다. 기존 `InputProbe.unity`와 `PleosInputProbe.cs`는 제거했다.
 
 ```text
 ParkingPractice

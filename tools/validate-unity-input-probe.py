@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import shutil
+import struct
 import subprocess
 import threading
 import time
@@ -185,6 +186,31 @@ def main():
                                stdout=subprocess.PIPE, timeout=20, creationflags=flags).stdout
         (output / name).write_bytes(image)
 
+    def enter_practice(launched_at, log_start):
+        # The application now starts at MainMenu. Older probe APKs already open practice.
+        deadline = time.monotonic() + 45
+        while time.monotonic() < deadline:
+            with lock:
+                if any(value["receivedAt"] >= launched_at for value in observations):
+                    return
+                menu_ready = any("PARKSIDE_MENU_READY" in line for line in raw_lines[log_start:])
+            if menu_ready:
+                break
+            time.sleep(0.2)
+        else:
+            raise RuntimeError("Neither the menu nor practice became ready; inspect unity-device.log")
+        image = subprocess.run(adb_command + ["exec-out", "screencap", "-p"], check=True,
+                               stdout=subprocess.PIPE, timeout=20, creationflags=flags).stdout
+        if image[:8] != b"\x89PNG\r\n\x1a\n":
+            raise RuntimeError("Cannot determine menu viewport from AVD screenshot")
+        width, height = struct.unpack(">II", image[16:24])
+        scale = min(width / 1440, height / 1000)
+        offset_x, offset_y = (width - 1440 * scale) / 2, (height - 1000 * scale) / 2
+        # Home's practice card -> reverse-parking Select -> Open practice.
+        for x, y in ((240, 580), (560, 560), (1228, 898)):
+            adb("shell", "input", "tap", str(round(offset_x + x * scale)), str(round(offset_y + y * scale)))
+            time.sleep(0.7)
+
     try:
         heartbeat_thread.start()
         deadline = time.monotonic() + 15
@@ -198,7 +224,11 @@ def main():
                 raise RuntimeError("AVD console DDS bridge did not become ready")
             time.sleep(0.2)
         controls()
+        with lock:
+            menu_log_start = len(raw_lines)
+        launched_at = time.monotonic()
         print(adb("shell", "am", "start", "-n", PACKAGE + "/com.unity3d.player.UnityPlayerActivity"), flush=True)
+        enter_practice(launched_at, menu_log_start)
         check_case("connected-neutral", lambda s: s["allowed"] and s["realGear"] == 4 and abs(s["acceleratorPercent"]) < 0.1,
                    time.monotonic(), timeout=45)
         changed = time.monotonic()

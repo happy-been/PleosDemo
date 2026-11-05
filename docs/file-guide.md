@@ -29,7 +29,8 @@ VehicleInputReceiver → InputSnapshotInterpreter → VehicleControlInput
 
 | 파일·위치 | 역할 / 여기서 수정하는 것 |
 |---|---|
-| [Scenes/ParkingPractice.unity](../unity/InputProbe/Assets/_Parkside/Scenes/ParkingPractice.unity) | 시작 씬. 맵·조명·차량·카메라·입력 연결·Canvas를 배치한다. Play 전에도 보인다. |
+| [Scenes/MainMenu.unity](../unity/InputProbe/Assets/_Parkside/Scenes/MainMenu.unity) | 시작 씬. Figma 기반 홈·연습 선택·준비·맵 목록·코스 상세 Canvas 패널. |
+| [Scenes/ParkingPractice.unity](../unity/InputProbe/Assets/_Parkside/Scenes/ParkingPractice.unity) | 연습장 씬. 맵·조명·차량·카메라·입력 연결·Canvas를 배치한다. Play 전에도 보인다. |
 | 씬의 `Environment` | 바닥·주차선·목표 주차면 위치와 크기 |
 | 씬의 `PracticeCanvas` | UI 위치·폰트·색상·고정 문구·버튼 On Click 연결 |
 | 씬의 `Systems/InputReceiver` | Desktop Source / Android Source에 입력 공급자 연결 |

@@ -1,0 +1,124 @@
+{
+  "svgRasterization": [
+    {
+      "source": "figmaHome-imgIconGlobe.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "figmaHome-imgIconParking.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "figmaHome-imgIconRoad.svg",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "source": "figmaHome-imgIconUsers.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "mapDetail-imgCurrentPosition.svg",
+      "width": 18,
+      "height": 18
+    },
+    {
+      "source": "mapDetail-imgDestination.svg",
+      "width": 15,
+      "height": 15
+    },
+    {
+      "source": "mapDetail-imgIconRoad.svg",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "source": "mapDetail-imgRoute.svg",
+      "width": 252,
+      "height": 210
+    },
+    {
+      "source": "maps-imgIconGlobe.svg",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "source": "maps-imgIconRoad.svg",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "source": "maps-imgIconSearch.svg",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "source": "maps-imgSchematicRoad.svg",
+      "width": 154,
+      "height": 155
+    },
+    {
+      "source": "practice-imgIconArrow.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "practice-imgIconExpand.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "practice-imgIconParking.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "practice-imgIconRoad.svg",
+      "width": 34,
+      "height": 34
+    },
+    {
+      "source": "practice-imgIconRoad1.svg",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "source": "setup-imgIconRoad.svg",
+      "width": 34,
+      "height": 34
+    }
+  ],
+  "photos": [
+    {
+      "name": "figmaHome-imgWorldAlps.png",
+      "sha256": "6295f6ce69ad11b0166c29b4e5fcba7d545736da94e380e574a14f326e3186ad"
+    },
+    {
+      "name": "figmaHome-imgWorldParking.png",
+      "sha256": "d24f9bdae2f8eda7490e40fea2cee109d02c80dd145355eb7dae1b29410210d4"
+    },
+    {
+      "name": "figmaHome-imgWorldSeoul.png",
+      "sha256": "e387f6a4cc9cc076382a77b8765792a0a466208ab6d51b4880de07563870051b"
+    },
+    {
+      "name": "mapDetail-imgWorldAlps.png",
+      "sha256": "6295f6ce69ad11b0166c29b4e5fcba7d545736da94e380e574a14f326e3186ad"
+    },
+    {
+      "name": "maps-imgWorldAlps.png",
+      "sha256": "6295f6ce69ad11b0166c29b4e5fcba7d545736da94e380e574a14f326e3186ad"
+    },
+    {
+      "name": "maps-imgWorldSeoul.png",
+      "sha256": "e387f6a4cc9cc076382a77b8765792a0a466208ab6d51b4880de07563870051b"
+    },
+    {
+      "name": "setup-imgWorldParking.png",
+      "sha256": "d24f9bdae2f8eda7490e40fea2cee109d02c80dd145355eb7dae1b29410210d4"
+    }
+  ]
+}

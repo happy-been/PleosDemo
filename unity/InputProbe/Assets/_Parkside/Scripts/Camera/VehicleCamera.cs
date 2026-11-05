@@ -14,6 +14,7 @@ namespace Parkside.Cameras
         public int ViewIndex { get; private set; }
         public bool IsConfigured => viewCamera != null && chaseAnchor != null && topAnchor != null && driverAnchor != null;
         public void CycleView() => ViewIndex = (ViewIndex + 1) % 3;
+        public void SetView(int index) => ViewIndex = Mathf.Clamp(index, 0, 2);
 
         private void LateUpdate()
         {

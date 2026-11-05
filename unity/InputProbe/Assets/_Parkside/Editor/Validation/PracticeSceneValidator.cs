@@ -45,6 +45,23 @@ namespace Parkside.Editor
 
             var components = scene.GetRootGameObjects().SelectMany(root => root.GetComponentsInChildren<MonoBehaviour>(true)).ToArray();
             Require(!components.Any(component => component == null), "Missing script reference");
+            var menus = components.OfType<ParksideMenu>().ToArray();
+            if (menus.Length > 0)
+            {
+                Require(menus.Length == 1 && menus[0].IsConfigured, "Menu pages and control references are missing");
+                Require(components.OfType<EventSystem>().Count() == 1, "Exactly one menu EventSystem is required");
+                var menuCanvas = menus[0].GetComponent<Canvas>();
+                Require(menuCanvas != null && menuCanvas.worldCamera != null && menuCanvas.GetComponent<CanvasScaler>() != null, "Menu scaling or render camera missing");
+                foreach (var image in menus[0].GetComponentsInChildren<RawImage>(true))
+                {
+                    Require(image.texture != null && image.texture.width > 0 && image.texture.height > 0, "Empty Figma asset: " + image.name);
+                    var slot = image.rectTransform.rect;
+                    var aspect = image.texture.width * image.uvRect.width / (image.texture.height * image.uvRect.height);
+                    Require(Mathf.Abs(aspect / (slot.width / slot.height) - 1) < 0.035f, "Figma asset proportions: " + image.name);
+                }
+                foreach (var button in menus[0].GetComponentsInChildren<Button>(true))
+                    Require(button.onClick.GetPersistentEventCount() > 0 && button.onClick.GetPersistentTarget(0) != null, "Menu button has no action: " + button.name);
+            }
             var practiceScene = components.Any(component => component is GameManager || component is VehicleController ||
                 component is VehicleInputReceiver || component is VehicleCamera || component is PracticeHud);
             if (!practiceScene) return checks;

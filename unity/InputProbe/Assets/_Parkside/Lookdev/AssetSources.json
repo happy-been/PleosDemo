@@ -1,0 +1,205 @@
+[
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_03/asphalt_03_diff_2k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\asphalt_03\\asphalt_03_diff_2k.jpg",
+    "bytes": 3723686,
+    "sha256": "12621c0ec24e4dd3c51a2598483b87a5925212b1db125dd5dfcfbd0226a06922",
+    "asset": "asphalt_03"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_03/asphalt_03_nor_gl_2k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\asphalt_03\\asphalt_03_nor_gl_2k.jpg",
+    "bytes": 4336458,
+    "sha256": "73416b96bf9524e4dc09f8e16e6b04875e8c90991a44286f36bd87f26415ee5d",
+    "asset": "asphalt_03"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_03/asphalt_03_arm_2k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\asphalt_03\\asphalt_03_arm_2k.jpg",
+    "bytes": 4591780,
+    "sha256": "c88a1d6029b893da52a3aa7fe23ca881c904fc90a1ca4b664aa1d1cb5242619f",
+    "asset": "asphalt_03"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor/concrete_floor_diff_2k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\concrete_floor\\concrete_floor_diff_2k.jpg",
+    "bytes": 4169270,
+    "sha256": "72249ce8ba5cedd518ebb60840e882a3506a4b2a24958055d1b36752dbcfda36",
+    "asset": "concrete_floor"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor/concrete_floor_nor_gl_2k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\concrete_floor\\concrete_floor_nor_gl_2k.jpg",
+    "bytes": 4003915,
+    "sha256": "b540b5d2ecb3d9eae96dbfda158b488abae243fe5d77b3ea37cc5453015419bf",
+    "asset": "concrete_floor"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor/concrete_floor_arm_2k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\concrete_floor\\concrete_floor_arm_2k.jpg",
+    "bytes": 2839684,
+    "sha256": "61e77a9d6d2c08c5bbd312ed5023d725c36e5c75f7e4726cf381bbf907f11de7",
+    "asset": "concrete_floor"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_planks_03/brown_planks_03_diff_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\brown_planks_03\\brown_planks_03_diff_1k.jpg",
+    "bytes": 570668,
+    "sha256": "8dfae22286fa9bb0ed62ce7326e8bc14c284e567d38fd64b5a453838080ecf19",
+    "asset": "brown_planks_03"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_planks_03/brown_planks_03_nor_gl_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\brown_planks_03\\brown_planks_03_nor_gl_1k.jpg",
+    "bytes": 516860,
+    "sha256": "868c153165ecaa7dd7259cb58214f06f6f86c80ac71fc92a827dff07708be077",
+    "asset": "brown_planks_03"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_planks_03/brown_planks_03_arm_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\brown_planks_03\\brown_planks_03_arm_1k.jpg",
+    "bytes": 126038,
+    "sha256": "2be4c94cc58a0f4ea2120a1004aab5ff1baf720809c321f4fa398cdb31fd3756",
+    "asset": "brown_planks_03"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/covered_car/covered_car_1k.fbx",
+    "file": "build\\parking-lookdev\\sources\\covered_car\\source.fbx",
+    "bytes": 422700,
+    "sha256": "765bbe9634d8dede608e9980ee8e8f706aac874f9aecdc739d43f9e0913bd595",
+    "asset": "covered_car"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/covered_car/covered_car_diff_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\covered_car\\covered_car_diff_1k.jpg",
+    "bytes": 558004,
+    "sha256": "c4616a5c7c1327e4bc127b600e59d9dcb2123f8926f1570a1ca4a068d97f4d34",
+    "asset": "covered_car"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/covered_car/covered_car_nor_gl_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\covered_car\\covered_car_nor_gl_1k.jpg",
+    "bytes": 641340,
+    "sha256": "6769694abe28c53e5c35ad1cefdd462b56416e7d89a6bcf5a9d9f6c922b46d05",
+    "asset": "covered_car"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/covered_car/covered_car_arm_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\covered_car\\covered_car_arm_1k.jpg",
+    "bytes": 745781,
+    "sha256": "e77f73234311701dd8088ec572e61d4ec7838bd28e9ea13ffe5e28f79da8e085",
+    "asset": "covered_car"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/shrub_01/shrub_01_1k.fbx",
+    "file": "build\\parking-lookdev\\sources\\shrub_01\\source.fbx",
+    "bytes": 4655340,
+    "sha256": "fcc961e8d9dd45fb807b5bb84dc2bec88f63e1713fb1757762188c8475b96326",
+    "asset": "shrub_01"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/shrub_01/shrub_01_alpha_1k.png",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\shrub_01\\shrub_01_alpha_1k.png",
+    "bytes": 132597,
+    "sha256": "eb693835205913dfc705a08fb45f3e8d1c338332bd0097e9837773765b421603",
+    "asset": "shrub_01"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_01/shrub_01_diff_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\shrub_01\\shrub_01_diff_1k.jpg",
+    "bytes": 502162,
+    "sha256": "fe60e639d694e1807c0a3ae97dd1d5a7e7b3f84e5fc32d0610b868ce48f36331",
+    "asset": "shrub_01"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_01/shrub_01_nor_gl_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\shrub_01\\shrub_01_nor_gl_1k.jpg",
+    "bytes": 746497,
+    "sha256": "076870a39a4e21a364cf94566e6dd1852a29045fdf1f23393637235b19d1c2e8",
+    "asset": "shrub_01"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_01/shrub_01_arm_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\shrub_01\\shrub_01_arm_1k.jpg",
+    "bytes": 386309,
+    "sha256": "8faecdc28d8f03ba0ac139be16e617e8bfd0778780ec1d7850812230378b89be",
+    "asset": "shrub_01"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/tree_small_02/tree_small_02_1k.fbx",
+    "file": "build\\parking-lookdev\\sources\\tree_small_02\\source.fbx",
+    "bytes": 75487180,
+    "sha256": "442394b4d39dcefef6c54358becea3c86735f040f2601b2c0c082e3ecf3685c5",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_diff_1k.png",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_branch_diff_1k.png",
+    "bytes": 1277270,
+    "sha256": "a93ce54213c4a98cd01cb5c5f7ab46b77defcd66e1dd082e6912f6e60632e630",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_branch_nor_gl_1k.png",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_branch_nor_gl_1k.png",
+    "bytes": 5754879,
+    "sha256": "0338a1400391893fdf6c6cbd1c22a573d6ab2300ad771d4916184bf206e1a671",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_diff_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_diff_1k.jpg",
+    "bytes": 863246,
+    "sha256": "4e0093f407b3a1120a36de49a48ebe5a465a9a9b77e361c7a3e66866e115e404",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_alpha_1k.png",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_leaves_alpha_1k.png",
+    "bytes": 264711,
+    "sha256": "4f143e2dda8a6a572f427ac378b92255d21761e4611de0d26e21816c01aa533b",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_diff_1k.png",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_leaves_diff_1k.png",
+    "bytes": 2338424,
+    "sha256": "d3fc48522c76aa1f91076c6b86f302669822ebe4e2acabd67d42c4d57eaa5ba0",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/tree_small_02/tree_small_02_leaves_nor_gl_1k.png",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_leaves_nor_gl_1k.png",
+    "bytes": 4903387,
+    "sha256": "fa4ad390f2e68b745db8f568cad64c3272696c5e01312ae564795e37724d79b8",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_branch_arm_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_branch_arm_1k.jpg",
+    "bytes": 375732,
+    "sha256": "8968b46d76c67da09ebbf4eed04b8123c9e0ddf5b55d123968b35b32aa76d27a",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_leaves_arm_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_leaves_arm_1k.jpg",
+    "bytes": 633698,
+    "sha256": "71f81374daf5a8f3e6eb2c694264a1769fdb0bea508178e4105618eecea83c3e",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/tree_small_02/tree_small_02_leaves_alpha_1k.jpg",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\tree_small_02\\tree_small_02_leaves_alpha_1k.jpg",
+    "bytes": 245083,
+    "sha256": "66d49e18d043c483d0f4a8638f379ec164e30a61e9c10e60384e72815ca0bb40",
+    "asset": "tree_small_02"
+  },
+  {
+    "source": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+    "file": "unity\\InputProbe\\Assets\\_Parkside\\Lookdev\\Textures\\Sky\\CourtyardSky.hdr",
+    "bytes": 5451493,
+    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "asset": "kloofendal_48d_partly_cloudy_puresky"
+  }
+]
