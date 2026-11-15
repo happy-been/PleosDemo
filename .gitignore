@@ -39,3 +39,6 @@ local.properties
 !.env.example
 *.jks
 *.keystore
+
+# The signed submission is published as a GitHub Release asset.
+/apk/잠자는바보들_파킹트래블_release.apk

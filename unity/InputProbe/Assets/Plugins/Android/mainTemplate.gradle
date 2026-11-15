@@ -1,6 +1,12 @@
 apply plugin: 'com.android.library'
 **APPLY_PLUGINS**
 
+// The local lint AAR contains all city assets before APK compression.
+tasks.withType(Zip).matching { it.name == 'bundleReleaseLocalLintAar' }.configureEach {
+    zip64 = true
+    entryCompression = ZipEntryCompression.DEFLATED
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'ai.pleos.playground:Vehicle:2.3.2'
