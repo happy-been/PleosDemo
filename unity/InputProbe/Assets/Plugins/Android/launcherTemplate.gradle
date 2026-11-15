@@ -24,6 +24,14 @@ android {
         noCompress = **BUILTIN_NOCOMPRESS** + unityStreamingAssets.tokenize(', ')
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:!CVS:!thumbs.db:!picasa.ini:!*~"
     }**SIGN**
+    if (System.getenv('PARKSIDE_KEYSTORE')) {
+        signingConfigs.create('submission') {
+            storeFile file(System.getenv('PARKSIDE_KEYSTORE'))
+            storePassword System.getenv('PARKSIDE_STORE_PASSWORD')
+            keyAlias System.getenv('PARKSIDE_KEY_ALIAS')
+            keyPassword System.getenv('PARKSIDE_KEY_PASSWORD')
+        }
+    }
     lintOptions { abortOnError false }
     buildTypes {
         debug {
@@ -34,6 +42,7 @@ android {
         release {
             minifyEnabled **MINIFY_RELEASE**
             proguardFiles getDefaultProguardFile('proguard-android.txt')**SIGNCONFIG**
+            if (signingConfigs.findByName('submission')) signingConfig signingConfigs.submission
         }
     }**PACKAGING_OPTIONS****PLAY_ASSET_PACKS****SPLITS**
 **BUILT_APK_LOCATION**

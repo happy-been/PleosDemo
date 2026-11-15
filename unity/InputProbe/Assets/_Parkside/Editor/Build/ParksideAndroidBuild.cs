@@ -18,8 +18,9 @@ namespace Parkside.Editor
             ConfigureAndroidTools();
             PracticeSceneValidator.ValidateBuildScenes();
             var scenes = EditorBuildSettings.scenes.Where(scene => scene.enabled).Select(scene => scene.path).ToArray();
-            PlayerSettings.companyName = "Parkside";
-            PlayerSettings.productName = "Pleos Unity Input Probe";
+            bool release = Environment.GetCommandLineArgs().Contains("-parksideRelease");
+            PlayerSettings.companyName = "잠자는바보들";
+            PlayerSettings.productName = "파킹트래블";
             PlayerSettings.bundleVersion = "0.1.0";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.example.pleosdemo.unityprobe");
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
@@ -59,7 +60,7 @@ namespace Parkside.Editor
             AssetDatabase.SaveAssets();
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
                 scenes = scenes, locationPathName = output, target = BuildTarget.Android,
-                options = BuildOptions.Development | BuildOptions.AcceptExternalModificationsToPlayer
+                options = BuildOptions.AcceptExternalModificationsToPlayer | (release ? BuildOptions.None : BuildOptions.Development)
             });
             if (report.summary.result != BuildResult.Succeeded) throw new BuildFailedException("Android export failed: " + report.summary.result);
             Debug.Log("PLEOS_PROBE_EXPORT " + output);

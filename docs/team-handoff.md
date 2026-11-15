@@ -145,7 +145,7 @@ JSON 필드 이름·타입을 바꾸면 Kotlin의 직렬화 코드와 C#의 `Inp
 2. Unity 2022.3.16f1로 연다. PC 편집·키보드 미리보기는 Windows 대상으로 가능하며 Android 모듈이 없어도 컴파일된다.
 3. `Assets/_Parkside/Scenes/ParkingPractice.unity`를 연다.
 4. Scene/Hierarchy에서 편집하고 저장한다.
-5. Play → `Start preview`를 누른다. W로 가속, Space로 제동, 좌우 방향키로 조향한다. A/D·위아래 방향키로 차량을 직접 이동시키지 않는다.
+5. Play하면 입력이 들어오는 대로 출발한다. W로 가속, Space로 제동, 좌우 방향키로 조향한다. A/D·위아래 방향키로 차량을 직접 이동시키지 않는다.
 6. Inspector 값은 Play를 정지한 뒤 편집·저장한다. Play 중 변경은 정지하면 되돌아갈 수 있다.
 7. `PARKSIDE → Validate scene and input`을 실행해 참조·입력·Controller 검사를 확인한다.
 
@@ -223,7 +223,7 @@ Git에는 Kotlin 소스·테스트, Unity `Assets/Packages/ProjectSettings`, 모
 | 증상 | 확인할 곳 |
 |---|---|
 | 예전 씬이 사라졌거나 화면이 비어 있음 | 새 `ParkingPractice.unity`를 열기 |
-| 차량이 움직이지 않음 | Start preview, Game 창 키보드 포커스, InputReady·차단 사유 |
+| 차량이 움직이지 않음 | 기어가 N인지, Game 창 키보드 포커스, InputReady·차단 사유 |
 | APK에서 입력 대기 | 8090 콘솔 세션, P·속도 0, 권한, 샘플 경과 시간 |
 | P에서 악셀 0 | 브라우저가 8090 프록시를 사용하는지 |
 | AndroidPlayer 미지원 | PC는 Windows 대상으로 열기, APK는 모듈이 설치된 Editor 사용 |
@@ -257,7 +257,7 @@ KeyboardInputSource의 기본 키는 W=가속, Space=브레이크, Left/Right Ar
 - 씬 재생성: Unity 메뉴 `Busan/Build drive slice scene`. 매번 `ParkingPractice.unity`를 파일 복사로 덮어쓴(GUID 유지) 뒤 전체를 다시 배선한다. 메시는 범주별 컨테이너 asset(`GeneratedSlice/Meshes`)이다.
 - 조작(v3): 부산 씬만 `DriveKeyboardSource`를 쓴다(주차 씬의 `KeyboardInputSource` W/Space 규약은 그대로). W/↑ 가속, S/↓ 제동 겸 후진, Space 제동만, ←→/A/D 조향. 정지 상태에서 S를 새로 누르면 즉시 후진, 눌러서 멈춘 뒤 계속 누르면 0.8초 후 후진, 후진 중 S는 약 11km/h, W는 제동이며 정지 후 같은 규칙으로 전진 복귀. 조작 안내 팝업은 기본 숨김(G로 표시). 이전 기록: W 가속, Space 제동, ←→ 조향, V 시점, **R 코스 복귀(막다른 길·범위 이탈 탈출구)**, T 자동주행, 1~5 점프, G 안내. PC 런타임에서만 `DriveAssist`가 그림자를 켜고 종료 시 복원한다(전역 품질값이라 주차 씬에 새면 안 된다). 모바일은 후처리를 끈다.
 - `VehicleController` 확장 필드(brakeDeceleration, highSpeedSteeringAngle, maxLateralAcceleration, steeringResponse, groundFollow, groundMask, SpeedCap)는 **기본값이 모두 "끔"이라 기존 주차 동작과 같다.** BusanDrive 씬의 차량 인스턴스에만 오버라이드가 걸려 있다. `groundFollow`는 현재 높이에 가장 가까운 면(±1.2m)만 지면으로 보고, 도로 끝에서는 ±10~50도 방향으로 미끄러진다. 도로 콜라이더는 레이어 30이다.
-- 메뉴 연결은 아직 없다. 부산 카드를 `ParksideMenu`에 붙일 때 주의: `PARKSIDE/Author Figma menu scene`을 실행하면 **EditorBuildSettings 씬 목록을 MainMenu·ParkingPractice 두 개로 덮어쓴다.** 부산 씬을 포함하려면 실행 후 다시 추가한다.
+- 메뉴 연결(2026-11-15): 메뉴의 주행 탭 부산 카드가 `BusanLandmarks`를 연다. `PARKSIDE/Author Figma menu scene`은 빌드 목록을 메뉴가 여는 6개 씬으로 맞춘다(부산 포함, 켜짐). 자세한 내용은 [UI 실행과 Scene 구성 안내](ui-and-scenes.md).
 - **합치는 순서(2026-11-10):**
   1. 부산 쪽 커밋에 `Assets/BusanEnvironment`(메시 포함 약 198MB, 100MB 넘는 단일 파일 없음), `Assets/BusanEnvironment.meta`, `Assets/_Parkside/Scenes/BusanDrive.unity`와 `.meta`, `tools/`, `docs/`를 모두 넣는다. 씬만 올라가면 메시 참조가 비어 분홍색 또는 빈 씬이 된다.
   2. 충돌이 날 수 있는 추적 파일은 셋이다: `ProjectSettings/EditorBuildSettings.asset`(씬 목록 3줄 추가), `Assets/_Parkside/Scripts/Vehicle/VehicleController.cs`(기본값이 전부 꺼진 필드 추가), `docs/team-handoff.md`. 제주 씬도 목록에 들어가므로 양쪽 씬 줄을 모두 남긴다.

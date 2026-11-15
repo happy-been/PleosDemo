@@ -2,7 +2,8 @@
     [string]$UnityEditor,
     [string]$AndroidSdk,
     [string]$JavaHome,
-    [switch]$SkipTests
+    [switch]$SkipTests,
+    [switch]$Release
 )
 $ErrorActionPreference = 'Stop'
 $taskRepository = Split-Path -Parent $PSScriptRoot
@@ -12,6 +13,13 @@ $taskSourceSdk = Get-ParksideAndroidSdk $taskRepository $AndroidSdk
 $taskGradleJavaHome = Get-ParksideJavaHome $taskSourceSdk $JavaHome
 $taskProject = Join-Path $taskRepository 'unity\InputProbe'
 $taskOutput = Join-Path $taskRepository 'build\unity-probe'
+if ($Release) {
+    if (-not ($env:PARKSIDE_KEYSTORE -and (Test-Path -LiteralPath $env:PARKSIDE_KEYSTORE -PathType Leaf) -and
+        $env:PARKSIDE_KEY_ALIAS -and $env:PARKSIDE_STORE_PASSWORD -and $env:PARKSIDE_KEY_PASSWORD)) {
+        throw 'Release 서명용 PARKSIDE_KEYSTORE, PARKSIDE_KEY_ALIAS, PARKSIDE_STORE_PASSWORD, PARKSIDE_KEY_PASSWORD를 설정해 주세요.'
+    }
+    $taskOutput = Join-Path $taskRepository 'build\unity-release'
+}
 $taskEditorData = Join-Path (Split-Path -Parent $UnityEditor) 'Data'
 $taskAndroidTools = Join-Path $taskEditorData 'PlaybackEngines\AndroidPlayer'
 $taskJava = Join-Path $taskAndroidTools 'OpenJDK\bin\java.exe'
@@ -32,6 +40,7 @@ try {
     $env:JAVA_HOME = $taskGradleJavaHome
     $env:ANDROID_HOME = $taskSourceSdk
     $taskNativeTasks = @(':vehicle-bridge:exportForUnity')
+    if ($Release) { $taskNativeTasks = @(':vehicle-bridge:exportReleaseForUnity') }
     if (-not $SkipTests) { $taskNativeTasks += @(':vehicle-bridge:testDebugUnitTest', ':app:testDebugUnitTest') }
     & .\gradlew.bat @taskNativeTasks --console=plain
     if ($LASTEXITCODE -ne 0) { throw 'Kotlin 입력 라이브러리 빌드가 실패했습니다.' }
@@ -58,6 +67,8 @@ try {
     $taskUnityLog = Join-Path $taskOutput 'unity-export.log'
     $taskUnityArguments = @('-batchmode', '-nographics', '-quit', '-projectPath', ('"' + $taskProject + '"'),
         '-buildTarget', 'Android', '-executeMethod', 'Parkside.Editor.ParksideAndroidBuild.BuildAndroid', '-logFile', ('"' + $taskUnityLog + '"'))
+    $taskExport = Join-Path $taskOutput 'android-export'
+    if ($Release) { $taskUnityArguments += @('-parksideRelease', '-probeOutputPath', ('"' + $taskExport + '"')) }
     $taskUnityProcess = Start-Process -FilePath $UnityEditor -ArgumentList $taskUnityArguments -WindowStyle Hidden -PassThru
     # Wait for the Editor itself, not persistent ADB/licensing child processes.
     $taskUnityProcess.WaitForExit()
@@ -65,18 +76,23 @@ try {
         Get-Content -LiteralPath $taskUnityLog -Tail 60
         throw 'Unity Android 내보내기가 실패했습니다. 같은 프로젝트가 Editor에서 열려 있으면 닫고 다시 실행해 주세요.'
     }
-    $taskExport = Join-Path $taskOutput 'android-export'
+    $taskVariant = if ($Release) { 'release' } else { 'debug' }
+    $taskAssemble = if ($Release) { ':launcher:assembleRelease' } else { ':launcher:assembleDebug' }
     $taskNativePreference = $ErrorActionPreference
     try {
         # Windows PowerShell can treat a successful Java command's stderr warnings as terminating errors.
         $ErrorActionPreference = 'Continue'
-        & $taskJava -classpath $taskGradleLauncher.FullName org.gradle.launcher.GradleMain -p $taskExport :launcher:assembleDebug --console=plain --no-daemon 2>&1 |
+        & $taskJava -classpath $taskGradleLauncher.FullName org.gradle.launcher.GradleMain -p $taskExport $taskAssemble --console=plain --no-daemon 2>&1 |
             ForEach-Object { $_.ToString() } | Tee-Object -FilePath (Join-Path $taskOutput 'gradle-apk.log')
         $taskGradleExit = $LASTEXITCODE
     } finally { $ErrorActionPreference = $taskNativePreference }
     if ($taskGradleExit -ne 0) { throw 'Unity APK 패키징이 실패했습니다.' }
     $taskApk = Join-Path $taskOutput 'parkside-input-probe.apk'
-    Copy-Item -LiteralPath (Join-Path $taskExport 'launcher\build\outputs\apk\debug\launcher-debug.apk') -Destination $taskApk -Force
+    if ($Release) {
+        $taskApkDir = New-Item -ItemType Directory -Path (Join-Path $taskRepository 'apk') -Force
+        $taskApk = Join-Path $taskApkDir.FullName '잠자는바보들_파킹트래블_release.apk'
+    }
+    Copy-Item -LiteralPath (Join-Path $taskExport "launcher\build\outputs\apk\$taskVariant\launcher-$taskVariant.apk") -Destination $taskApk -Force
     Write-Output "APK: $taskApk"
 } finally {
     $env:JAVA_HOME = $taskPreviousJavaHome

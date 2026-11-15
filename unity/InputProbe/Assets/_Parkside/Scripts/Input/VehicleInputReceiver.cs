@@ -37,6 +37,14 @@ namespace Parkside.Input
             }
         }
 
+        /// <summary>For scenes that add a receiver at runtime (Jeju and Paris through the presentation HUD).</summary>
+        public void UseSources(VehicleInputSource desktop, VehicleInputSource android)
+        {
+            desktopSource = desktop;
+            androidSource = android;
+            Reconnect();
+        }
+
         private void OnEnable() => Reconnect();
         private void OnDisable() => Disconnect();
 

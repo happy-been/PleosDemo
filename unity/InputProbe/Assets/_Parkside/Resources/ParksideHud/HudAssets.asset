@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9d1fee47fa55e428a3ed2f180e58fe, type: 3}
+  m_Name: HudAssets
+  m_EditorClassIdentifier: 
+  regular: {fileID: 12800000, guid: dd38c572c9b0bc74da0aae7814dc97d8, type: 3}
+  medium: {fileID: 12800000, guid: 87053a04ff6ed8e4494e8e39f9080c07, type: 3}
+  semiBold: {fileID: 12800000, guid: 0db0c17a740c693498886ec5237380c3, type: 3}
+  playerCar: {fileID: 5892902724090793313, guid: d04b144c49512b040bd0d104e58fcd63, type: 3}
+  round20: {fileID: 21300000, guid: 4276a48b4fc2a594bb1b7a23cbbbe1c1, type: 3}
+  round14: {fileID: 21300000, guid: 3494355b53999484a821e4af35570c1e, type: 3}
+  circle: {fileID: 21300000, guid: 6f4da91c83804874d871d74e3cc67e62, type: 3}
+  arrow: {fileID: 21300000, guid: 92b353f3f3d7836489bb3478ae7da2b3, type: 3}
+  carIcon: {fileID: 21300000, guid: 36eefb71ecd51ce4db20ba72d85538a3, type: 3}
+  cockpit: {fileID: 21300000, guid: 9e79f51b97f59d645b98fcec63e31a38, type: 3}
+  wheel: {fileID: 21300000, guid: 1039e3ca36fca6747b052574f571c845, type: 3}
+  handLeft: {fileID: 21300000, guid: 14e4d39a364cf94439adba932ad49659, type: 3}
+  handRight: {fileID: 21300000, guid: 149e1a7996824784b9024a8919139d38, type: 3}
+  mirrorRearHousing: {fileID: 21300000, guid: 930c9e3e80384c24894e6daa2d0a5470, type: 3}
+  mirrorRearMask: {fileID: 21300000, guid: 4385d3278ec3b6140a6272be1b4090c5, type: 3}
+  mirrorLeftHousing: {fileID: 21300000, guid: e2baed92ef3afb842b5ba05a5541a912, type: 3}
+  mirrorLeftMask: {fileID: 21300000, guid: ab0c4f3cc3efb85449340b5173c7b23c, type: 3}
+  mirrorRightHousing: {fileID: 21300000, guid: df19476b577ab3e4291c668a06df1e04, type: 3}
+  mirrorRightMask: {fileID: 21300000, guid: 2baaf16c824f6d9429affe6da0bac4fa, type: 3}

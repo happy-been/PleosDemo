@@ -33,3 +33,10 @@ tasks.register<Copy>("exportForUnity") {
     into(rootProject.file("unity/InputProbe/Assets/Plugins/Android"))
     rename { "pleos-vehicle-bridge.aar" }
 }
+
+tasks.register<Copy>("exportReleaseForUnity") {
+    dependsOn("assembleRelease")
+    from(layout.buildDirectory.file("outputs/aar/vehicle-bridge-release.aar"))
+    into(rootProject.file("unity/InputProbe/Assets/Plugins/Android"))
+    rename { "pleos-vehicle-bridge.aar" }
+}

@@ -22,6 +22,13 @@ namespace Parkside.Vehicle
         [SerializeField] private bool groundFollow = false;
         [SerializeField] private LayerMask groundMask = ~0;
         [SerializeField] private float groundClearance = 0f;
+        // Parking-lot extension, off by default: the body (a box of obstacleBox width × height × length whose
+        // bottom sits obstacleFloor above the ground) stops at colliders instead of passing through them.
+        // The floor gap lets curbs, wheel stops and speed humps pass underneath.
+        [SerializeField] private bool blockOnObstacles = false;
+        [SerializeField] private Vector3 obstacleBox = new Vector3(2.2f, 1.1f, 4.7f);
+        [SerializeField, Min(0f)] private float obstacleFloor = 0.35f;
+        private static readonly Collider[] OverlapBuffer = new Collider[16];
         private const float ProbeHeight = 4f;
         private const float ProbeDepth = 10f;
         private const float AlignRate = 8f;
@@ -33,6 +40,8 @@ namespace Parkside.Vehicle
         private float steeringState;
         private float speedCap = float.PositiveInfinity;
 
+        /// <summary>N gear of the presentation HUD: the accelerator is ignored and the car rolls to a stop. Off by default.</summary>
+        public bool Neutral { get; set; }
         public float SpeedKph => SpeedMps * 3.6f;
         public float SpeedMps { get; private set; }
         public bool IsReversing => direction < 0;
@@ -61,7 +70,7 @@ namespace Parkside.Vehicle
             if (input.Brake > 0.01f)
                 SpeedMps = brakeDeceleration > 0f ? Mathf.MoveTowards(SpeedMps, 0f, dt * brakeDeceleration) : 0f;
             else
-                SpeedMps = Mathf.MoveTowards(SpeedMps, input.Throttle * maximumSpeed, dt * acceleration);
+                SpeedMps = Mathf.MoveTowards(SpeedMps, (Neutral ? 0f : input.Throttle) * maximumSpeed, dt * acceleration);
             // cap 0 means a stopped car right ahead; any other cap keeps a 2 m/s floor so two cars never wait for each other
             if (direction > 0 && SpeedMps > speedCap) SpeedMps = Mathf.MoveTowards(SpeedMps, speedCap <= 0f ? 0f : Mathf.Max(speedCap, 2f), dt * 9f);
             var yaw = direction * SpeedMps / wheelbase * Mathf.Tan(steering * Mathf.Deg2Rad);
@@ -69,7 +78,26 @@ namespace Parkside.Vehicle
             var beforeRotation = transform.rotation;
             transform.Rotate(0f, yaw * Mathf.Rad2Deg * dt, 0f);
             transform.position += transform.forward * (direction * SpeedMps * dt);
+            if (blockOnObstacles)
+            {
+                // A pose that already overlaps (a bad spawn) may still move, so the car can always get free.
+                Blocked = Overlaps(transform.position, transform.rotation) && !Overlaps(before, beforeRotation);
+                if (Blocked) { transform.SetPositionAndRotation(before, beforeRotation); Stop(); return; }
+            }
             if (groundFollow) FollowGround(dt, before, beforeRotation);
+        }
+
+        /// <summary>True when the last step was stopped by an obstacle (only with blockOnObstacles).</summary>
+        public bool Blocked { get; private set; }
+
+        private bool Overlaps(Vector3 position, Quaternion rotation)
+        {
+            var half = obstacleBox * 0.5f;
+            var center = position + rotation * new Vector3(0f, obstacleFloor + half.y, 0f);
+            var count = Physics.OverlapBoxNonAlloc(center, half, OverlapBuffer, rotation, ~0, QueryTriggerInteraction.Ignore);
+            for (var i = 0; i < count; i++)
+                if (!OverlapBuffer[i].transform.IsChildOf(transform)) return true;
+            return false;
         }
 
         // Arcade ground follow for the drive map: snaps height and pitch to road
@@ -157,6 +185,7 @@ namespace Parkside.Vehicle
         {
             Stop();
             steeringState = 0f;
+            Blocked = false;
             transform.SetPositionAndRotation(position, rotation);
             if (frontLeftWheel != null) frontLeftWheel.localRotation = Quaternion.identity;
             if (frontRightWheel != null) frontRightWheel.localRotation = Quaternion.identity;

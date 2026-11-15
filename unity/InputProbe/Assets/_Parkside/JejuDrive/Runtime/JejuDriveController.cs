@@ -20,6 +20,13 @@ namespace Parkside.Jeju
         public int cameraMode;
         public bool showHud = true;
         public string CurrentRoadName { get; private set; }
+        // Presentation HUD hook (off by default): when externalInput is set, the pedals and steering below drive the car
+        // instead of the keyboard (the simulator has no keyboard). Throttle is -1..1 (negative = reverse), turn -1..1 (+ = right).
+        public bool externalInput;
+        public float externalThrottle, externalTurn;
+        public bool externalBrake;
+        public float Steering => steering;
+        public float SignedSpeed => speed;
         float speed, steering, wheelAngle, cullingTimer;
         bool paused;
         void Start() { JumpToStation(0); UpdateScenery(); UpdateCamera(true); }
@@ -34,11 +41,15 @@ namespace Parkside.Jeju
             for (int i = 0; i < Mathf.Min(9, route.stations.Length); i++)
                 if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha1 + i)) JumpToStation(i);
             if (route.stations.Length > 9 && UnityEngine.Input.GetKeyDown(KeyCode.Alpha0)) JumpToStation(9);
-            float throttle = (UnityEngine.Input.GetKey(KeyCode.W) || UnityEngine.Input.GetKey(KeyCode.UpArrow) ? 1 : 0)
-                - (UnityEngine.Input.GetKey(KeyCode.S) || UnityEngine.Input.GetKey(KeyCode.DownArrow) ? 1 : 0);
-            float turn = (UnityEngine.Input.GetKey(KeyCode.D) || UnityEngine.Input.GetKey(KeyCode.RightArrow) ? 1 : 0)
-                - (UnityEngine.Input.GetKey(KeyCode.A) || UnityEngine.Input.GetKey(KeyCode.LeftArrow) ? 1 : 0);
-            Simulate(throttle, turn, UnityEngine.Input.GetKey(KeyCode.Space), Time.deltaTime);
+            if (externalInput) Simulate(externalThrottle, externalTurn, externalBrake, Time.deltaTime);
+            else
+            {
+                float throttle = (UnityEngine.Input.GetKey(KeyCode.W) || UnityEngine.Input.GetKey(KeyCode.UpArrow) ? 1 : 0)
+                    - (UnityEngine.Input.GetKey(KeyCode.S) || UnityEngine.Input.GetKey(KeyCode.DownArrow) ? 1 : 0);
+                float turn = (UnityEngine.Input.GetKey(KeyCode.D) || UnityEngine.Input.GetKey(KeyCode.RightArrow) ? 1 : 0)
+                    - (UnityEngine.Input.GetKey(KeyCode.A) || UnityEngine.Input.GetKey(KeyCode.LeftArrow) ? 1 : 0);
+                Simulate(throttle, turn, UnityEngine.Input.GetKey(KeyCode.Space), Time.deltaTime);
+            }
             cullingTimer -= Time.deltaTime;
             if (cullingTimer <= 0) { UpdateScenery(); cullingTimer = .5f; }
         }
@@ -86,7 +97,8 @@ namespace Parkside.Jeju
 
         void SimulateManual(float throttle, float turn, bool braking, float dt)
         {
-            float target = throttle > 0 ? topSpeedKph / 3.6f : throttle < 0 ? -4.2f : 0;
+            // keyboard throttle is exactly ±1, so this keeps the keyboard behaviour; pedals scale the target speed
+            float target = throttle > 0 ? throttle * topSpeedKph / 3.6f : throttle < 0 ? throttle * 4.2f : 0;
             speed = Mathf.MoveTowards(speed, braking ? 0 : target, dt * (braking ? 11 : throttle == 0 ? 1.6f : 3.2f));
             if(ambient!=null)
             {

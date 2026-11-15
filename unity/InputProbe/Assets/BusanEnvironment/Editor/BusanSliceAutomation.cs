@@ -342,6 +342,17 @@ namespace BusanEnvironment.Editor
                     SessionState.SetFloat(PlayStartKey, -1f);
                     EditorApplication.isPlaying = true;
                     break;
+                case "invoke": // invoke <Namespace.Type.Method>: a public static editor method without arguments; its string result is reported
+                    {
+                        var cut = argument.LastIndexOf('.');
+                        var typeName = cut > 0 ? argument.Substring(0, cut) : "";
+                        var type = AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType(typeName, false)).FirstOrDefault(t => t != null);
+                        var method = type?.GetMethod(argument.Substring(cut + 1), System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static, null, Type.EmptyTypes, null);
+                        if (method == null) { Report("ERR invoke: no public static method " + argument); break; }
+                        try { Report("OK invoke " + argument + " " + method.Invoke(null, null)); }
+                        catch (System.Reflection.TargetInvocationException e) { Report("ERR invoke " + argument + " " + e.InnerException); }
+                    }
+                    break;
                 default:
                     Report("ERR unknown command " + command);
                     break;

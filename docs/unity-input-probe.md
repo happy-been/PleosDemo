@@ -92,7 +92,7 @@ py -3 .\tools\validate-unity-input-probe.py
 & .\tools\start-parking-console.ps1
 ```
 
-터미널을 유지하고 PC 브라우저의 `http://127.0.0.1:8090/`을 연다. AVD에서 `Pleos Unity Input Probe` → `Start preview`를 누른다. 실제 기어는 P, 가상 D/R과 시점은 Unity 버튼으로 바꾼다. 자동 검사 종료 후 앱이 대기 상태이면 브라우저 콘솔을 열어 세션을 다시 활성화한다.
+터미널을 유지하고 PC 브라우저의 `http://127.0.0.1:8090/`을 연다. AVD에서 `Pleos Unity Input Probe`로 연습을 열면 입력이 들어오는 대로 출발한다. 실제 기어는 P, 가상 R·N·D와 시점은 화면 HUD(기어 슬라이더·카메라 버튼)로 바꾼다. 자동 검사 종료 후 앱이 대기 상태이면 브라우저 콘솔을 열어 세션을 다시 활성화한다.
 
 **입력 경계와 제한**
 
