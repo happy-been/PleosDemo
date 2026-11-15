@@ -31,6 +31,8 @@
 
 ## PC에서 시작
 
+소스에서 열 때는 Git LFS를 설치하고 저장소 루트에서 `git lfs pull`을 먼저 실행한다. 제주 씬과 파리의 가로수 에셋은 Git LFS로 받는다.
+
 1. Unity Hub의 **Add → Add project from disk**에서 `unity/InputProbe` 폴더를 등록한다.
 2. Unity **2022.3.16f1**, PC 작업은 **Windows 64-bit** 대상으로 연다.
 3. `Assets/_Parkside/Scenes/MainMenu.unity`를 열고 Play한다.
